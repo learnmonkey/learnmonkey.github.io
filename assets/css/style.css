@@ -69,5 +69,5 @@ li.navitem a {
 }
 
 li.navitem a:hover {
-  color: orange;
+  font: orange;
 }
