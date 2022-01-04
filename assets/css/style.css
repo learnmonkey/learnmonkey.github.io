@@ -9,3 +9,16 @@ img {
 main {
     margin: 15px;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(37, 13, 4);
+    color: #f0e9e9;
+    opacity: 50%;
+}
+
+a.footlink {
+    text-decoration: none;
+    color: #f0e9e9;
+}
