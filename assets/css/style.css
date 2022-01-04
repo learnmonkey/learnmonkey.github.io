@@ -13,14 +13,36 @@ main {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: rgb(37, 13, 4);
-    color: #ad0c0c;
-    opacity: 70%;
+    background-color: rgb(90, 63, 4);
+    color: #f0e9e9;
+    opacity: 50%;
 }
 
-a.footlink {
+/*
+a.footer-link {
     text-decoration: none;
-    color: #f0e9e9;
+    color: lightgray;
+}
+
+a.footer-link:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+*/
+
+a.footer-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 5px;
+}
+
+#footer-icons {
+    width: 100%;
+}
+
+
+#footer-copyright {
+    width: 100%;
 }
 
 ul.navbar {
@@ -94,3 +116,4 @@ li.navitem a:hover {
 .show {
   display: block;
 }
+

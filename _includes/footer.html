@@ -1,8 +1,10 @@
-<!-- <footer class="bg-light text-center text-white">            
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        &copy; 2022 {{site.title}}
-    </div>
-</footer> -->
+<!-- the site. things are the values set in the _config.yml file -->
 <footer>
-	<h4><a href="mailto:learnmonkey2@gmail.com" class="footlink">Contact: EMail</a> | &#169;2022 Learnmonkey</h4>
+    <div id="footer-icons">
+        <a href="mailto:{{site.email}}"><i class="fa fa-envelope footer-icon"></i></a>
+        <a href="https://github.com/{{site.github_username}}"><i class="fa fa-github-square footer-icon"></i></a>
+    </div>
+    <div id="footer-copyright">
+        <p style="text-align: center;">&copy; 2022 {{site.title}}</p>
+    </div>
 </footer>
