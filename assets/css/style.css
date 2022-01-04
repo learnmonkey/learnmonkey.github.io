@@ -52,6 +52,7 @@ ul.navbar {
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #745a2b;
+    position: fixed;
 }
 
 li.navitem {
