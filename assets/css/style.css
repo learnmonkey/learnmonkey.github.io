@@ -30,10 +30,11 @@ a.footer-link:hover {
 }
 */
 
-a.footer-icon {
+i.footer-icon {
     margin-left: 5px;
     margin-right: 5px;
-    color: white !important;
+    color: blue !important;
+    font-size: xx-large !important;
 }
 
 #footer-icons {
