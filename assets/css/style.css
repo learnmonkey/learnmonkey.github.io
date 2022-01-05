@@ -74,4 +74,9 @@ li.navitem a:hover {
 
 code {
     background-color: rgb(173, 173, 173);
+    font-size: 1em;
+}
+
+body {
+    scroll-behavior: smooth;
 }
