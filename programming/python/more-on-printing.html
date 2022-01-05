@@ -10,9 +10,23 @@ title: More on Printing in Python
     <h2>Printing Multiple Things at a Time</h2>
     <p>We can give <code>print</code> two things to print by separating them by commas.</p>
     <p>For example, we can do <code>print("Hello", "World!")</code>. In the command line, it prints out <code>Hello World!</code>.</p>
-    <p>If you noticed, Python put a space between the words.</p>
+    <p>If you noticed, Python put a space between the words. If we don't want the space, we use <var>sep</var>, which stands for seperator. Going back to the Hello World exmaple, we do <code>print("Hello", "World", sep="")</code> and we get back <samp>HelloWorld</samp>.</p>
 </section>
 
 <section>
     <h2>Printing Without Endline</h2>
+    <p>Python's <code>print</code> actually creates a new line after it prints. With the Hello World it might not be that obvious, but we can easily demonstrate it by printing two things.</p>
+    <p>If we do <pre><code>print("Hello")
+    print("World")
+    </code></pre> we see: <pre><samp>
+        Hello
+        World
+    </samp></pre></p>
+    <p>Well, what if we don't want the newline at the end? It's actuasly very simple. Going back to our Hello World example, we change it to 
+        <pre><code>
+            print("Hello", end="")
+            print("World", end="")
+        </code></pre> we get <samp>HelloWorld</samp>.
+    </p>
+    <p>Note: you can actually change the <var>end</var> to be anything. I'd recommend you not do that though.</p>
 </section>
