@@ -8,20 +8,25 @@ permalink: /programming/python/your-first-python-program/
 <p>Now, it's time for you to write your first program.</p>
 
 <section>
-    <h2>Writing The Program</h2>
-    <p>Our very first program will simply print out "Hello World!" onto the screen. That might sound boring, but don't worry, in later lessons, you'll learn more advanced things.</p>
-    <p>So, first, open up a text editor and make a file ending in .py. ".py" is the file extension for Python, which means that all of the file names for Python programs end in .py.</p>
-    <p>You can name your file whatever you want, but in this tutorial, I'm calling it "helloworld.py".</p>
-    <p>The program only has one line: <code><pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span></pre></code></p>
-    <p>Finally, save the file.</p>
+    <h2>Writing the Program</h2>
+    <p>To write our very first program, we will be using our freshly installed Sublime Text. First, open up Sublime Text, and you should the following screen: </p>
+    <img src="/images/programming/python/sublime-text-1.PNG" alt="Empty Sublime Text window">
+    <p>Inside of it, write <code><pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span></pre></code></p>
 </section>
 
 <section>
-    <h2>Running The Program</h2>
-    <p>Go into the terminal and navigate to the folder where you created your Python program.</p>
-    <p>Then, execute the following command: </p>
-    <code style="text-decoration:none;">python [filename].py</code>
-    <p>This tells Python to run the Python program.</p>
-    <p>After running the command, you should see the words "Hello World!" printed below your command.</p>
-    <p>Yay! You've written and run your first Python program.</p>
+    <h2>Running the Program</h2>
+    <p>Now, we need to save our Python program. To do this, press the Ctrl and S keys. You should see a window like the following pop up: </p>
+    <img src="/images/programming/python/sublime-text-2.PNG" alt="Sublime Text Save Window">
+    <p>Navigate to the folder you want your program to be in and enter a name for the text. It's important that the file ends in ".py". I'm calling mine <var>helloworld.py</var>.</p>
+    <p>To run the program, press the Ctrl and B keys and choose "Python". You should see <samp>Hello World!</samp> printed at the bottom.</p>
+    <img src="/images/programming/python/sublime-text-3.PNG" alt="Sublime Text Runned Python Program">
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>Time for a breakdown of what we just did. Below is the code:</p>
+    <p><code><pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span></pre></code></p>
+    <p>The <code>print</code> tells Python that we want to print something. The brackets tell Python that it's a function. You'll learn more about functions in a later tutorial. Finally, the quotes tell Python that there will be some text. In the program, we used double quotes, but could've just as easily used single quotes.</p>
+    <small>Note: if you're using single quotes, remember to replace both double quotes with single quotes. If you don't Python will give you an error.</small>
 </section>
