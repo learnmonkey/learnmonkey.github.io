@@ -71,3 +71,7 @@ li.navitem a {
 li.navitem a:hover {
   color: orange;
 }
+
+code {
+    background-color: rgb(173, 173, 173);
+}
