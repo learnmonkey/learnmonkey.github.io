@@ -16,6 +16,8 @@ footer {
     background-color: rgb(90, 63, 4);
     color: #f0e9e9;
     opacity: 75%;
+    position: relative;
+    bottom: 0px;
 }
 
 /*
