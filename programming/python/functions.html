@@ -13,15 +13,23 @@ permalink: /programming/python/functions/
 
 <section>
     <h2>How to Make a Function?</h2>
-    <p>To make a function, we use <code>def</code>, which stands for "define". After that, we type a colon and press Enter. Then, Sublime Text should indent the next line. This is because Python uses indentation for seperating blocks of code and this includes functions.</p>
+    <p>To make a function, we use <code>def</code>, which stands for "define". After that, we type our function name, which in this case is <code>helloWorld</code> and type a pair of parentheses (<code>()</code>). After that, we type a colon and press enter. Then, Sublime Text should indent the next line. This is because Python uses indentation for seperating blocks of code and this includes functions.</p>
+    <small>Note: You cannot put a space in the middle of a function name.</small>
+    <img src="/images/programming/python/functions-1.png" alt="Making a Python function in Sublime Text">
+    <p>Then, inside of our function we can type <code>print("Hello World!")</code>. This tells Python that whenever we run the <code>helloWorld</code> function, we want to print <samp>Hello World!</samp>. </p>
 </section>
 
 <section>
-    <h2>Function Arguments</h2>
-    <p>"Argument" is the fancy programmning term for input.</p>
+    <h2>Function Arguments and Parameters</h2>
+    <p>When we are making our function, we can make our function have specific inputs so that when we use our function. These are called arguments. Then, when we run our functions, we can pass in the arguments we just defined as parameters. We can do it as follows:</p>
+    <pre><code>
+def helloWorld(argument1, argument2, argument3, .....):
+    # do something
+    </code></pre>
+    <p>We put the arguments in the parentheses and seperate them by commas. Then, we can use the arguments as if they were variables. If we put nothing in the parentheses, that tells Python that we're passing in no arguments.</p>
 </section>
 
 <section>
-    <h2>How to Run a Function?</h2>
-    <p></p>
+    <h2>Running a Function</h2>
+    <p>Running a function quite similar to making a function, but we don't use <code>def</code> and we don't type anything after the parentheses. For example, we could call the <code>helloWorld</code> fucntion we made earlier by typing <code>helloWorld()</code>.</p>
 </section>
