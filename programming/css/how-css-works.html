@@ -4,8 +4,21 @@ permalink: /programming/css/how-css-works/
 layout: css
 ---
 
-<h1>How CSS Works</h1>
-<p>In the last lesson, we got CSS linked into our site and we changed the font. In this lesson, we'll go over how CSS works and some other ways to use CSS. Below was our code: </p>
-<code style='color:#000000;'><span style='color:#800000; font-weight:bold; '>body</span> <span style='color:#800080; '>{</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#bb7977; font-weight:bold; '>font-family</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>sans-serif</span><span style='color:#800080; '>;</span><br>
-      <span style='color:#800080; '>}</span></code>
+<section>
+  <h1>How CSS Works</h1>
+  <p>In the last lesson, we got CSS linked into our site and we changed the font. In this lesson, we'll go over how CSS works and some other ways to use CSS. Below was our code: </p>
+  <code style='color:#000000;'><span style='color:#800000; font-weight:bold; '>body</span> <span style='color:#800080; '>{</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#bb7977; font-weight:bold; '>font-family</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>sans-serif</span><span style='color:#800080; '>;</span><br>
+        <span style='color:#800080; '>}</span></code>
+  <p>Now, we will go over how the CSS code works.</p>
+</section>
+
+<section>
+  <h1>Breaking It Down</h1>
+  <p>On the first line, we have <code style='color:#000000;'><span style='color:#800000; font-weight:bold; '>body</span> <span style='color:#800080; '>{</span></code>. This means that we want to apply our CSS to the <code>body</code> tag. If we were to change it to <code>a</code> or something else like <code>i</code>, then our CSS, at least in our example, would affect that. By using <code>body</code>, it affects <u>EVERYTHING</u> in the <code>body</code>, including all of the <i>other tags</i>!</p>
+  <p>This is useful if you want to change the background color of the <b>WHOLE PAGE</b> or the font of the whole page.</p>
+  <br>
+  <p>On the next line, we have <code><span style='color:#bb7977; font-weight:bold; '>font-family</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>sans-serif</span><span style='color:#800080; '>;</span></code>. This means to make the <code>font-family</code>, or the font, a sans-serif font. We could've changed it to another font like <code>Segoe UI</code> to make it a different font.</p>
+  <br>
+  <p>Finally, on the very last line, we end of with a closing curly bracket. This tells CSS to end our CSS statement and to begin a new one.</p>
+</section>
