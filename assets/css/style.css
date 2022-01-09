@@ -123,3 +123,12 @@ samp {
     background-color: #eee;
     font-size: 1em;
 }
+
+footer a.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+footer a.footer-link:hover {
+    color: #eee;
+}
