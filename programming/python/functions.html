@@ -65,7 +65,28 @@ permalink: /programming/python/functions/
 </section>
 
 <section>
-    <h2>(Arbitrary) Keyword Arguments</h2>
+    <h2>Keyword Arguments</h2>
+    <p>In Python, we can use keyword arguments to make our code more readable. When we are using keyword arguments, instead of putting out parameters in order, we can put our parameters in whatever order we choose. Below is an example of keyword arguments: </p>
+
+    <pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">def</span> favoriteFoods<span style="color:#808030; ">(</span>food1<span style="color:#808030; ">,</span> food2<span style="color:#808030; ">,</span> food3<span style="color:#808030; ">)</span><span style="color:#808030; ">:</span>
+        <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span><span style="color:#0000e6; ">"My favorite foods are: "</span><span style="color:#808030; ">)</span>
+        <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food1<span style="color:#808030; ">)</span>
+        <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food2<span style="color:#808030; ">)</span>
+        <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food3<span style="color:#808030; ">)</span>
+    favoriteFoods<span style="color:#808030; ">(</span>food2<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"noodles"</span><span style="color:#808030; ">,</span> food1<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"bananas"</span><span style="color:#808030; ">,</span> food3<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pizza"</span><span style="color:#808030; ">)</span>
+    </pre>
+
+    <p>The output is: </p>
+    <pre><samp>
+bananas
+noodles
+pizza
+    </samp></pre>
+    <p>As we can see, the order in which the parameters were placed didn't matter.</p>
+</section>
+
+<section>
+    <h2>Arbitrary Keyword Arguments (<code>**kwargs</code>)</h2>
     <p></p>
 </section>
 
