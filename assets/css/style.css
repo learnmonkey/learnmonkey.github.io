@@ -85,16 +85,29 @@ li.navitem a:hover {
 }
 
 ul#tutorials-list {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
   
 ul#tutorials-list li {
-    border: 1px solid #ddd; /* Add a thin border to each list item */
+    border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Add a grey background color */
-    padding: 12px; /* Add some padding */
+    background-color: #f6f6f6;
+    padding: 12px;
+}
+  
+ul#tutorials-list li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+ul#tutorials-list li a {
+    text-decoration: none !important;
+}
+
+ul#tutorials-list li a:hover {
+    text-decoration: none !important;
 }
 
 code {
