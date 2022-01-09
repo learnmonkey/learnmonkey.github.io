@@ -81,18 +81,17 @@ favoriteFoods<span style="color:#808030; ">(</span>food2<span style="color:#8080
 bananas
 noodles
 pizza</samp></pre>
-    <p>As we can see, the order in which the parameters were placed doesn't matter.</p>
+    <p>As we can see, the order in which the parameters were placed didn't matter.</p>
 </section>
 
 <section>
     <h2>Arbitrary Keyword Arguments (<code>**kwargs</code>)</h2>
-    <p>In Python, we have another similar thing to <code>*args</code> which is <code>**kwargs</code>. It's similar in the sense that they start with asterisks, only that <code>**kwargs</code> has two asterisks but with <code>**kwargs</code>, but <code>**kwargs</code> takes arguments as seperate parameters. For example, if I have the code</p>
-    <small>Fun fact: the <code>kw</code> in <code>kwargs</code> stands for <b>k</b>eyword <b>a</b>rguments.</small>
+    <p>In Python, we have another similar thing to <code>*args</code> which is <code>**kwargs</code>. It's similar in the sense that they start with asterisks, only that <code>**kwargs</code> has two asterisks but with <code>**kwargs</code>, but <code>**kwargs</code> takes arguments as seperate parameters. For example, if I have the cod
         <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> my_function<span style='color:#808030; '>(</span><span style='color:#44aadd; '>**</span>stuff<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
             <span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span>stuff<span style='color:#808030; '>)</span>
 my_function<span style='color:#808030; '>(</span>random<span style='color:#808030; '>=</span><span style='color:#008c00; '>2765</span><span style='color:#808030; '>,</span> thing<span style='color:#808030; '>=</span><span style='color:#0000e6; '>"gega"</span><span style='color:#808030; '>,</span> my_name<span style='color:#808030; '>=</span><span style='color:#0000e6; '>"monkey"</span><span style='color:#808030; '>)</span>
         </pre>
-    <p>After running that code, we get a dictionary, where the keys are the names of the keyword arguments and the values are the values:</p>
+    <p>After running that code, the output is the dictionary:</p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800080; '>{</span><span style='color:#0000e6; '>'random'</span><span style='color:#808030; '>:</span> <span style='color:#008c00; '>2765</span><span style='color:#808030; '>,</span> <span style='color:#0000e6; '>'thing'</span><span style='color:#808030; '>:</span> <span style='color:#0000e6; '>'gega'</span><span style='color:#808030; '>,</span> <span style='color:#0000e6; '>'my_name'</span><span style='color:#808030; '>:</span> <span style='color:#0000e6; '>'monkey'</span><span style='color:#800080; '>}</span>
     </pre>
 </section>
@@ -109,4 +108,5 @@ emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '
 <section>
     <h2>Running a Function</h2>
     <p>Running a function quite similar to making a function, but we don't use <code>def</code> and we don't type anything after the parentheses. For example, we could call the <code>helloWorld</code> fucntion we made earlier by typing <code>helloWorld()</code>.</p>
+    <p><i class="fas fa-exclamation-circle"></i> Remember that if you need to pass in any arguments to put them inside the brackets!!</p>
 </section>
