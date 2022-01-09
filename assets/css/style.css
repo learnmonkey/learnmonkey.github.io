@@ -87,7 +87,7 @@ li.navitem a:hover {
 ul#tutorials-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 50px;
 }
   
 ul#tutorials-list a li {
