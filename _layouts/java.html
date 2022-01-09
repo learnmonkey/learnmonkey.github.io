@@ -4,12 +4,16 @@
     <body>
         {%- include nav.html -%}
         <main>{{content}}</main>
-        <aside class="bg-light" id="menu-wrapper">
+        <!-- <aside class="bg-light" id="menu-wrapper">
             <div class="list-group list-group-flush overflow-auto vh-100">
                 <a href="/programming/java/" class="list-group-item list-group-item-action bg-light">Introduction to Java</a>
                 <a href="/programming/java/environment-setup/" class="list-group-item list-group-item-action bg-light">Environment Setup</a>
             </div>
-        </aside>
+        </aside> -->
+        <ul id="tutorials-list">
+            <a href="/programming/java/"><li>Introduction to Java</li></a>
+            <a href="/programming/css/environment-setup/"><li>Environment Setup</li></a>
+      </ul>
         {%- include footer.html -%}
     </body>
 </html>

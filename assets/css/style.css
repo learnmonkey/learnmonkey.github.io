@@ -90,23 +90,23 @@ ul#tutorials-list {
     margin: 0;
 }
   
-ul#tutorials-list li {
+ul#tutorials-list a li {
     border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6;
     padding: 12px;
 }
   
-ul#tutorials-list li:hover {
+ul#tutorials-list a li:hover {
     background-color: #eee;
     cursor: pointer;
 }
 
-ul#tutorials-list li a {
+ul#tutorials-list a {
     text-decoration: none !important;
 }
 
-ul#tutorials-list li a:hover {
+ul#tutorials-list a:hover {
     text-decoration: none !important;
 }
 
