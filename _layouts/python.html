@@ -4,7 +4,7 @@
     <body>
         {%- include nav.html -%}
         <main>{{content}}</main>
-        <aside class="bg-light" id="menu-wrapper">
+        <!--<aside class="bg-light" id="menu-wrapper">
             <div class="list-group list-group-flush overflow-auto vh-100">
                 <a href="/programming/python/" class="list-group-item list-group-item-action bg-light">Introduction to Python</a>
                 <a href="/programming/python/environment-setup/" class="list-group-item list-group-item-action bg-light">Environment Setup</a>
@@ -16,8 +16,18 @@
                 <a href="/programming/python/arithmetic/" class="list-group-item list-group-item-action bg-light">Arithmetic</a>
                 <a href="/programming/python/functions/" class="list-group-item list-group-item-action bg-light">Functions</a>
             </div>
-        </aside>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </aside>-->
+        <ul id="tutorials-list">
+              <li><a href="/programming/python/">Introduction to Python</a></li>
+              <li><a href="/programming/python/environment-setup/">Environment Setup</a></li>
+              <li><a href="/programming/python/your-first-python-program/">Your First Python Program</a></li>
+              <li><a href="/programming/python/variables/">Variables</a></li>
+              <li><a href="/programming/python/data-types/">Data Types</a></li>
+              <li><a href="/programming/python/comments/">Comments</a></li>
+              <li><a href="/programming/python/arithmetic/">Arithmetic</a></li>
+              <li><a href="/programming/python/functions/">Functions</a></li>
+        </ul>
         {%- include footer.html -%}
     </body>
 </html>
+
