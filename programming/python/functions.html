@@ -15,7 +15,7 @@ permalink: /programming/python/functions/
     <h2>How to Make a Function?</h2>
     <p>To make a function, we use <code>def</code>, which stands for "define". After that, we type our function name, which in this case is <code>helloWorld</code> and type a pair of parentheses (<code>()</code>). After that, we type a colon and press enter. Then, Sublime Text should indent the next line. This is because Python uses indentation for seperating blocks of code and this includes functions.</p>
     <small>Note: You cannot put a space in the middle of a function name.</small><br>
-    <img src="/images/programming/python/functions-1.png" alt="Making a Python function in Sublime Text" style="height:80%;width:80%;">
+    <img src="/images/programming/python/functions-1.png" alt="Making a Python function in Sublime Text" style="height:20%;width:20%;">
     <p>Then, inside of our function we can type <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span>
     </pre>. This tells Python that whenever we run the <code>helloWorld</code> function, we want to print <samp>Hello World!</samp>. </p>
 </section>
@@ -47,7 +47,7 @@ permalink: /programming/python/functions/
     <p>We can set default parameters as following:</p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> greet<span style='color:#808030; '>(</span>name<span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Learnmonkey"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
         <span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello "</span> <span style='color:#44aadd; '>+</span> name<span style='color:#808030; '>)</span>
-    greet<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+greet<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
     </pre>
     <p>The output of the code is <samp>Hello Learnmonkey</samp>.</p>
 </section>
@@ -58,7 +58,7 @@ permalink: /programming/python/functions/
     <small>Note: We reference the <code>*args</code> by typing <code>args</code> not <code>*args</code>.</small>
     <pre style="color:#000000;background:#ffffff;"><span style="color:#800000; font-weight:bold; ">def</span> argsTest<span style="color:#808030; ">(</span><span style="color:#44aadd; ">*</span>args<span style="color:#808030; ">)</span><span style="color:#808030; ">:</span>
         <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>args<span style="color:#808030; ">)</span>
-    argsTest<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+argsTest<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
     </pre>
     <p>The output of the code is <samp>(1, 2.1, 3)</samp>.</p>
     <small>Note: We could rename <code>*args</code> to <code>*nums</code> or anything else. The only thing that matters in the asterisk in front. It is customary to use <code>*args</code>.</small>
@@ -73,15 +73,14 @@ permalink: /programming/python/functions/
         <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food1<span style="color:#808030; ">)</span>
         <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food2<span style="color:#808030; ">)</span>
         <span style="color:#800000; font-weight:bold; ">print</span><span style="color:#808030; ">(</span>food3<span style="color:#808030; ">)</span>
-    favoriteFoods<span style="color:#808030; ">(</span>food2<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"noodles"</span><span style="color:#808030; ">,</span> food1<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"bananas"</span><span style="color:#808030; ">,</span> food3<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pizza"</span><span style="color:#808030; ">)</span>
+favoriteFoods<span style="color:#808030; ">(</span>food2<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"noodles"</span><span style="color:#808030; ">,</span> food1<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"bananas"</span><span style="color:#808030; ">,</span> food3<span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pizza"</span><span style="color:#808030; ">)</span>
     </pre>
 
     <p>The output is: </p>
     <pre><samp>
 bananas
 noodles
-pizza
-    </samp></pre>
+pizza</samp></pre>
     <p>As we can see, the order in which the parameters were placed didn't matter.</p>
 </section>
 
@@ -95,7 +94,7 @@ pizza
     <p>Sometimes you just want an empty function. However, Python won't let you do that and putting in a comment won't work either. So, we use <code>pass</code>. Simply put <code>pass</code> as the code in your function and Python will do nothing: </p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
         <span style='color:#800000; font-weight:bold; '>pass</span>
-    emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
     </pre>
 </section>
 
