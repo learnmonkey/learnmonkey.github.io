@@ -4,6 +4,6 @@ description:
   Learnmonkey - high-quality educational content
 baseurl: "" 
 url: ""
-#twitter_username: jekyllrb
+twitter_username: learn_monkey
 github_username:  learnmonkey
 
