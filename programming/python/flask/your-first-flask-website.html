@@ -27,4 +27,11 @@ layout: flask
 
 <section>
   <h2>Code Breakdown</h2>
+  <p>Now, it's time for a line by line breakdown of the code.</p>
+  <p><code>from flask import Flask</code> tells Python that we want to import the <code>Flask</code> object from the Flask module.</p>
+  <p><code>app = Flask('app')</code> tells Flask to make a Flask app.</p>
+  <p><code>@app.route('/')</code> is a decorator. Decorator changes the function of the next function. In this case, it modifies the next function to be returned whenever we visit the home page of our website.</p>
+  <p><code>def hello_world():</code> defines a new function called <code>hello_world</code> that takes on the decorator.</p>
+  <p><code>return 'Hello, World!'</code> means that when we go to the home page of the website, we see <samp>Hello, World!</samp>.</p>
+  <p><code>app.run(port=8080)</code> tells Flask to actually run our website and put it on port 8080. Whenever you make web servers, they are hosted by default on <code>localhost</code>, so we can now access our page on <a href="localhost:8080">localhost:8080</a>.</p>
 </section>
