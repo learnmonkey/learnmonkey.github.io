@@ -38,5 +38,11 @@ pygame<span style='color:#808030; '>.</span>quit<span style='color:#808030; '>(<
   <p>Now, we will break down the code!</p>
   <p>First of all, we need to import Pygame using <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>import</span> pygame</pre>
   <p>Without it, we wouldn't be able to use Pygame. If you get an error, however, that Pygame isn't defined, then make sure that you correctly <a href="/programming/python/pygame/setup">setup</a> Pygame.</p>
-  <p>On the next line, we have <pre style='color:#000000;background:#ffffff;'>pygame.init()</pre>, which initializes Pygame. Without it, we won't be able to use Pygame for our games. It is often a good idea to write this line of code at the front of your code after all of your imports</p>
+  <p>On the next line, we have <pre style='color:#000000;background:#ffffff;'>pygame.init()</pre> which initializes Pygame. Without it, we won't be able to use Pygame for our games. It is often a good idea to write this line of code at the front of your code after all of your imports.</p>
+  <p>Then, we set up the screen dimensions in the variables <code>WIDTH</code> and <code>HEIGHT</code>. We do this so we can easily access the screen dimensions without needing to run any other functions.</p>
+  <p>On the next two lines, we have:</p>
+  <pre style='color:#000000;background:#ffffff;'>WIN <span style='color:#808030; '>=</span> pygame<span style='color:#808030; '>.</span>display<span style='color:#808030; '>.</span>set_mode<span style='color:#808030; '>(</span><span style='color:#808030; '>(</span>WIDTH<span style='color:#808030; '>,</span> HEIGHT<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+pygame<span style='color:#808030; '>.</span>display<span style='color:#808030; '>.</span>set_caption<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span>
+</pre>
+  <p>We do this to setup the screen using <code>pygame.display.set_mode</code> and then passing in the screen dimensions in the tuple <code>(WIDTH, HEIGHT)</code>. Then, we set the caption, our the title, of our window. The default caption is <code>pygame window</code> but we changed it to be <code>Hello World!</code> which better suits are demo window.</p>
 </section>
