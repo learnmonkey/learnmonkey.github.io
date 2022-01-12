@@ -10,3 +10,20 @@ layout: pygame
   <h2>Drawing</h2>
   <p>So far, our window is just an empty black screen, pretty boring, right? So, in this tutorial, we'll learn how to draw shapes to the screen and how to change the background color to make our windows look a little better!</p>
 </section>
+
+<section>
+  <h2>Changing The Background Color</h2>
+  <p>First of all, let's change our background color! To that, we can write, after <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>for</span> event <span style='color:#800000; font-weight:bold; '>in</span> pygame<span style='color:#808030; '>.</span>event<span style='color:#808030; '>.</span>get<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>if</span> event<span style='color:#808030; '>.</span><span style='color:#400000; '>type</span> <span style='color:#44aadd; '>==</span> pygame<span style='color:#808030; '>.</span>QUIT<span style='color:#808030; '>:</span>
+      run <span style='color:#808030; '>=</span> <span style='color:#074726; '>False</span>
+      <span style='color:#800000; font-weight:bold; '>break</span>
+</pre> but in the while loop, <pre style='color:#000000;background:#ffffff;'>WIN<span style='color:#808030; '>.</span>fill<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"blue"</span><span style='color:#808030; '>)</span></pre> and our game loop will now be <pre style='color:#000000;background:#ffffff;'>run <span style='color:#808030; '>=</span> <span style='color:#074726; '>True</span>
+<span style='color:#800000; font-weight:bold; '>while</span> run<span style='color:#808030; '>:</span>
+  <span style='color:#800000; font-weight:bold; '>for</span> event <span style='color:#800000; font-weight:bold; '>in</span> pygame<span style='color:#808030; '>.</span>event<span style='color:#808030; '>.</span>get<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>if</span> event<span style='color:#808030; '>.</span><span style='color:#400000; '>type</span> <span style='color:#44aadd; '>==</span> pygame<span style='color:#808030; '>.</span>QUIT<span style='color:#808030; '>:</span>
+      run <span style='color:#808030; '>=</span> <span style='color:#074726; '>False</span>
+      <span style='color:#800000; font-weight:bold; '>break</span>
+  WIN<span style='color:#808030; '>.</span>fill<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"blue"</span><span style='color:#808030; '>)</span>
+</pre>
+  <p>Now, you might think that putting the <code>WIN.fill</code> in the while loop is strange, but if you think about it, it will actually make sense. For example, if we draw more stuff on the screen later, we will want to fill the screen to cover up the previous drawings. You'll understand later!</p>
+</section>
