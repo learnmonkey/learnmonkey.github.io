@@ -4,15 +4,33 @@ permalink: /programming/python/pygame/your-first-pygame-game/
 layout: pygame
 ---
 
-<h1>Your First Flask Website</h1>
+<h1>Your First Pygame Game</h1>
 
 <section>
     <h2>Writing the Code</h2>
     <p>The code will be as follows: </p>
+    <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>import</span> pygame
+pygame<span style='color:#808030; '>.</span>init<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+
+WIDTH<span style='color:#808030; '>,</span> HEIGHT <span style='color:#808030; '>=</span> <span style='color:#008c00; '>500</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>500</span>
+WIN <span style='color:#808030; '>=</span> pygame<span style='color:#808030; '>.</span>display<span style='color:#808030; '>.</span>set_mode<span style='color:#808030; '>(</span><span style='color:#808030; '>(</span>WIDTH<span style='color:#808030; '>,</span> HEIGHT<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>
+pygame<span style='color:#808030; '>.</span>display<span style='color:#808030; '>.</span>set_caption<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello World!"</span><span style='color:#808030; '>)</span>
+
+run <span style='color:#808030; '>=</span> <span style='color:#074726; '>True</span>
+<span style='color:#800000; font-weight:bold; '>while</span> run<span style='color:#808030; '>:</span>
+  <span style='color:#800000; font-weight:bold; '>for</span> event <span style='color:#800000; font-weight:bold; '>in</span> pygame<span style='color:#808030; '>.</span>event<span style='color:#808030; '>.</span>get<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>if</span> event<span style='color:#808030; '>.</span><span style='color:#400000; '>type</span> <span style='color:#44aadd; '>==</span> pygame<span style='color:#808030; '>.</span>QUIT<span style='color:#808030; '>:</span>
+      run <span style='color:#808030; '>=</span> <span style='color:#074726; '>False</span>
+      <span style='color:#800000; font-weight:bold; '>break</span>
+
+pygame<span style='color:#808030; '>.</span>quit<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span>
+</pre>
 </section>
 
 <section>
     <h2>Running the Code</h2>
+    <p>TO run the code, simply run it like you do a regular Python file.</p>
+    <p><b><u>IMPORTANT:</u></b> Do not name you file <code>pygame.py</code> as you import the <code>pygame</code> module so naming your file <code>pygame.py</code> will make it import itself. Nonsense!!</p>
 </section>
 
 <section>
