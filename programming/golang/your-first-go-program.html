@@ -31,4 +31,10 @@ func main() {
 
 <section>
     <h2>Code Breakdown</h2>
+    <p><code>package main;</code> tells Go that we are making a program that we are going to run, not something like a library.</p>
+    <p><code>import "fmt"</code> tells Go to import the <code>fmt</code> library, which includes basic functionality.</p>
+    <p><code>func main() {</code> tells Go that we are declaring a function called <code>main</code>. If you don't know what a function is, don't panic. Just know that Go runs the code in the main function.</p>
+    <p><code>fmt.Println("Hello, World!")</code> tells Go to go into the <code>fmt</code> library and find the function <code>Println</code>, which prints the text <code>Hello, World</code> onto the screen. The <code>ln</code> in <code>Println</code> is for 
+    "line", so Go adds a newline to the end of our text.</p>
+    <p><code>}</code> tells Go to end the <code>main</code> function. If we don't add it, we get an error.</p>
 </section>
