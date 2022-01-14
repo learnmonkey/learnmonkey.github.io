@@ -1,0 +1,35 @@
+---
+title: Printing In Go
+permalink: /programming/golang/printing/
+layout: golang
+---
+
+<h1>Printing In Go</h1>
+
+<section>
+	<h2>What is Printing?</h2>
+	<p>In the last tutorial when we made our first program, we wrote <samp>Hello, World!</samp> in the <i>Terminal/Command Prompt</i>. In programming, we call this <u>printing</u>. Printing is an essential but basic part of programming; It's just writing text in the console. If we wanted to create a text-based game, we would use print to show the text in the terminal.</p>
+</section>
+
+<section>
+	<h2>How can I print text in Go?</h2>
+	<p>We already know that we can simply write <code>fmt.Println(<i>text</i>)</code> to print stuff in Go. We can change text to be any <a href="/programming/golang/data-types/">Data Type</a> we want (to learn more about Data Types, click the link to see our Data Types tutorial)!</p>
+</section>
+
+<section>
+	<h2>Usage</h2>
+	<p>There are many ways you can use the Go <code>fmt.Println</code> <i>function</i></p>
+	<p>Firstly, you can simply put your text as a single <b>string</b> inside the function. In short, a string is simply a group of <u>characters</u> <strong>STRUNG</strong> together. In Go, we surround strings with double quotation marks (<code>"</code>) and we also end them with double quotation marks</p>
+	<p>For example, some examples of doing this are:</p>
+	<code>fmt.Println("My name is Mr. Monkey!")</code><br>
+	<code>fmt.Println("suoguhgo")</code>
+	<br><br>
+	<p>We can also use <code>fmt.Println</code> to print a number: an integer or decimal(<i>floating point</i>). To do that, we can write <code>fmt.Println(<i>number</i>)</code>.</p>
+	<p>For example, that could look like:</p>
+	<code>fmt.Println(36257265)</code><br>
+	<code>fmt.Println(973.256347)</code>
+	<br><br>
+	<p>Finally, we can place different Data Types in the function, seperated with commas like this:</p>
+	<code>fmt.Println("My", "Name", "Is", "Joe")</code>
+	<p>This will tell the <code>fmt.Println</code> function to print each of the strings but sperated with spaces so the end result will be: <samp>My Name Is Joe</samp>.</p>
+</section>
