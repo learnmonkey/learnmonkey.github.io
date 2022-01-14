@@ -17,4 +17,18 @@ layout: golang
 
 <section>
     <h2>How do I make a function in Go?</h2>
+    <p>In Go, it's actually very easy to create function. As a demo, type the following code into your <code>.go</code> file:</p>
+<pre>
+package main
+
+import "fmt"
+
+func hello(name string) {
+  fmt.Println("Hello " + name)
+}
+
+func main() {
+    var name = "Coder Monkey"
+  hello(name)
+}</pre>
 </section>
