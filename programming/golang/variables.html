@@ -22,6 +22,7 @@ layout: golang
     <h2>Making Variables in Go</h2>
     <p>It's actually very easy to make variables in Go. Simply type <code>var [variable name]</code> to initialize an empty variable. If we want to initialize a variable and set it to a value, we type <code>var [variable name] = [value]</code>.</p>
     <small><i class="fas fa-exclamation-circle"></i>When you first create a variable, you <strong>MUST</strong> use <code>var</code> or the short-declare operator (<code>:=</code>).</small>
+    <small><i class="fas fa-exclamation-circle"></i> Once you make a variable, you <strong>HAVE</strong> to use it. If you don't, you'll get an error.</small>
     <p>Go is statically-typed, which means that the type of variable (integer, string, boolean, etc.) cannot change. When you make a variable, Go infers the type. Below is some code that will cause an error: </p>
     <pre><code>
 var x = 3;
