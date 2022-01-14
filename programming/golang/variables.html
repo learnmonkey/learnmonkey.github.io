@@ -31,3 +31,9 @@ x = "Hello World!"
     <br>
     <p>You could also make a new variable and give it a value without writing <code>var</code> by using a short-declare operator — <code>:=</code> — instead of an equals sign. For example: <code>var x = 3</code> is the same as <code>x := 3</code>. However, you cannot use <code>:=</code> once you have already defined a variable to change its value. Use <code>=</code> for that.</p>
 </section>
+
+<section>
+    <h2>Explicit Variable Data Types</h2>
+    <p>In Go, everything is statically-typed, meaning if you assign the variable to something other than when the variable's data type was when declared, you'll get an error. When we do something like <code>var x = 3</code>, Go is implicitly inferring that the data type is integer. If we then try and do <code>x = "some text"</code>, we get an error.</p>
+    <p>In Go, we can also declare our variable types explicitly. For example, instead of doing <code>var x = 3</code>, we can do <code>var x int = 3</code>. This can be very useful when we are debugging our code.</p>
+</section>
