@@ -3,7 +3,18 @@ title: Your First Go Program
 permalink: /programming/golang/your-first-go-program/
 layout: golang
 ---
+<link rel="stylesheet" href="/path/to/styles/default.min.css">
+<script src="/path/to/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<pre><code class="language-go">
+package main
 
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+</code></pre>
 <h1>Your First Go Program</h1>
 
 <section>
@@ -19,7 +30,7 @@ func main() {
 }
     </code></pre>
     <p>Save this file as something that ends in <code>.go</code>.</p>
-    
+
 <div class="demo-highlight"><pre><span></span><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w"></span>
 
 <span class="kn">import</span><span class="w"> </span><span class="s">"fmt"</span><span class="w"></span>
