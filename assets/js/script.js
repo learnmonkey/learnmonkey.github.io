@@ -7,6 +7,7 @@ function switchDark() {
 	// 	document.allLinks [n].style.cursor = "wait";
 	// }
 	var style = document.createElement("style");
+	style.setAttribute("id", "dark-style");
 	document.head.appendChild(style);
 	var css = `a {color: yellow; text-decoration: none;}
 a:hover {color: white; text-decoration: underline;}
@@ -17,4 +18,8 @@ body {background-color: black; font: white; color: white;}`
 	catch (_ie) {
 		style.styleSheet.cssText = css;
 	}
+}
+
+function switchLight() {
+	document.getElementById("dark-style").remove();
 }
