@@ -6,7 +6,7 @@ function switchDark() {
 	// for(var n = 0; n < allLinks ; n++) {
 	// 	document.allLinks [n].style.cursor = "wait";
 	// }
-	if (document.getElementById("dark-style") != null) {
+	if (document.getElementById("dark-style") == null) {
 		var style = document.createElement("style");
 		style.setAttribute("id", "dark-style");
 		document.head.appendChild(style);
