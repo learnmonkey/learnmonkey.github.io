@@ -10,7 +10,7 @@ function switchDark() {
 	style.setAttribute("id", "dark-style");
 	document.head.appendChild(style);
 	var css = `a {color: yellow; text-decoration: none;}
-a:hover {color: white; text-decoration: underline;}
+a:hover {color: lightgrey; text-decoration: underline;}
 body {background-color: black; font: white; color: white;}`
 	try {
 		style.innerHTML = css;
