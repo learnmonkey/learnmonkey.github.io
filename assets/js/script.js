@@ -8,7 +8,7 @@ function switchDark() {
 	// }
 	var style = document.createElement("style");
 	document.head.appendChild(style);
-	var css = `a {color: yellow; text-decoration: none}
+	var css = `a {color: yellow; text-decoration: none;}
 a:hover {color: white; text-decoration: none;}
 body {background-color: black;}`
 	try {
