@@ -132,3 +132,8 @@ footer a.footer-link {
 footer a.footer-link:hover {
     color: #eee;
 }
+
+#toggledarklight:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
