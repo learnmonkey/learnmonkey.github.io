@@ -8,10 +8,12 @@ function switchDark() {
 	// }
 	var style = document.createElement("style");
 	document.head.appendChild(style);
+	var css = `a {color: yellow; text-decoration: none}
+a:hover {color: white; text-decoration: none;`
 	try {
-		style.innerHTML = `a { cursor: wait; }`;
+		style.innerHTML = css;
 	}
 	catch (_ie) {
-		style.styleSheet.cssText = `a { cursor: wait; }`;
+		style.styleSheet.cssText = css;
 	}
 }
