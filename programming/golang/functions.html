@@ -18,7 +18,7 @@ layout: golang
 <section>
     <h2>Making Functions in Go</h2>
     <p>In Go, it's actually very easy to create functions. As a demo, type the following code into your <code>.go</code> file:</p>
-<pre><code>
+<pre><code class="language-go">
 package main
 
 import "fmt"
@@ -37,7 +37,7 @@ func main() {
     <h2>Code Breakdown</h2>
     <p>Now that you have written the code, we will now break it down and see how it works.</p>
     <p>Well, the only <u>NEW</u> code we wrote was:</p>
-<pre><code>func hello(name string) {
+<pre><code class="language-go">func hello(name string) {
     fmt.Println("Hello " + name)
 }</code></pre>
     <p>On the first line, we have <pre><code>func hello(name string) {</code></pre> This is called <i>declaring</i> a function, much like a variable. We type <code>func</code> to tell Go that our code is a function and we name it <code>hello</code>. Then, we write <code>name string</code> in the brackets. Basically, this is an <i>argument</i>, also known as a <i>parameter</i>. This is used to pass information and variables to our function. We can even pass in other functions! Writing <code>string</code> means that the <code>name</code> argument <strong><u>MUST</u></strong> be a string Data Type. After, we write the curly bracket (<code>{</code>) to tell Go that the next lines of code, before the closing curly bracket (<code>}</code>), to be the code that runs when we call our <code>hello</code> function.</p>
