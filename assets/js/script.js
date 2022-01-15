@@ -14,3 +14,4 @@ function switchDark() {
 	catch (_ie) {
 		style.styleSheet.cssText = `a { cursor: wait; }`;
 	}
+}
