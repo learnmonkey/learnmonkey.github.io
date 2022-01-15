@@ -1,3 +1,7 @@
+body {
+  transition: 0.5s;
+}
+
 #menu-wrapper {
     height: 10vh;
 }
