@@ -133,7 +133,12 @@ footer a.footer-link:hover {
     color: #eee;
 }
 
+#toggledarklight {
+  color: white;
+  text-decoration: none;
+}
+
 #toggledarklight:hover {
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 }
