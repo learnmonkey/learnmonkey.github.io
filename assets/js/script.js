@@ -12,7 +12,7 @@ function switchDark() {
 		document.head.appendChild(style);
 		var css = `a {color: yellow; text-decoration: none;}
 	a:hover {color: lightgrey; text-decoration: underline;}
-	body {background-color: black; font: white; color: white;}`
+	body {background-color: #212529; font: white; color: white;}`
 		try {
 			style.innerHTML = css;
 		}
