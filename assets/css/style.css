@@ -152,7 +152,7 @@ ul.navbar .dropdown {
   overflow: hidden;
 }
 
-ul.navbar.dropdown {
+ul.navbar .dropdown {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -164,7 +164,7 @@ ul.navbar.dropdown {
   cursor: pointer;
 }
 
-ul.navbar.dropbtn {
+ul.navbar .dropbtn {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -177,15 +177,15 @@ ul.navbar.dropbtn {
 }
 
 
-ul.navbar.dropdown:hover {
+ul.navbar .dropdown:hover {
   background-color: red;
 }
 
-ul.navbar.dropbtn {
+ul.navbar .dropbtn {
   background-color: red;
 }
 
-ul.navbar.dropdown-content {
+ul.navbar .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -194,7 +194,7 @@ ul.navbar.dropdown-content {
   z-index: 1;
 }
 
-ul.navbar.dropdown-content a {
+ul.navbar .dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -203,10 +203,10 @@ ul.navbar.dropdown-content a {
   text-align: left;
 }
 
-ul.navbar.dropdown-content a:hover {
+ul.navbar .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-ul.navbar.dropdown:hover .dropdown-content {
+ul.navbar .dropdown:hover .dropdown-content {
   display: block;
 }
