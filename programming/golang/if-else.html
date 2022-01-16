@@ -20,11 +20,30 @@ if [condition] {
 <section>
     <h2>Else Statements</h2>
     <p>Sometimes, we want something to happen when a condition is met, but something else to happen if the condition is not met. To do this, we can use else statements. Below is the syntax of the if and else statement: </p>
-    <pre><code>
+    <pre><code class="language-go">
 if [condition] {
     // do something if the condition is met
 } else {
     // do something if the condition is not met
 }
     </code></pre>
+    <small><i class="fas fa-exclamation-circle"></i>The last curly bracket of the if statement and the start of the else statement have to be on the same line! Otherwise, you'd get an error.</small>
+</section>
+
+<section>
+    <h2>Else If Statements</h2>
+    <p>Sometimes, we want to do something if none of the previous conditions are met, but the condition is met. That is what the else if statement is for. Below is an example: </p>
+    <pre><code class="language-go">
+if [condition 1] {
+    // do something if condition 1 is met
+} else if [condition 2] {
+    // do something if condition 1 is not met, but condition 2 is met
+} else if [condition 3] {
+    // do something is condition 1 and 2 are not met, but condition 3 is met
+} else {
+    // do something if condition 1, 2, and 3 are all not met
+}
+    </code></pre>
+    <p>We can chain as many else if statements together as we want.</p>
+    <small><i class="fas fa-exclamation-circle"></i>The last curly bracket of each statement has to be on the same line as the next statement.</small>
 </section>
