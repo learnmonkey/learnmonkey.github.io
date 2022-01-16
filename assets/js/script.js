@@ -28,5 +28,7 @@ function switchDark() {
 }
 
 function switchLight() {
-	document.getElementById("dark-style").remove();
+	if (document.getElementById("dark-style") != null) {
+		document.getElementById("dark-style").remove();
+	}
 }
