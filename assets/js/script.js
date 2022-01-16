@@ -47,6 +47,6 @@ function switchLight() {
 }
 
 // Default Light/Dark Modes
-if document.cookie.includes("dark=y") {
+if (document.cookie.includes("dark=y")) {
 	switchDark()
 }
