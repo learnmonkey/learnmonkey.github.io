@@ -26,6 +26,11 @@ function switchDark() {
 			style.styleSheet.cssText = css;
 		}
 	}
+	var dark = document.getElementById("toggledarklight");
+	var light = document.createElement("li");
+	light.setAttribute("class", "navitem");
+	light.innerHTML = `<a onclick="switchLight()" id="toggledarklight2">Toggle Light</a>`;
+	dark.parentNode.replaceChild(light, dark);
 }
 
 function switchLight() {
