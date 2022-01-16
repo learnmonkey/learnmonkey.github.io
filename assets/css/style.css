@@ -147,47 +147,15 @@ footer a.footer-link:hover {
     text-decoration: underline;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-weight: bold;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown:hover .dropbtn {
-  color: orange;
-  cursor: pointer;
+li .dropdown {
+  display: block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #eee;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #e1d1d1;
+  background-color: gray;
+  border: 2px solid black;
 }
 
 .dropdown:hover .dropdown-content {
