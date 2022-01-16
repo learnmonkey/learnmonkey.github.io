@@ -147,13 +147,14 @@ footer a.footer-link:hover {
     text-decoration: underline;
 }
 
-ul.navbar .dropdown {
+.dropdown {
   float: left;
   overflow: hidden;
 }
 
-ul.navbar .dropdown {
-  font-size: 16px;  
+.dropdown .dropbtn {
+  font-size: 36px;
+  font-weight: bold;
   border: none;
   outline: none;
   color: white;
@@ -161,40 +162,26 @@ ul.navbar .dropdown {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+/*   color: #C4A484; */
+/*  color: #145261; */
+  color: lightseagreen;
   cursor: pointer;
 }
 
-ul.navbar .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  cursor: pointer;
-}
-
-
-ul.navbar .dropdown:hover {
-  background-color: red;
-}
-
-ul.navbar .dropbtn {
-  background-color: red;
-}
-
-ul.navbar .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+/*   background-color: #f9f9f9; */
+  background-color: #eee;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-ul.navbar .dropdown-content a {
+.dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -203,10 +190,10 @@ ul.navbar .dropdown-content a {
   text-align: left;
 }
 
-ul.navbar .dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content a:hover {
+  background-color: #e1d1d1;
 }
 
-ul.navbar .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
