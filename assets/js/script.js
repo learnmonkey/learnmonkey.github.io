@@ -1,3 +1,4 @@
+hljs = require('highlight.js');
 hljs.highlightAll(); // Code Highlighting
 
 // Light And Dark Mode
