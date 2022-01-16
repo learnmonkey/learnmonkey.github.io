@@ -29,7 +29,7 @@ function switchDark() {
 	var dark = document.getElementById("toggledarklight");
 	var light = document.createElement("li");
 	light.setAttribute("class", "navitem");
-	light.innerHTML = `<a onclick="switchLight()" id="toggledarklight2">Toggle Light</a>`;
+	light.innerHTML = `<a onclick="switchLight()" id="toggledarklight">Toggle Light</a>`;
 	dark.parentNode.replaceChild(light, dark);
 }
 
@@ -37,4 +37,9 @@ function switchLight() {
 	if (document.getElementById("dark-style") != null) {
 		document.getElementById("dark-style").remove();
 	}
+	var light = document.getElementById("toggledarklight");
+	var dark = document.createElement("li");
+	dark.setAttribute("class", "navitem");
+	dark.innerHTML = `<a onclick="switchDark()" id="toggledarklight">Toggle Dark</a>`;
+	light.parentNode.replaceChild(dark, light);
 }
