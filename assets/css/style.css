@@ -145,14 +145,30 @@ footer a.footer-link:hover {
     text-decoration: underline;
 }
 
-li .dropdown {
+li.dropdown {
   display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown a {
+  color: white;
+  text-decoration: none;
+}
+
+li.dropdown a:hover {
+  color: orange;
+  text-decoration: none;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: gray;
+  top: 40px;
+  left: 200px;
   border: 2px solid black;
 }
 
