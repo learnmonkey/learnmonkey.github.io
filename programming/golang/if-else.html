@@ -49,3 +49,21 @@ if [condition 1] {
     <small><i class="fas fa-exclamation-circle"></i>The last curly bracket of each statement has to be on the same line as the next statement.</small>
     <small><i class="fas fa-exclamation-circle"></i>You can have an if and else if statement without an else statement, but you can't have an else if statement without an if!</small>
 </section>
+
+<section>
+    <h2>Nested If Statements</h2>
+    <p>You can have nested if statements, but it's often better to use <a href="/programming/golang/operators/logical/">logical operators</a>. For example: </p>
+    <pre><code class="language-go">
+if x &lt; 6 {
+    if x &lt; 4 {
+        // code inside here only executes if x is smaller than 6 and 4
+    }
+}
+    </code></pre>
+    <p>The above code could be replaced with the following using logical operators: </p>
+    <pre><code class="language-go">
+if x &lt; 6 && x &lt; {
+    // code inside here only executes if x is smaller than 6 and 4
+} 
+    </code></pre>
+</section>
