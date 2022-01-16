@@ -1,0 +1,46 @@
+---
+title: Go Switch
+permalink: /programming/golang/switch/
+layout: golang
+---
+
+<h1>Go Switch</h1>
+
+<section>
+    <h2>What is a Switch Statements?</h2>
+    <p>You can use a switch statement when you have lots of if and else if statements in your code. For example: </p>
+    <pre><code class="language-go">
+if x == 1 {
+    // do something
+} else if x == 2 {
+    // do something
+} else if x == 3 {
+    // do something
+} else if x == 4 {
+    // do something
+}
+// ... you get the idea
+    </code></pre>
+    <p>Instead, of this complicated, nasty code, we could have used a switch statement to save us lots of nasty code.</p>
+    <p>Switch statements work by having different cases for what a variable might be. That way, we can put our conditional code in the cases.</p>
+</section>
+
+<section>
+    <h2>Implementing the Switch Statement</h2>
+    <p>Below is an example of what we could do to replace the earlier nasty code: </p>
+    <pre><code class="language-go">
+switch x {
+    case 1:
+        // case where x is 1
+    case 2:
+        // case where x is 2
+    case 3:
+        // case where x is 3
+    case 4:
+        // case where x is 4
+    // ... you get the idea
+}
+    </code></pre>
+    <p>The very first line of our code is <code class="language-go">switch x {</code>, which tells Go that we are making a switch using the variable x. All of our cases will go inside the curly brackets.</p>
+    <p>Then, we simply define all the cases using the syntax <code class="language-go">case [value]:</code> and then write the code for the case below it.</p>
+</section>
