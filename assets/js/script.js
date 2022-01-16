@@ -49,4 +49,5 @@ function switchLight() {
 // Default Light/Dark Modes
 if (document.cookie.includes("dark=y")) {
 	switchDark();
+	console.log("Switch Dark By Default");
 }
