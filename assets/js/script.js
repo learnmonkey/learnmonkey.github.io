@@ -31,6 +31,7 @@ function switchDark() {
 	light.setAttribute("class", "navitem");
 	light.innerHTML = `<a onclick="switchLight()" id="toggledarklight">Toggle Light</a>`;
 	dark.parentNode.replaceChild(light, dark);
+	document.cookie = 'dark=y; path=/'
 }
 
 function switchLight() {
@@ -42,4 +43,10 @@ function switchLight() {
 	dark.setAttribute("class", "navitem");
 	dark.innerHTML = `<a onclick="switchDark()" id="toggledarklight">Toggle Dark</a>`;
 	light.parentNode.replaceChild(dark, light);
+	document.cookie = 'dark=n; path=/'
+}
+
+// Default Light/Dark Modes
+if document.cookie.includes("dark=y") {
+	switchDark()
 }
