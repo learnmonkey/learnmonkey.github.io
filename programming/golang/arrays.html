@@ -43,3 +43,12 @@ fmt.Println(len(my_array))
     <p>returns: </p>
     <samp>3</samp>
 </section>
+
+<section>
+    <h2>Arrays inside of Arrays</h2>
+    <p>We can put arrays inside of arrays, as we can do with any other data type, but the code looks a little messier:</p>
+    <pre><code class="language-go">
+array1 := [][]int{[]int{1,2,3},[]int{1,2,3}}
+array2 := [][]int{{1,2,3},{1,2,3}} // slightly less messier version
+    </code></pre>
+</section>
