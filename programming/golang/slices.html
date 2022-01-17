@@ -37,4 +37,9 @@ slice_name = append(slice_name, element1, element2, ...)
 
 <section>
     <h2>Appending a Slice to a Slice</h2>
+    <p>Appending a slice to a slice also uses the <code>append</code> function:</p>
+    <pre><code class="language-go">
+slice3 = append(slice1, slice2...)
+    </code></pre>
+    <small><i class="fas fa-exclamation-circle"></i>The <code>...</code> is required! If you don't add it, Go will think that you are adding the slices as elements.</small>
 </section>
