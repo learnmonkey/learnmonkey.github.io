@@ -17,7 +17,7 @@ layout: golang
     <p>The general format of making an array is: </p>
     <pre><code class="language-go">
 var array_name = [length]datatype{values} // explicitly setting the array length
-var array_name = []datatype{values} // array's length will be inferred
+var array_name = [...]datatype{values} // array's length will be inferred, also, don't forget the ...!
     </code></pre>
     <p>You replace <code>array_name</code> with the name of your array variable, <code>length</code> with the length of your array, replace <code>datatype</code> with the data type of your array, and replace <code>values</code> with your values seperated by commas.</p>
     <small><i class="fas fa-exclamation-circle"></i>Remember: You <strong>cannot</strong> have more elements than the length of your array!</small>
@@ -25,7 +25,7 @@ var array_name = []datatype{values} // array's length will be inferred
     <p>You can also you the short declare operator (<code>:=</code>):</p>
     <pre><code class="language-go">
 array_name := [length]datatype{values} // explicitly setting the array length
-array_name := []datatype{values} // array's length will be inferred
+array_name := [...]datatype{values} // array's length will be inferred, also, don't forget the ...!
     </code></pre>
 </section>
 
@@ -35,4 +35,11 @@ array_name := []datatype{values} // array's length will be inferred
 
 <section>
     <h2>Getting the Length</h2>
+    <p>To get the length of an array, we use the <code>len</code> function. For example: </p>
+    <pre><code class="language-go">
+var my_array = [3]int{}
+fmt.Println(len(my_array))
+    </code></pre>
+    <p>returns: </p>
+    <samp>3</samp>
 </section>
