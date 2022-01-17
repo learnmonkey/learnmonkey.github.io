@@ -8,15 +8,25 @@ layout: golang
 
 <section>
     <h2>What is an Array?</h2>
-    <p>An array is a list of values of the same data type of a fixed length. That way, instead of declaring seperate variables for each value, you could put it together into one variable. The values in an array can be called items or elements. This tutorial will use the term element.</p>
-</section>
-
-<section>
-    <h2>Uses</h2>
+    <p>An array is an ordered list of values of the same data type of a fixed length. That way, instead of declaring seperate variables for each value, you could put it together into one variable. The values in an array can be called items or elements. This tutorial will use the term element.</p>
+    <small>Fun fact: Array elements are physically stored next to each other in memory. This means that accessing a value in an array is very, <strong>very</strong> fast.</small>
 </section>
 
 <section>
     <h2>Declaring an Array</h2>
+    <p>The general format of making an array is: </p>
+    <pre><code class="language-go">
+var array_name = [length]datatype{values} // explicitly setting the array length
+var array_name = []datatype{values} // array's length will be inferred
+    </code></pre>
+    <p>You replace <code>array_name</code> with the name of your array variable, <code>length</code> with the length of your array, replace <code>datatype</code> with the data type of your array, and replace <code>values</code> with your values seperated by commas.</p>
+    <small><i class="fas fa-exclamation-circle"></i>Remember: You <strong>cannot</strong> have more elements than the length of your array!</small>
+    <small><i class="fas fa-exclamation-circle"></i>Remember: You <strong>cannot</strong> have elements of different data types than the array data type!</small>
+    <p>You can also you the short declare operator (<code>:=</code>):</p>
+    <pre><code class="language-go">
+array_name := [length]datatype{values} // explicitly setting the array length
+array_name := []datatype{values} // array's length will be inferred
+    </code></pre>
 </section>
 
 <section>
