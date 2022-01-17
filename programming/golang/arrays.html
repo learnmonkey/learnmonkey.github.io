@@ -17,15 +17,16 @@ layout: golang
     <p>The general format of making an array is: </p>
     <pre><code class="language-go">
 var array_name = [length]datatype{values} // explicitly setting the array length
-var array_name = [...]datatype{values} // array's length will be inferred, also, don't forget the ...!
+var array_name = [...]datatype{values} // array's length will be inferred, also, you need the three periods!
     </code></pre>
     <p>You replace <code>array_name</code> with the name of your array variable, <code>length</code> with the length of your array, replace <code>datatype</code> with the data type of your array, and replace <code>values</code> with your values seperated by commas.</p>
     <small><i class="fas fa-exclamation-circle"></i>Remember: You <strong>cannot</strong> have more elements than the length of your array!</small><br>
     <small><i class="fas fa-exclamation-circle"></i>Remember: You <strong>cannot</strong> have elements of different data types than the array data type!</small>
+    <small><i class="fas fa-exclamation-circle"></i>If you don't add the <code>...</code> in the square brackets, Go will think that you are making a <a href="/programming/golang/slices/">slice</a>, not an array!</small>
     <p>You can also you the short declare operator (<code>:=</code>):</p>
     <pre><code class="language-go">
 array_name := [length]datatype{values} // explicitly setting the array length
-array_name := [...]datatype{values} // array's length will be inferred, also, don't forget the ...!
+array_name := [...]datatype{values} // array's length will be inferred, also, you need the three periods!
     </code></pre>
 </section>
 
