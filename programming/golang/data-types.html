@@ -14,19 +14,37 @@ layout: golang
 <section>
     <h2>Strings</h2>
     <p>A string is some text. If that's hard to remember, think of text as characters strung together on a string. In Go, strings are wrapped in double quotes. If we don't do that, Go will think that we are referring to a variable and we'll get an error.</p>
+    <p>Below is an example of making a string variable: </p>
+    <pre><code class="language-go">
+var websiteName = "Learnmonkey"
+    </code></pre>
 </section>
 
 <section>
     <h2>Integers</h2>
     <p>An integer is a whole number that can be positive or negative. In Go, we simply write out the number, no quotes or anything like that. To make it negative, just add a dash in front of it. We can do arithmetic with integers.</p>
+    <p>Below is an example of making an integer variable: </p>
+    <pre><code class="language-go">
+var numberOfStudents int = 27
+    </code></pre>
 </section>
 
 <section>
     <h2>Booleans</h2>
     <p>Booleans are either true or false. Since computers are made from ones and zeroes, which are equivalent to true and false, you'd imagine booleans are pretty important. In Go, to make a variable true, we simply type <code>true</code>, all lowercase. Likewise, we type <code>false</code> for false. Booleans are named after the English mathematician George Boole.</p>
+    <p>Below is an example of making a boolean variable: </p>
+    <pre><code class="language-go">
+var isOn bool = true
+var isEmpty bool = false
+    </code></pre>
 </section>
 
 <section>
     <h2>Floats</h2>
     <p>Floats are an abbreviation of floating point numbers and can do all of the same thing as integers. The only difference is that floats are decimals. In Go, there are two types of floats, <code>float32</code> and <code>float64</code>. <code>float64</code> uses 64 bytes of memory, while <code>float32</code> only uses 32 bytes of memory. So, <code>float64</code> can store larger floats and floats with more decimals. However, <code>float64</code> uses more memory, so there is a tradeoff.</p>
+    <p>Below is an example of making a <code>float32</code> and a <code>float64</code> variable and constant: </p>
+    <pre><code class="language-go">
+const pi float32 = 3.141
+var percentage float64 = 2.4563543
+    </code></pre>
 </section>
