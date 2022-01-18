@@ -284,3 +284,7 @@ a {
 a:hover {
   color: darkblue;
 }
+
+img {
+  height: 200px;
+}
