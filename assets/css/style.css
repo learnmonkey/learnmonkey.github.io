@@ -186,13 +186,14 @@ li.dropdown a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #5b241c;
   color: white;
 }
 
 .brand-title {
   font-size: 1.5rem;
   margin: .5rem;
+  font-weight: bold;
 }
 
 .navbar-links ul {
@@ -212,8 +213,8 @@ li.dropdown a:hover {
   display: block;
 }
 
-.navbar-links li:hover {
-  background-color: #555;
+.navbar-links li a:hover {
+  color: orange;
 }
 
 .toggle-button {
