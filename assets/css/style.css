@@ -23,6 +23,10 @@
   /*font-size: 1.5em;*/
 }
 
+.topnav a:hover {
+  text-decoration: none;
+}
+
 .topnav .icon {
   display: none;
 }
@@ -52,6 +56,11 @@
 
 .dropdown .dropbtn:hover {
   cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown:hover {
+  text-decoration: none;
 }
 
 .dropdown-content {
@@ -74,6 +83,10 @@
   text-decoration: none;
   display: block;
   text-align: left;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
