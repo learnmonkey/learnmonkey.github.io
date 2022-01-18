@@ -18,7 +18,8 @@ function switchDark() {
 	pre {color: grey; font: grey;}
 	samp {color: #3D3D3D;}
 	ul#tutorials-list a {color: blue;}
-	ul#tutorials-list a:hover {color: darkblue;}`
+	ul#tutorials-list a:hover {color: darkblue;}
+	code {color: #3d3d3d; font: #3d3d3d;}`
 		try {
 			style.innerHTML = css;
 		}
