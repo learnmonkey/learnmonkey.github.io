@@ -61,14 +61,14 @@ i.footer-icon {
     width: 100%;
 }
 
-ul.navbar {
+/*ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #5b241c;
-/*  position: -webkit-sticky;  Safari 
-  position: sticky;*/
+*  position: -webkit-sticky;  Safari 
+  position: sticky;*
   top: 0;
 }
 
@@ -86,7 +86,7 @@ li.navitem a {
 
 li.navitem a:hover {
   color: orange;
-}
+}*/
 
 ul#tutorials-list {
     list-style-type: none;
