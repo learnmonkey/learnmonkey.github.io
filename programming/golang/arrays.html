@@ -71,10 +71,26 @@ fmt.Println(companies)
 </section>
 
 <section>
+    <h2>Initializing Only Specific Elements</h2>
+    <p>When we are making arrays, we often want to initialize only specific elements of the array. We can do this by first setting our array to an empty array and setting the values we want like this:</p>
+    <pre><code class="language-go">
+testArray = [5]int{}
+testArray[0] = 3
+testArray[2] = 6
+testArray[3] = 9
+testArray[4] = 1
+    </code></pre>
+    <p>Instead of doing the above and writing lots of nasty code, we could use a <a href="/programming/golang/maps/">map</a> to accomplish the same thing: </p>
+    <pre><code class="language-go">
+testArray = [5]int{0:3, 2:6, 3:9, 4:1}
+    </code></pre>
+</section>
+
+<section>
     <h2>Getting the Array Length</h2>
     <p>To get the length of an array, we use the <code>len</code> function. For example: </p>
     <pre><code class="language-go">
-var my_array = [3]int{}
+var my_array = [3]int{6,3,9}
 fmt.Println(len(my_array))
     </code></pre>
     <p>returns: </p>
