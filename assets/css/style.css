@@ -276,3 +276,11 @@ li.dropdown a:hover {
     display: flex;
   }
 }
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: darkblue;
+}
