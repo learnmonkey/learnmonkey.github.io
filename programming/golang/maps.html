@@ -1,0 +1,25 @@
+---
+title: Go Maps
+permalink: /programming/golang/maps/
+layout: golang
+---
+
+<h1>Go Maps</h1>
+
+<section>
+    <h2>What are Maps?</h2>
+    <p>Quite simply, maps map a key to a value. You can also think of maps as an unordered list of key:value pairs, with unique keys. Keys must have the same data type and values must have the same data types. However, keys and values don't need to have the same data type.</p>
+</section>
+
+<section>
+    <h2>Creating a Map</h2>
+    <p>Below is the general form of a map: </p>
+    <pre><code class="language-go">
+map1 := map[KeyType]ValueType{key1:value1, key2:value2,...}
+    </code></pre>
+    <p>Replace <code>KeyType</code> with the data type of the keys and <code>ValueType</code> with the data type of the values. Then, inside the curly brackets, you can put <code>key:value</code> pairs, seperated by commas.</p>
+    <p>For example: </p>
+    <pre><code class="language-go">
+websiteMap := map[string]string{"name":"Learnmonkey", "founded":"2022", domain:"learnmonkey.github.io"}
+    </code></pre>
+</section>
