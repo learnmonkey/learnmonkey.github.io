@@ -52,9 +52,17 @@ if (document.cookie.includes("dark=y")) {
 	// console.log("Switch Dark By Default");
 }
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+// const toggleButton = document.getElementsByClassName('toggle-button')[0]
+// const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-	navbarLinks.classList.toggle('active')
-})
+// toggleButton.addEventListener('click', () => {
+// 	navbarLinks.classList.toggle('active')
+// })
+function openSmallNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
