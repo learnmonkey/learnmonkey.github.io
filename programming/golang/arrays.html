@@ -55,6 +55,22 @@ Wikipedia
 </section>
 
 <section>
+    <h2>Setting Array Elements</h2>
+    <p>To set array elements, we do the exact same thing as getting array elements, but we act as if the array element is a variable. So, we type: </p>
+    <code class="language-go">
+<i>array</i>[<i>index</i>]
+    </code>
+    <p>For example: </p>
+    <pre><code class="language-go">
+companies = ["Google", "Facebook", "Apple", "Twitter"]
+companies[1] = "Microsoft"
+fmt.Println(companies)
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre>[Google Microsoft Apple Twitter]</pre>
+</section>
+
+<section>
     <h2>Getting the Array Length</h2>
     <p>To get the length of an array, we use the <code>len</code> function. For example: </p>
     <pre><code class="language-go">
