@@ -31,7 +31,27 @@ array_name := [...]datatype{values} // array's length will be inferred, also, yo
 </section>
 
 <section>
-    <h2>Setting Values</h2>
+    <h2>Accessing Array Elements</h2>
+    <p>To access and set array elements, we use array indices. Array indices start at zero for the first element and the index goes up by one for every element we go. For example, the element with array index 2 is the third element and the element with array element 4 is the fifth element.</p>
+    <p>To access array element, we type:</p>
+    <code class="language-go">
+<i>array</i>[<i>index</i>]
+    </code>
+    <p>We replace <code><i>array</i></code> with the name of the array variable and <code><i>index</i></code> with the index of the element. For example: </p>
+    <pre><code class="language-go">
+websites = ["GitHub", "Wikipedia", "Learnmonkey", "Twitter", "Gmail", "Stack Overflow"]
+fmt.Println(websites[2])
+fmt.Println(website[5])
+fmt.Println(websites[0])
+fmt.Println(websites[1])
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre><samp>
+Learnmonkey
+Stack Overflow
+GitHub
+Wikipedia
+    </samp></pre>
 </section>
 
 <section>
