@@ -17,9 +17,41 @@ layout: golang
 </section>
 
 <section>
-    <h2>Declaring a Struct</h2>
+    <h2>Making a Struct</h2>
+    <p>Structs are in the following form: </p>
+    <pre><code class="language-go">
+type struct_name struct {
+  member1 datatype
+  member2 datatype
+  member3 datatype
+}
+    </code></pre>
+    <p>For example, we could have: </p>
+    <pre><code class="language-go">
+type CollegeStudent struct {
+    firstName string
+    lastName string
+    major string
+    birthYear int
+}
+    </code></pre>
 </section>
 
 <section>
     <h2>Using a Struct</h2>
+    <p>Below is an example of using the <code>CollegeStudent</code> struct we created earlier: </p>
+    <pre><code class="language-go">
+var student1 CollegeStudent
+var student2 CollegeStudent
+
+student1.firstName = "Aaron"
+student1.lastName = "Hou"
+student1.major = "Computer Science"
+student1.birthYear = 2006
+
+student2.firstName = "Isaac"
+student2.lastName = "Shaul"
+student2.major = "Art History"
+student2.birthYear = 2000
+    </code></pre>
 </section>
