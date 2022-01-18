@@ -415,10 +415,12 @@ li.dropdown a:hover {
 */
 a {
   color: blue;
+  text-decoration: none;
 }
 
 a:hover {
   color: darkblue;
+  text-decoration: underline;
 }
 
 img {
