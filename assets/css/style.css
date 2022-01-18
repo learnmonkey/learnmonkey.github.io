@@ -437,11 +437,11 @@ a:hover {
   color: darkblue;
   text-decoration: underline;
 }
-
+/*
 a:visited {
   text-decoration: none;
   color: blue;
-}
+}*/
 
 img {
   height: 200px;
