@@ -452,3 +452,23 @@ img {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }*/
+
+#tutorial-index-main li{
+  text-decoration: none;
+  color: blue;
+}
+
+#tutorial-index-main li:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+#tutorial-index-main ul li{
+  text-decoration: none;
+  color: blue;
+}
+
+#tutorial-index-main ul li:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
