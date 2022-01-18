@@ -266,6 +266,8 @@ ul#tutorials-list a:hover {
 code {
     background-color: #eee;
     font-size: 1em;
+    color: #3d3d3d;
+    font: #3d3d3d;
 }
 
 body {
