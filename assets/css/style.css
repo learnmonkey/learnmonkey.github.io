@@ -485,12 +485,12 @@ img {
   color: darkblue;
 }
 
-#tutorial-index-main li ul li{
+#tutorial-index-main li li{
   text-decoration: none;
   color: blue;
 }
 
-#tutorial-index-main li ul li:hover {
+#tutorial-index-main li li:hover {
   text-decoration: underline;
   color: darkblue;
 }
