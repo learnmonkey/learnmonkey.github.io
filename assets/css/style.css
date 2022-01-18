@@ -381,8 +381,8 @@ li.dropdown a:hover {
 
 .toggle-button:hover {
   cursor: pointer;
-  /* animation: toggle-button-spin 2s; */
-}
+  /* animation: toggle-button-spin 2s; 
+} */
 
 /* @keyframes toggle-button-spin {
   100% {rotate(360deg);}
@@ -436,11 +436,6 @@ a {
 a:hover {
   color: darkblue;
   text-decoration: underline;
-}
-
-a:visited {
-  text-decoration: none;
-  color: blue;
 }
 
 img {
