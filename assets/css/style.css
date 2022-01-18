@@ -230,12 +230,12 @@ li.dropdown a:hover {
 
 .toggle-button:hover {
   cursor: pointer;
-  animation: toggle-button-spin 2s;
+  /* animation: toggle-button-spin 2s; */
 }
 
-@keyframes toggle-button-spin {
+/* @keyframes toggle-button-spin {
   100% {rotate(360deg);}
-}
+} */
 
 .toggle-button .bar {
   height: 3px;
