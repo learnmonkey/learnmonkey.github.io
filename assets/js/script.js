@@ -27,10 +27,17 @@ function switchDark() {
 			style.styleSheet.cssText = css;
 		}
 	}
+	// var dark = document.getElementById("toggledarklight");
+	// var light = document.createElement("li");
+	// light.setAttribute("class", "navitem");
+	// light.innerHTML = `<a onclick="switchLight()" id="toggledarklight">Toggle Light</a>`;
+	// dark.parentNode.replaceChild(light, dark);
+	// document.cookie = 'dark=y; path=/';
 	var dark = document.getElementById("toggledarklight");
-	var light = document.createElement("li");
-	light.setAttribute("class", "navitem");
-	light.innerHTML = `<a onclick="switchLight()" id="toggledarklight">Toggle Light</a>`;
+	var light = document.createElement("a");
+	light.setAttribute("onclick", "switchLight()");
+	light.setAttribute("id", "toggledarklight");
+	light.innerText = "Toggle Light";
 	dark.parentNode.replaceChild(light, dark);
 	document.cookie = 'dark=y; path=/';
 }
@@ -40,9 +47,10 @@ function switchLight() {
 		document.getElementById("dark-style").remove();
 	}
 	var light = document.getElementById("toggledarklight");
-	var dark = document.createElement("li");
-	dark.setAttribute("class", "navitem");
-	dark.innerHTML = `<a onclick="switchDark()" id="toggledarklight">Toggle Dark</a>`;
+	var dark = document.createElement("a");
+	dark.setAttribute("onclick", "switchDark()");
+	dark.setAttribute("id", "toggledarklight");
+	dark.innerText = "Toggle Dark";
 	light.parentNode.replaceChild(dark, light);
 	document.cookie = 'dark=n; path=/';
 }
