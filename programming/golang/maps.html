@@ -20,6 +20,23 @@ map1 := map[KeyType]ValueType{key1:value1, key2:value2,...}
     <p>Replace <code>KeyType</code> with the data type of the keys and <code>ValueType</code> with the data type of the values. Then, inside the curly brackets, you can put <code>key:value</code> pairs, seperated by commas.</p>
     <p>For example: </p>
     <pre><code class="language-go">
-websiteMap := map[string]string{"name":"Learnmonkey", "founded":"2022", domain:"learnmonkey.github.io"}
+website := map[string]string{"name":"Learnmonkey", "founded":"2022", domain:"learnmonkey.github.io"}
     </code></pre>
+</section>
+
+<section>
+    <h2>Accessing Map Elements</h2>
+    <p>To access a map element, we type <code class="language-go"><i>map</i>[<i>key</i>]</code>. For example: </p>
+    <pre><code class="language-go">
+website := map[string]string{"name":"Learnmonkey", "founded":"2022", domain:"learnmonkey.github.io"}
+fmt.Println(website["name"])
+fmt.Println(website["founded"])
+fmt.Println(website["domain"])
+    </code></pre>
+    <p>The above code outputs: </p>
+    <pre><samp>
+Learnmonkey
+2022
+learnmonkey.github.io
+    </samp></pre>
 </section>
