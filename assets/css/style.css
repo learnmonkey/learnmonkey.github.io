@@ -495,3 +495,27 @@ img {
   text-decoration: underline;
   color: darkblue;
 }*/
+
+/* CSS for the alert box */
+
+.alert {
+  padding: 20px;
+  background-color: rgb(233, 210, 0); /* yellow */
+  color: black;
+  margin-bottom: 15px;
+}
+
+.alert-close-button {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-close-button:hover {
+  color: rgb(82, 82, 82); /* light gray */
+}
