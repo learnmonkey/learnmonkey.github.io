@@ -15,21 +15,17 @@ layout: golang
     <h2>Declaring a Slice</h2>
     <p>First of all, we can declare a completely empty slice like this: </p>
     <pre><code class="language-go">
-empty_slice = []<i>datatype</i>
+empty_slice := []<i>datatype</i>
     </code></pre>
     <p>If we want to initialize some values, we can do it like this: </p>
     <pre><code class="language-go">
-non_empty_slice = []<i>datatype</i>{<i>values</i>}
+non_empty_slice := []<i>datatype</i>{<i>values</i>}
     </code></pre>
     <p>The values are seperated by commas. For example: </p>
     <pre><code class="language-go">
-cities = []string{"New York", "San Francisco", "Los Angeles", "Chicago"}
-nums = []int{6,3,6,8,26,34,432}
+cities := []string{"New York", "San Francisco", "Los Angeles", "Chicago"}
+nums := []int{6,3,6,8,26,34,432}
     </code></pre>
-</section>
-
-<section>
-    <h2>Getting the Length of a Slice</h2>
 </section>
 
 <section>
@@ -37,7 +33,7 @@ nums = []int{6,3,6,8,26,34,432}
     <p>To make a slice from an array, we have to specify the start and end indices for the slice: </p>
     <pre><code class="language-go">
 var example_array = [<i>length</i>]<i>datatype</i>{<i>values</i>} // make an array
-example_slice = example_array[<i>start</i>:<i>end</i>] // make a slice from that array
+example_slice := example_array[<i>start</i>:<i>end</i>] // make a slice from that array
     </code></pre>
     <p>For example: </p>
     <pre><code class="language-go">
@@ -72,6 +68,40 @@ fmt.Println(websites[1])
     <pre><code class="language-go">
 slice_name = append(slice_name, element1, element2, ...)
     </code></pre>
+    <small><i class="fas fa-exclamation-circle"></i>Remember that the <code>append</code> function returns another array. It does not actually append the element to the slice unless we set the slice to the output of it.</small>
+</section>
+
+<section>
+    <h2>Getting the Length of a Slice</h2>
+    <p>To get the length of a slice, we can use two functions: <code>len</code> and <code>cap</code>. The <code>len</code> function returns how many elements are actually in the slice. For example: </p>
+    <pre><code class="language-go">
+countries := []string{"France", "Germany", "Italy", "United States", "Canada", "China", "Mexico"}
+fmt.Println(len(countries))
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre><samp>
+7
+    </samp></pre>
+    <p>However, see what happens if we use the <code>cap</code> function: </p>
+    <pre><code class="language-go">
+fmt.Println(cap(countries))
+    </code></pre>
+    <p>The code returns: </p>
+    <pre><samp>
+7
+    </samp></pre>
+    <p>Hmm. Same thing. But see what happens when we append an element: </p>
+    <pre><code class="language-go">
+countries = append(countries, "Brazil")
+fmt.Println(len(countries))
+fmt.Println(cap(countries))
+    </code></pre>
+    <p>Now, we get: </p>
+    <pre><samp>
+8
+14
+    </samp></pre>
+    <p>The reason this is happening is because <code>len</code> returns the number of elements in the slice, but <code>cap</code> returns the equivalent amount of memory the actual slice is using.</p>
 </section>
 
 <section>
