@@ -485,6 +485,10 @@ img {
   color: darkblue;
 }
 
+#tutorial-index-main li > ul > li:hover {
+  color: black;
+}
+
 /*#tutorial-index-main li li{
   text-decoration: none;
   color: blue;
