@@ -21,6 +21,21 @@ layout: golang
 
 <section>
     <h2>Making a Slice From an Array</h2>
+    <p>To make a slice from an array, we have to specify the start and end indices for the slice: </p>
+    <pre><code class="language-go">
+var example_array = [<i>length</i>]<i>datatype</i>{<i>values</i>} // make an array
+example_slice = example_array[<i>start</i>:<i>end</i>] // make a slice from that array
+    </code></pre>
+    <p>For example: </p>
+    <pre><code class="language-go">
+arr1 := [5]string{"Chimpanzee", "Capuchin", "Gorilla", "Macaque", "Orangutan", "Bonobo"}
+var slice1 = arr1[1:4]
+fmt.Println(slice1)
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre><samp>
+[Capuchin Gorilla Macaque Orangutan]
+    </samp></pre>
 </section>
 
 <section>
