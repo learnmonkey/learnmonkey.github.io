@@ -500,7 +500,7 @@ img {
 
 .alert {
   padding: 20px;
-  background-color: rgb(233, 210, 0); /* yellow */
+  background-color: rgb(223, 212, 121); /* yellow */
   color: black;
   margin-bottom: 15px;
 }
@@ -517,5 +517,5 @@ img {
 }
 
 .alert-close-button:hover {
-  color: rgb(82, 82, 82); /* light gray */
+  color: rgb(189, 189, 189); /* light gray */
 }
