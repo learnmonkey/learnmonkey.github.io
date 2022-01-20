@@ -503,6 +503,7 @@ img {
   background-color: rgb(223, 212, 121); /* yellow */
   color: black;
   margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 .alert-close-button {
