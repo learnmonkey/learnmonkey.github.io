@@ -25,6 +25,16 @@ var <i>variable-name</i> *<i>data-type</i>
     <p>To get the address of a variable in Go, we put the ampersand symbol (<code>&</code>) before the variable. For example: </p>
     <pre><code class="language-go">
 var x int = 5
-
+fmt.Println(&x)
+    </code></pre>
+    <p>The above code returns a hexadecimal number for the address of where the variable <code>x</code> is stored in memory: </p>
+    <pre><samp>
+0xc000016190
+    </samp></pre>
+    <p>We can also set the address to a pointer variable: </p>
+    <pre><code class="language-go">
+var y int = 10
+var y_addr *int
+y_addr = &y
     </code></pre>
 </section>
