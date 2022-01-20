@@ -8,5 +8,15 @@ layout: jquery
 
 <section>
     <h2>How to Setup jQuery</h2>
-    <p>jQuery is hosted on online CDNs. For this tutorial, we will include the jQuery library using GoogleApis. To do this,</p>
+    <p>jQuery is hosted on online CDNs. For this tutorial, we will include the jQuery library using the Cloudflare CDN. To do this, simply add</p>
+    <pre><code class="language-html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </code></pre>
+    <p>To your <code>head</code> tag, but before your <code>script.js</code> code. So, your head might look like this:</p>
+    <pre><code class="language-html">
+&#60;head&#62;
+&#60;script src="script.js"&#62;&#60;/script&#62
+&#60;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"&#62;&#60;/script&#62
+&#60;/head&#62;
+    </code></pre>
 </section>
