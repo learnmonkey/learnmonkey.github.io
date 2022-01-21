@@ -43,3 +43,23 @@ var y_addr *int
 y_addr = &y
     </code></pre>
 </section>
+
+<section>
+    <h2>Getting the Data at a Memory Address</h2>
+    <p>To get the data at the address, we use an asterisk (<code>*</code>) yet again. If we type <code>*x</code>, we are referring to the value stored at the piece of memory that the <code>x</code> variable is pointing to.</p>
+    <p>For example: </p>
+    <pre><code class="language-go">
+package main
+import "fmt"
+
+func main() {
+    var myInt = 5 // declare an integer variable called myInt
+    var myPtr *int = &x // declare a pointer variable that points to the memory location of myInt
+    fmt.Println(*myPtr) // get the data stored at the memory address myPtr is pointing to
+}
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre><samp>
+5
+    </samp></pre>
+</section>
