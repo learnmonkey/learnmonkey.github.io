@@ -13,7 +13,20 @@ permalink: /programming/python/flask/routing/
 
 <section>
     <h2>Making Routes In Flask</h2>
-    <p>Flask is what we call a <i>Backend Web Framework</i>, or a framework for creating the backend code for a site. Backend is handling the user requests and the code on the server. <i>Frontend</i> programming is creating the actual user interface, or the <a href="/programming/html/">HTML</a> code, on the site. Anyways, how do you make routes in Flask? Well, we simply type <pre><code class="language-python">@app.route("/my-route")</code></pre> and then followed by a function. In that function, we will return HTML code as a string. You can also return HTML code as a <i>template</i>, as we will learn in the <i><a href="/programming/python/flask/templating/">next tutorial</a></i>.</p>
+    <p>Flask is what we call a <i>Backend Web Framework</i>, or a framework for creating the backend code for a site. Backend is handling the user requests and the code on the server. <i>Frontend</i> programming is creating the actual user interface, or the <a href="/programming/html/">HTML</a> code, on the site. Anyways, how do you make routes in Flask? Well, we simply type <pre><code class="language-python">@app.route("/my-route")</code></pre> and then followed by a function. In that function, we will return HTML code as a string. You can also return HTML code as a <i>template</i>, as we will learn in the <i><a href="/programming/python/flask/templating/">next tutorial</a></i>. For example, type the following code <b>AFTER</b> the <code>hello_world</code> function from the last tutorial:</code></p>
+    <pre><code class="language-python">
+@app.route("/say-hi")
+def say_hi():
+    return "Hi"
+
+@app.route("/hello-there/")
+def hello_there():
+    return "Hello There"
+
+@app.route("/greet/&#60;name&#62;")
+def greet(name):
+    return f"Hi There, {name}!"
+    </code></pre>
 </section>
 
 <section>
