@@ -11,3 +11,21 @@ layout: javascript
     <p>First of all, we will install a Code Editor, or a program that we can type our JavaScript into. If you already have a Code Editor like a Text Editor or IDE, just skip this part.</p>
     <p>One of the easiest to use Code Editors around is <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>. We will install that too. To do so, visit the <a href="https://www.sublimetext.com/download" target="_blank">Sublime Text Download Page</a> and select the download file for your operating system. Then, run through the Setup Wizard and you'll have Sublime Text installed!</p>
 </section>
+
+<section>
+    <h2>Linking Our JavaScript Code Into HTML</h2>
+    <p>There are two main ways to run JavaScript in a browser, and they both involve linking our having the JavaScript code in your <a href="/programming/html/">HTML</a> file.</p>
+    <p>The first option is putting your JavaScript code between two <code>&#60;script&#62;</code> tags. For example, we could have </p>
+    <pre><code class="language-html">
+&#60;script&#62;
+alert("Hello World!")
+&#60;/script&#62;
+    </code></pre>
+    <p>in our code. We just simply embedded our JavaScript code into the HTML file. This is the first main way to write JavaScript code, but it isn't very widely used because it can be hard to find your code.</p>
+    <p>The second and more preferable option is writing your JavaScript code in an external <code>.js</code> file, which is usually in the same <i>directory</i>, or folder, as the <code>index.html</code> file. Then, we can simply reference the JavaScript file by writing</p>
+    <pre><code class="language-html">
+&#60;script src="location/to/javascript/code.js"&#62;&#60;/script&#62;
+    </code></pre>
+    <p>and by using this way, it i easy to organiza your JavaScript code into different chunks based on what they do! The main file name for the main JavaScript file that all or most pages on your site need is usually <code>script.js</code>.</p>
+    <p>Obviously, it is up to you for what method you choose, but in this JavaScript course, we will use the second method, or the <code>src="blablahblah.js"</code> method!</p>
+</section>
