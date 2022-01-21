@@ -26,7 +26,7 @@ app.run(port=8080)
     </code></pre>
     <p><code>@app.route("/hello-world/")</code> is a decorator, which tells Python to change the behavior of the next function. Here, it makes Flask run the next function whenver we visit <code>/hello-world</code>.</p>
     <p>Then, we actually declare the function. The name of the function actually doesn't matter, but it's always good to have descriptive names.</p>
-    <p>Flask gets the return value of the shows it to the user. Now, when we visit <code>localhost:8080/hello-world</code>, we see <samp>Hello World</samp>.</p>
+    <p>Flask gets the return value of the shows it to the user. Now, when we visit <a href="https://localhost:8080/hello-world">https://localhost:8080/hello-world</a>, we see <samp>Hello World</samp>.</p>
     <p>We can have as many routes as we want.</p>
 </section>
 
@@ -43,7 +43,7 @@ def hello_world(name):
 
 app.run(port=8080)
     </code></pre>
-    <p>In the above code, whenever we go to <code>localhost:8080/hello/Learnmonkey</code>, we would see <samp>Hello Learnmonkey!</samp>. If we now go to <code>localhost:8080/hello/John</code> we would see <samp>Hello John!</samp>. As you can see, the text that is being displayed corresponds to the URL, but we didn't need to hard-code every single thing that the user might enter.</p>
+    <p>In the above code, whenever we go to <a href="localhost:8080/hello/Learnmonkey">localhost:8080/hello/Learnmonkey</a>, we would see <samp>Hello Learnmonkey!</samp>. If we now go to <a href="localhost:8080/hello/John">localhost:8080/hello/John</a> we would see <samp>Hello John!</samp>. As you can see, the text that is being displayed corresponds to the URL, but we didn't need to hard-code every single thing that the user might enter.</p>
 </section>
 
 <section>
