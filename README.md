@@ -9,6 +9,8 @@ If you want to add some content or fix something, fork this repository and make 
 
 If you want to make some suggestions, you can open an issue.
 
+However, <b>don't</b> make random pull requests or issues. They are wastes of time and we will close them immediately.
+
 # Our Mission
 
 At Learnmonkey, we strive to provide high-quality educational content for free.
