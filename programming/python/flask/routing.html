@@ -31,11 +31,19 @@ app.run(port=8080)
 </section>
 
 <section>
-    <h2>The Different Routes</h2>
-</section>
-
-<section>
     <h2>URL Variables</h2>
+    <p>In Flask, we can put variables in the URL of a route. For example: </p>
+    <pre><code class="language-python">
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/hello/&lt;name>")
+def hello_world(name):
+    return "Hello " + name + "!"
+
+app.run(port=8080)
+    </code></pre>
+    <p>In the above code, whenever we go to <code>localhost:8080/hello/Learnmonkey</code>, we would see "Hello Learnmonkey!". If we now go to <code>localhost:8080/hello/John</code> we would see "Hello John!". As you can see, the text that is being displayed corresponds to the URL, but we didn't need to hard-code every single thing that the user might enter.</p>
 </section>
 
 <section>
