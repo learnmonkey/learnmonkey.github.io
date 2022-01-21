@@ -8,12 +8,11 @@ permalink: /programming/python/flask/routing/
 
 <section>
     <h2>What is Routing?</h2>
-    <p>Routing simply means returning code (or HTML pages) when someone visits a specific URL on your site. For example, in the previous tutorial, we had one route: the <code>/</code> route which was our home page. In this tutorial, we will learn a little bit more about routing with Flask.</p>
+    <p><em>Routing</em> simply means returning stuff when someone visits a specific URL on your site, which is called a <em>route</em>. For example, in the previous tutorial, we had one route: the <code>/</code> route which was our home page. In this tutorial, we will learn a little bit more about routing with Flask.</p>
 </section>
 
 <section>
     <h2>Making Routes In Flask</h2>
-    <p>Flask is a <em>backend web framework</em> which means that Flask runs the code behind the scenes. Backend means that Flask handles all the user requests and the code on the server.</p>
     <p>In Flask, we create routes to handle what happens when the user goes to a particular address. For example, if we wanted to return "Hello World" every time the user visits the route <code>localhost:8080/hello-world/</code>, we would type: </p>
     <pre><code class="language-go">
 from flask import Flask
