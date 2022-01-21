@@ -1,0 +1,21 @@
+
+
+
+<section>
+    <h2>Writing the Code</h2>
+    <p>Below is the code we will write: </p>
+    <pre><code class="language-python">
+from bottle import route, run
+
+@route('/')
+def hello():
+    return "Hello World!"
+
+run(port=8080)
+    </code></pre>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>Run the code as you would run any other Python program. Once you run it, when you go to <a href="localhost:8080">localhost:8080</a>, you should see <samp>Hello World!</samp>.</p>
+</section>
