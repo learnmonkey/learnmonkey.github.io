@@ -9,4 +9,4 @@ If you are looking to contribute, just open a pull request.
 
 # Our Mission
 
-At Learnmonkey, we strive to create tutorials on all different subjects.
+At Learnmonkey, we strive to provide high-quality educational content for free.
