@@ -5,7 +5,9 @@ Currently, we are focusing on making programming and math content. We would grea
 
 # Contributing
 
-If you are looking to contribute, just open a pull request.
+If you want to add some content or fix something, fork this repository and make your edits. Then, you can create a pull request.
+
+If you want to make some suggestions, you can open an issue.
 
 # Our Mission
 
