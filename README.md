@@ -6,3 +6,7 @@ Currently, we are focusing on making programming and math content. We would grea
 # Contributing
 
 If you are looking to contribute, just open a pull request.
+
+# Our Mission
+
+At Learnmonkey, we strive to create tutorials on all different subjects.
