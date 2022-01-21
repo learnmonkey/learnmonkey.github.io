@@ -1,0 +1,25 @@
+---
+title: Selecting Elements
+permalink: /programming/javascript/jquery/
+layout: jquery
+---
+
+<h1>Selecting Elements</h1>
+
+<section>
+    <h2>The <code>$</code> Function</h2>
+    <p>The main function in jQuery is the <code>$</code> function. Yes, it's a dollar sign, but it's the basis of using jQuery. To select in element, we need to use the <code>$</code> function. As an example, type the following code into <code>script.js</code>:</p>
+    <pre><code class="language-javascript">
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+    </code></pre>
+    <p>And then, in your <code>index.html</code> file, add a couple of paragraph (<code>p</code>) tags with text in them.</p>
+    <pre><code class="language-html">
+&#60;p&#62;Click Me!&#60;/p&#62;
+&#60;p&#62;Click Me Too!&#60;/p&#62;
+&#60;p&#62;No, Click Me!&#60;/p&#62;
+    </code></pre>
+</section>
