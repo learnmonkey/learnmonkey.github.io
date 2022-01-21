@@ -18,25 +18,27 @@ layout: golang
 
 <section>
 	<h2>What is a For Loop?</h2>
-    <p>A For Loop in programming is a loop that loops a certain number of times. It can <i>iterate</i>, or loop over, an array or any other iterable (array, slices, etc.).</p>
+    <p>A for loop in programming is a loop that loops a certain number of times. It can <i>iterate</i>, or loop over, an array or any other iterable (array, slices, etc.).</p>
 </section>
 
 <section>
 	<h2>Making For Loops in Go</h2>
-    <p>In Go, we can make For Loops by using the <code>for</code> keyword. The syntax for Go For Loops is:</p>
+    <p>In Go, we can make for loops by using the <code>for</code> keyword. The syntax for Go for loops is:</p>
     <pre><code class="language-go">
-for initialization; condition; update {
+for <i>initialization</i>; <i>condition<i>; <i>update</i> {
     // looped code goes here
 }
     </code></pre>
-    <p>As an example, type the following code into a <code>.go</code> file:</p>
+    <p><code><i>initialization</i></code> initializes a loop counter variable. <code><i>condition</i></code> is the condition that has to be met in order for the loop counter to be initialized. Finally, <code><i>update</i></code> updates the loop counter.</p>
+    <small><i class="fas fa-exclamation-circle"></i>Remember to put the three parts in the correct order! If you do something like <code>for <i>initialization</i>; <i>update<i>; <i>condition</i></code> your code will run forever!</small>
+    <p>For example:</p>
     <pre><code class="language-go">
         package main
 
         import "fmt"
         
         func main() {
-            for i := 0; i < 10; i++ {
+            for i := 0; i =&lt; 10; i++ {
                 fmt.Println(i)
             }
         }
@@ -53,5 +55,32 @@ for initialization; condition; update {
 7
 8
 9
+    </samp></pre>p
+    <p>In the code, we declare a loop counter called <code>i</code> and set it to zero. While <code>i</code> is smaller than 10, we keep adding one to <code>i</code> and printing out <code>i</code>.</p>
+    <p>We could have done something like this too:</p>
+    <pre><code class="language-go">
+package main
+
+import "fmt"
+
+func main() {
+    for i := 10; i >= 0; i-- {
+        fmt.Println(i)
+    }
+}
+    </code></pre>
+    <p>The above code returns: </p>
+    <pre><samp>
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
     </samp></pre>
 </section>
