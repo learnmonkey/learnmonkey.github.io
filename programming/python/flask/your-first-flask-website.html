@@ -9,17 +9,15 @@ layout: flask
 <section>
     <h2>Writing the Code</h2>
     <p>The code will be as follows: </p>
-    <pre><code class="language-html">
-&lt;!DOCTYPE html>
-&lt;html>
-  &lt;head>
-    &lt;title>Hello&lt;/title>
-  &lt;head>
-  &lt;body>
-    &lt;h1>Welcome To My Website!&lt;/h1>
-    &lt;p>Hello World!&lt;/p>
-  &lt;/body>
-&lt;/html>
+    <pre><code class="language-python">
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return 'Hello, World!'
+
+app.run(port=8080)
     </code></pre>
 </section>
 
@@ -32,7 +30,7 @@ layout: flask
   <h2>Code Breakdown</h2>
   <p>Now, it's time for a line by line breakdown of the code.</p>
   <p><code>from flask import Flask</code> tells Python that we want to import the <code>Flask</code> object from the Flask module.</p>
-  <p><code>app = Flask('app')</code> tells Flask to make a Flask app.</p>
+  <p><code>app = Flask(__name__)</code> tells Flask to make a Flask app. This will be the object that represents our entire web app.</p>
   <p><code>@app.route('/')</code> is a decorator. Decorator changes the function of the next function. In this case, it modifies the next function to be returned whenever we visit the home page of our website.</p>
   <p><code>def hello_world():</code> defines a new function called <code>hello_world</code> that takes on the decorator.</p>
   <p><code>return 'Hello, World!'</code> means that when we go to the home page of the website, we see <samp>Hello, World!</samp>.</p>
