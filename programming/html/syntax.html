@@ -13,9 +13,22 @@ layout: html
 &lt;<i>element_name</i>><i>element content</i>&lt;/<i>element_name</i>>
     </code></pre>
     <p>In programming lingo, the stuff inside the angle brackets is called a tag. Elements consist of a starting tag, a closing tag, content, and attributes (which we'll learn about later).</p>
-    <p>Notice how the tag at the front (the starting tag) is different from the tag at the end (closing tag). This is very important.</p>
+    <p>Notice how the tag at the front (the starting tag) is different from the tag at the end (closing tag). This is very important. We'll talk about why they're different when we get to nesting elements.</p>
     <p>You can also have tags with no content inside: </p>
     <pre><code class="language-html">
 &lt;<i>tag_name</i>>
+    </code></pre>
+</section>
+
+<section>
+    <h2>Attributes</h2>
+    <p>Attributes are things that we can add to elements to change their properties. Attributes follow the following form: </p>
+    <pre><code class="language-html">
+&lt;<i>element_name</i> <i>attribute_name</i>="<i>attribute_value</i>"><i>content</i>&lt;/element_name>
+    </code></pre>
+    <p>Notice how the attributes go inside the starting tag. They do not go in the ending tag.</p>
+    <p>We can also have multiple attributes: </p>
+    <pre><code class="language-html">
+&lt;<i>element_name</i> <i>attribute1_name</i>="<i>attribute1_value</i>" <i>attribute2_name</i>="<i>attribute2_value</i>"><i>content</i>&lt;/element_name>
     </code></pre>
 </section>
