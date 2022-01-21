@@ -13,21 +13,21 @@ permalink: /programming/python/flask/routing/
 
 <section>
     <h2>Making Routes In Flask</h2>
-    <p>Flask is what we call a <i>Backend Web Framework</i>, or a framework for creating the backend code for a site. Backend is handling the user requests and the code on the server. <i>Frontend</i> programming is creating the actual user interface, or the <a href="/programming/html/">HTML</a> code, on the site. Anyways, how do you make routes in Flask? Well, we simply type <pre><code class="language-python">@app.route("/my-route")</code></pre> and then followed by a function. In that function, we will return HTML code as a string. You can also return HTML code as a <i>template</i>, as we will learn in the <i><a href="/programming/python/flask/templating/">next tutorial</a></i>. As an example, type the following code <b>AFTER</b> the <code>hello_world</code> function from the last tutorial:</code></p>
-    <pre><code class="language-python">
-@app.route("/say-hi")
-def say_hi():
-    return "Hi"
+    <p>Flask is a <em>backend web framework</em> which means that Flask runs the code behind the scenes. Backend means that Flask handles all the user requests and the code on the server.</p>
+    <p>In Flask, we create routes to handle what happens when the user goes to a particular address. For example, if we wanted to return "Hello World" every time the user visits the route <code>localhost:8080/hello-world/</code>, we would type: </p>
+    <pre><code class="language-go">
+from flask import Flask
+app = Flask(__name__)
 
-@app.route("/hello-there/")
-def hello_there():
-    return "Hello There"
+@app.route("/hello-world")
+def hello_world():
+    return "Hello World"
 
-@app.route("/greet/&lt;name>")
-def greet(name):
-    return f"Hi There, {name}!"
+app.run(port=8080)
     </code></pre>
-    <p>Now, once you have finished copying that code down and have ran it, we can start experimenting with routes!</p>
+    <p><code>@app.route("/hello-world/")</code> is a decorator, which tells Python to change the behavior of the next function. Here, it makes Flask run the next function whenver we visit <code>/hello-world</code>.</p>
+    <p>Then, we actually declare the function. The name of the function actually doesn't matter, but it's always good to have descriptive names.</p>
+    <p>Flask gets the return value of the shows it to the user. Now, when we visit <code>localhost:8080/hello-world</code>, we see "Hello World".</p>
 </section>
 
 <section>
