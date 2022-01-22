@@ -10,4 +10,18 @@ layout: jquery
 <section>
     <h2>Code Demo</h2>
     <p>To explain the concepts in this tutorial, we will write some example code. The code will be as follows:</p>
+    <pre><code class="language-javascript">
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).text("A p tag")
+    });
+    $("#p").click(function(){
+        $(this).text("A p id")
+    });
+    $(".p").click(function(){
+        $(this).text("A p class")
+    });
+});
+    </code></pre>
+    <p>And then, add the following couple of lines into your <code>index.html</code> dile:</p>
 </section>
