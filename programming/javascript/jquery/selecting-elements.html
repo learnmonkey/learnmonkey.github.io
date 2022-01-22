@@ -33,4 +33,5 @@ $(document).ready(function(){
     <h2>Code Breakdown</h2>
     <p>Now, let's see how the <code>$</code> function works!</p>
     <p>On the first line of the JavaScript code, we have <pre><code class="language-javascript">$(document).ready(function(){</code></pre> which tells our web browser to <b>ONLY</b> run the code once the document, or web page, has loaded. Without it, our JavaScript code might try to access some elements that haven't been created yet on the page!!</p>
+    <p>Then, on the next line, we have <pre><code class="language-javascript">$("p").click(function(){</code></pre> which tells jQuery to run the next couple fo lines of JavaScript <strong>ONLY</strong> when you click on a paragraph tag. In jQuery, the $ function takes strings or document elements (like the document object) and runs methods on those objects. The strings we pass in are the equivalent of <a href="/programming/css/">CSS</a> selectors.</p>
 </section>
