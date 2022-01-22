@@ -30,7 +30,19 @@ console.log(confirm("Are you sure you want to do this?"))
     </code></pre>
     <p>When you run it, you should see something like this: </p>
     <img src="/images/programming/javascript/confirm-alert-example.png" alt="An example of a confirmation alert in JavaScript">
-    <p>Click "OK". Now, go into the console. You should see something like <code style="color:rgb(166, 0, 207)">true</code>.</p>
-    <p>If you do it again and click "Cancel", you should now see something like <code style="color:rgb(166, 0, 207)">false</code>.</p>
+    <p>Click "OK". Now, go into the console. You should see <code>true</code>.</p>
+    <p>If you do it again and click "Cancel", you should now see <code>false</code>.</p>
     <p>Just like normal alerts, you should not overuse confirmation alerts. They do not allow the user to interact with the page until they click "OK" or "Cancel".</p>
+</section>
+
+<section>
+    <h2>Making a Prompt Alert</h2>
+    <p>The final type of alert that JavaScript offers in the prompt alert, which uses the <code>prompt()</code> function. It allows the user to enter something in the alert. For example, write the following code: </p>
+    <pre><code class="language-javascript">
+console.log(prompt("Enter your favorite website:"))
+    </code></pre>
+    <p>When you run it, you should see something like this:</p>
+    <img src="/images/programming/javascript/prompt-alert-example.png" alt="An example of a prompt alert in JavaScript">
+    <p>Then, you can enter "Learnmonkey" and click OK. Now, when you look at the console, you should see <code>Learnmonkey</code>.</p>
+    <p>Now, do the same thing again but click "Cancel" instead. Then, you should see <code>null</code>. <code>null</code> basically means an empty value or variable.</p>
 </section>
