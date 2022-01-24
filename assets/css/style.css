@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+pre {
+  font-size: 1em;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #5b241c;
