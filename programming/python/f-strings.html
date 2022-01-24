@@ -1,0 +1,19 @@
+---
+layout: python
+title: Python F-Strings
+permalink: /programming/python/f-strings/
+---
+
+<h1>Python F-Strings</h1>
+<p>F-strings were introduced in Python 3.6 as an improved way of formatting strings. Before f-strings, we would either have to concatenate a bunch of strings or use the <code>format()</code> method. Both of them aren't particularly elegant. So, f-strings were introduced. Using them is similar to using the <code>format()</code> method, but everything is more concise. For example, instead of writing: </p>
+<pre><code class="language-python">
+name = "John"
+age = 36
+txt = "Hello! My name is {name}. I'm {age} years old.".format(name = name, age = age)
+</code></pre>
+<p>We could write: </p>
+<pre><code class="language-python">
+name = "John"
+age = 36
+txt = f"Hello! My name is {name}. I'm {age} years old."
+</code></pre>
