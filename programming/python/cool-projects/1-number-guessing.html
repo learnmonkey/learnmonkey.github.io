@@ -30,5 +30,38 @@ permalink: /programming/python/cool-projects/1-number-guessing/
 
 <section>
     <h2>Implementing The Game</h2>
-    <p></p>
+    <p>First, we want a <i>while</i> loop for our game, so the user can enter guesses over and over until they get it. And, before the loop, we will add the <code>randint</code> code.</p>
+    <pre><code class="language-python">
+import random
+num = random.randint(1, 100)   
+while True:
+    guess = int(input("Guess A Number Between 1 and 100: "))
+    </code></pre>
+    <p>After, we just need to add some <code>if</code> statements for the logic:</p>
+    <pre><code class="language-python">
+import random
+num = random.randint(1, 100)
+while True:
+    guess = int(input("Guess A Number Between 1 and 100: "))
+    if guess > num:
+        print("Your Number Is Too High, Try Again")
+    elif guess < num:
+        print("Your Number Is Too Low, Try Again")
+    else:
+        print(f"Correct! The Number Was {num}.")
+        break
+    </code></pre>
+    <p>And then, you're done. Congrats!</p>
+</section>
+
+<section>
+    <h2>Extensions</h2>
+    <p>Fun extension ideas:</p>
+    <ul>
+        <li>Give the use a limited number of guesses</li>
+        <li>Add a feature for hints on the number (even or odd, etc.)</li>
+        <li>Allow the player to replay after guessing the number</li>
+        <li>Add a points system</li>
+        <li>Let the user quit in the game</li>
+    </ul>
 </section>
