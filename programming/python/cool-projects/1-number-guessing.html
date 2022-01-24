@@ -44,11 +44,11 @@ num = random.randint(1, 100)
 while True:
     guess = int(input("Guess A Number Between 1 and 100: "))
     if guess > num:
-        print("Your Number Is Too High, Try Again")
-    elif guess < num:
-        print("Your Number Is Too Low, Try Again")
+        print("Your number is too high!")
+    elif guess &lt; num:
+        print("Your number is too low!")
     else:
-        print(f"Correct! The Number Was {num}.")
+        print("Correct! The number was " + str(num) + ".")
         break
     </code></pre>
     <p>And then, you're done. Congrats!</p>
