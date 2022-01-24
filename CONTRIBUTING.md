@@ -2,9 +2,10 @@
 
 Looking to contribute? Great! If you want to add some content or fix something, fork this repository and make your edits. Then, you can create a pull request. If you want to make some suggestions, you can open an issue.
 
-# To-Do List:
+# Things you can do
 
 - Fix any existing issues
-- Add more content
+- Add more content (especially math)
 - Fix spelling errors
 - Anything to enhance the site
+- Making the site look better
