@@ -8,5 +8,17 @@ permalink: /programming/python/pymongo/setup/
 
 <section>
     <h2>Setting up a MongoDB Database</h2>
-    <p>Before we can do anything, we of course need to set up a MongoDB database. Luckily, MongoDB offers a free plan.</p>
+    <p>Before we can do anything, we of course need to set up a MongoDB database. There are two options. First, we could download ad MongoDB database onto our computer. The second option, and the one we'll go with, is hosting our database in the cloud. Luckily, MongoDB has a free plan that we can se for experimentation. To do this, go to <a href="https://www.mongodb.com/cloud/atlas">https://www.mongodb.com/cloud/atlas</a> and set it up.</p>
+</section>
+
+<section>
+    <h2>Installing PyMongo</h2>
+    <p>After making our database, we need to install the PyMongo Python module using PIP: </p>
+    <pre><code class="language-bat">
+python -m pip install pymongo
+    </code></pre>
+    <p>After using PIP, run the following Python code to test if you installed it correctly: </p>
+    <pre><code class="language-python">
+import pymongo
+    </code></pre>
 </section>
