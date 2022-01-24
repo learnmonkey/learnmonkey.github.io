@@ -29,7 +29,7 @@ pip install keyboard</code>
 import pyautogui
 import keyboard
 key = input("Auto Clicker Key Bind: ")
-button = input("Which Button? 'primary' For Left Button And 'right' For Right Button. ")
+button = input("Which Button? 'primary' For The Left Button And 'right' For The Right Button. ")
 while True:
     if keyboard.is_pressed(key):
         pyautogui.click(button=button)
