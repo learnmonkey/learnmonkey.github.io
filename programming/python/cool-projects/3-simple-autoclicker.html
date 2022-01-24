@@ -14,3 +14,35 @@ permalink: /programming/python/cool-projects/3-simple-autoclicker/
 pip install keyboard</code>
     <p>If the commands don't work for you, go <a href="/programming/python/articles/troubleshooting-pip/">here</a>.</p>
 </section>
+
+<section>
+    <h2>Using The Modules</h2>
+    <p>Now, let's discuss how our program will work. We've already installed the required modules, so, how will they work in our program?</p>
+    <p>Well, the <code>keyboard</code> modules is used for methods in the keyboard. We're using it for detecting key presses so when the user holds a specific key, the program will now and it will boot the autoclicker and start clicking.</p>
+    <p>The <code>pyautogui</code> module is used for <i>automation</i>, such as clicking, typing, and moving the mouse. We'll be using <code>pyautogui</code> for clicking the mouse.</p>
+</section>
+
+<section>
+    <h2>Implementation</h2>
+    <p>Below is the implementation of the autoclicker:</p>
+    <pre><code class="language-python">
+import pyautogui
+import keyboard
+key = input("Auto Clicker Key Bind: ")
+button = input("Which Button? 'primary' For Left Button And 'right' For Right Button. ")
+while True:
+    if keyboard.is_pressed(key):
+        pyautogui.click(button=button)
+    </code></pre>
+</section>
+
+<section>
+    <h2>Code Result</h2>
+    <p>When you run the code, the program will prompt you for a key bind, or a key that you hold in order for the code to click. Then, it asks you for which button to click, left or right.</p>
+    <p>Try typing "<code>c</code>" as the key bind and type "<code>primary</code> as the button, and then hold the <code>c</code> key on your keyboard. You'll notice that the mouse is clicking!</p>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>The program is actually very simply</p>
+</section>
