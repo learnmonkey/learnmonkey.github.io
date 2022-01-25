@@ -12,4 +12,34 @@ permalink: /programming/python/cool-projects/2-counter-app/
     <p>In this tutorial, we'll be using the Tkinter module for making graphical user interfaces (GUIs). In the last project, where we made a number guessing game, we put our game in the command line, so we made a command line interface (CLIs).</p>
     <p>Tkinter is a built in Python module for creating GUIs. Although the apps that Tkinter makes aren't the prettiest, they are a good starting point and is very beginner-friendly.</p>
     <p>If you want to learn more about the Tkinter module and all of its features, check out the <a href="/programming/python/tkinter/">Tkinter</a> tutorial series on Learnmonkey.</p>
+    <p>Tkinter is built-in, so we don't need to install anything.</p>
+</section>
+
+<section>
+    <h2>Writing the Code</h2>
+    <p>Below is our code: </p>
+    <pre><code class="language-python">
+import tkinter as tk
+
+window = tk.Tk()
+
+counter = tk.Label(text="0")
+counter.pack()
+
+def increment_counter():
+    counter['text'] = int(counter['text']) + 1
+
+button = tk.Button(text="Click Me!", command=increment_counter)
+button.pack()
+
+window.mainloop()
+    </code></pre>
+    <p>When you run it, you should see something like: </p>
+    <img src="/images/programming/python/cool-projects/counter-app.png" alt="Screenshot of the Tkinter counter app">
+    <p>If you click the button, you should see the count above the button increase by one.</p>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p></p>
 </section>
