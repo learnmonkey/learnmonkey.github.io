@@ -16,7 +16,17 @@ layout: golang
     <p>The <code>Scan()</code> function, as well as all the other functions we will be discussing in this tutorial, is in the built-in <code>fmt</code> module, so we need to type <code>import "fmt"</code> before using these functions, as always.</p>
     <p>The <code>Scan()</code> function receives raw user input as space-seperated values and stores them in variables. Newlines count as spaces. For example: </p>
     <pre><code class="language-go">
-
+package main
+import "fmt"
+func main() {
+    var fname string
+    var lname string
+    fmt.Println("Enter Your Name: ")
+    fmt.Scan(&fname)
+    fmt.Scan(&lname)
+    fmt.Println("Your First Name Is", fname)
+    fmt.Println("Your Last Name Is", lname)
+}
     </code></pre>
 </section>
 
