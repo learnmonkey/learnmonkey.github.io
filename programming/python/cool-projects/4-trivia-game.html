@@ -21,7 +21,22 @@ questions = [{"question" : "Who created Python?", "possible" : ["Guido Van Rossu
     <h2>Making the App</h2>
     <p>Now, it's time to make our app, which will run in the command line. First of all, we need to import the things we need: </p>
     <pre><code class="language-python">
-import questions # import the list of questions
-import random # we'll use this for randomizing the questions and answers
+import questions
+import random
+    </code></pre>
+    <p>We will be using the <code>random</code> module to randomize the questions and answers.</p>
+    <p>Then, we wrap the rest of our code to ask the player a question in a giant <code>while True</code> loop, so that our app will ask the player a question one after another: </p>
+    <pre><code class="language-python">
+while True:
+    </code></pre>
+    <p>Now, inside the loop, we use the <code>random.choice()</code> function to choose a random question from our list of random questions and print the name of the question: </p>
+    <pre><code class="language-python">
+current_question = random.choice(questions.questions)
+print(current_question['question'])
+    </code></pre>
+    <p>We then use the <code>random.shuffle()</code> function to randomly reorganize the list of answers. We also declare a variable called <code>answers</code> so we don't have to repeat ourselves: </p>
+    <pre><code class="language-python">
+random.shuffle(current_question['answers'])
+answers = current_question['answers']
     </code></pre>
 </section>
