@@ -41,5 +41,11 @@ window.mainloop()
 
 <section>
     <h2>Code Breakdown</h2>
-    <p></p>
+    <p>First of all, we need to import the Tkinter module. We import it as if its name was <code>tk</code> so it saves us some typing.</p>
+    <p>Then, we define a window object which you can think of as the main window of our app. We will add all of our other widgets in this window object.</p>
+    <p>We then define a Tkinter <code>Label</code> object with the name of <code>counter</code>, which will represent the count. <code>Label</code> objects simply define some text to be shown.</p>
+    <p>After creating the <code>Label</code> object, we will then have to use the <code>pack()</code> method to actually put the counter in the window.</p>
+    <p>Then, we create a function called <code>increment_counter</code> which increments the counter by one. We will call this function when we click on the button.</p>
+    <p>We then create a <code>Button</code> object with the text of "Click Me!". We set the <code>command</code> object to the <code>increment_counter</code> function we defined earlier. Then, we use the <code>pack()</code> method.</p>
+    <p>Finally, we run <code>window.mainloop()</code> to actually display the window and listen for events like button clicks.</p>
 </section>
