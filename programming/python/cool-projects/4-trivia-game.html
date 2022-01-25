@@ -39,4 +39,30 @@ print(current_question['question'])
 random.shuffle(current_question['answers'])
 answers = current_question['answers']
     </code></pre>
+    <p>We then print out each of the questions in numerical order: </p>
+    <pre><code class="language-python">
+for answer in range(len(answers)):
+    print(f"{answer+1}. {answers[answer]}")
+    </code></pre>
+    <p>Then, we ask the player to enter their answer. We wrap it in a try-except block so that when the player enters something that's not a number, we print an error and exit the game: </p>
+    <pre><code class="language-python">
+try:
+    selected_answer = int(input("Enter your answer: "))
+except ValueError:
+    print("Error: invalid number")
+    break
+    </code></pre>
+    <p>After that, we check if the answer that the user gave was correct. Remember that we increased all the list indices when we were listing the answers, so we now have to decrease the answer by one. We wrap it in a try-except block so that whenever the player chooses an answer that wasn't listed, the program prints an error and exits: </p>
+    <pre><code class="language-python">
+try:
+    if answers[selected_answer - 1] == current_question['correct']:
+        print("You answered correctly!")
+    else:
+        print("Your answer wasn't correct. (womp womp)")
+except IndexError:
+    print("Error: invalid answer")
+    break
+    </code></pre>
+    <p>Finally, we can run our code. Try a few different test cases and see if it works!</p>
+    <p>You can find the full code for the tutorial <a href="https://github.com/calgary34/python-trivia-app">here</a>.</p>
 </section>
