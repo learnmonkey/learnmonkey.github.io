@@ -44,11 +44,11 @@ num = random.randint(1, 100)
 while True:
     guess = int(input("Guess A Number Between 1 and 100: "))
     if guess > num:
-        print("Your Number Is Too High!")
-    elif guess &lt; num:
-        print("Your number is too low!")
+        print("Your Number Is Too High. Try Again!")
+    elif guess &#60; num:
+        print("Your number Is Too Low! Try Again!")
     else:
-        print("Correct! The number was " + str(num) + ".")
+        print(f"Correct! The Number Was {str(num)}.")
         break
     </code></pre>
     <p>We want to tell the player if they guessed too low, too high, or if they got the number! We can just use some quick <code>if-statements</code>.</p>
