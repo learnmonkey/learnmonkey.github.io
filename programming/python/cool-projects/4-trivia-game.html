@@ -11,6 +11,8 @@ permalink: /programming/python/cool-projects/4-trivia-game/
     <h2>Making Questions</h2>
     <p>For our trivia game, we'll need to make some questions and store them for our program mto access. We'll have them in this format:</p>
     <pre><code class="language-python">
-questions = [{"question" : "Who created Python?", "possible" : ["Guido Van Rossum", "James Gosling", "Donald Knuth", "Dennis Ritchie"], "correct" : "Guido Van Rossum"}]
+questions = [{"question" : "Who created Python?", "possible" : ["Guido Van Rossum", "James Gosling", "Donald Knuth", "Dennis Ritchie"], "correct" : "Guido Van Rossum"}, {"question" : "What is the oldest American university?", "possible" : ["Harvard University", "Yale University", "College of William and Mary", "Massachusetts Institute of Technology"], "correct" : "Harvard University"}]
     </code></pre>
+    <p>Notice how the <code>questions</code> variable is a list of dictionaries, which contain the question name, possible answers, and correct answer.</p>
+    <p>We will then put this in a Python file called <code>questions.py</code> so we can more easily access it. So, whenever we need to access the questions, we can simply type <code>import questions</code> and use it as <code>questions.questions</code>.</p>
 </section>
