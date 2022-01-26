@@ -35,3 +35,20 @@ client.run("token")
     <p>The above code prints out the contents of every message sent in the server.</p>
     <p>Notice how there is an at symbol (<code>@</code>) in front of the <code>on_message</code> function. This is a decorator. Also notice how the function is asynchronous. That means that we don't need to wait for something else to happen in the bot. Right now, our bot is small and it doesn't really matter that much, but imagine your bot became really popular and you would have to wait for everything else.</p>
 </section>
+
+<section>
+    <h2>Checking For Messages</h2>
+    <p>Of course, bots need commands and we need to listen for them. We can do this by simply putting some if statements in the <code>on_message</code> listener. For example: </p>
+    <pre><code class="language-python">
+import discord
+
+client = discord.Client()
+
+@client.event
+async def on_message(message):
+    if message.content == "$hello":
+        print("Hello!")
+
+client.run("token")
+    </code></pre>
+</section>
