@@ -52,3 +52,21 @@ async def on_message(message):
 client.run("token")
     </code></pre>
 </section>
+
+<section>
+    <h2>Sending Messages</h2>
+    <p>To send a message when a command is issued, we first check for the channel where it was issued and send it there: </p>
+    <pre><code class="language-python">
+import discord
+
+client = discord.Client()
+
+@client.event
+async def on_message(message):
+    if message.content == "$hello":
+        await message.channel.send("Hello!")
+
+client.run("token")
+    </code></pre>
+    <p>The <code>await</code> keyword is used to make the message sending asynchronous.</p>
+</section>
