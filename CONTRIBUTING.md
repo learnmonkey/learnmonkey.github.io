@@ -4,6 +4,7 @@ Looking to contribute? Great! If you want to add some content or fix something, 
 
 # Things you can do
 
+- The [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the repo wiki
 - Fix any existing issues
 - Add more content (especially math)
 - Fix spelling errors
