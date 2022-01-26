@@ -16,4 +16,20 @@ permalink: /programming/python/discord-py/setup/
     <img src="/images/programming/python/discord-py/new-application-form.png">
     <p>Then, click on the "Bot" tab and click the "Add Bot" button: </p>
     <img src="/images/programming/python/discord-py/build-a-bot.png">
+    <p>Now, you should see bot settings. Here, you can rename bot's username and change the avatars. Make sure that the "Public Bot" switch is turned on.</p>
+    <img src="/images/programming/python/discord-py/bot-settings.png">
+    <p>Notice how there is a hidden token field in the settings. The bot token is basically the password for the bot and it is very important that you do not share the bot token. If you accidentally share your bot token, you can click the "Regenerate" button to regenerate the bot token.</p>
+</section>
+
+<section>
+    <h2>Installing Discord.py</h2>
+    <p>To install Discord.py, run the following command in your command line: </p>
+    <pre><code class="language-bat">
+pip install discord.py
+    </code></pre>
+    <small>If PIP doesn't work, read our <a href="/programming/python/articles/troubleshooting-pip/">Troubleshooting PIP</a> article.</small>
+    <p>To test if your install worked, try running the following Python script: </p>
+    <pre><code class="language-python">
+import discord
+    </code></pre>
 </section>
