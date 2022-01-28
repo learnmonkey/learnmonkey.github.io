@@ -13,6 +13,22 @@ permalink: /programming/python/discord-py/embeds/
 </section>
 
 <section>
+    <h2>Making an Embed</h2>
+    <p>Embeds are created using the <code>discord.Embed</code> object. Below is the general format for creating an embed: </p>
+    <pre><code class="language-python">discord.Embed(title="<i>title</i>", description="<i>content</i>")</code></pre>
+    <p>For example: </p>
+    <pre><code class="language-python">
+discord.Embed(title="Example Embed", description="An example of an embed")
+    </code></pre>
+    <p>The above embed looks like: </p>
+    <img src="/images/programming/python/discord-py/embed-example-2.png">
+    <p>To send an embed, we type: </p>
+    <pre><code class="language-python">
+await ctx.send(embed=<i>embed variable name</i>)
+    </code></pre>
+</section>
+
+<section>
     <h2>Embed Generator</h2>
-    <p>There is a <a href="https://cog-creators.github.io/discord-embed-sandbox/">very handy tool</a> which generates Discord.py embeds for you.</p>
+    <p>There is a <a href="https://cog-creators.github.io/discord-embed-sandbox/">very handy tool</a> which generates embeds for you.</p>
 </section>
