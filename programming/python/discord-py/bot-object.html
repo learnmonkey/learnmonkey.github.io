@@ -26,3 +26,8 @@ bot = commands.Bot(command_prefix="$")
 bot.run("token")
     </code></pre>
 </section>
+
+<section>
+    <h2>Adding a Command</h2>
+    <p>To add a command to the bot, we now use the <code>@bot.command()</code> decorator for each of the bot command functions. Also, now our command functions need to have the argument <code>ctx</code> as the first argument. The context is basically the context in which the message was sent (channel, author, etc.) For example: </p>
+</section>
