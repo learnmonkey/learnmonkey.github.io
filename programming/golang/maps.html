@@ -8,7 +8,7 @@ layout: golang
 
 <section>
     <h2>What are Maps?</h2>
-    <p>Quite simply, maps map a key to a value. You can also think of maps as an unordered list of key:value pairs, with unique keys. Keys must have the same data type and values must have the same data types. However, keys and values don't need to have the same data type.</p>
+    <p>Quite simply, maps map a key to a value. You can also think of maps as an unordered list of key-value pairs, with unique keys. Keys must have the same data type and values must have the same data types. However, keys and values don't need to have the same data type.</p>
 </section>
 
 <section>
@@ -56,4 +56,7 @@ learnmonkey.github.io
     <p>To check if a map element exists, we type: </p>
     <code class="language-go">x, y := <i>map</i>[<i>key</i>]</code>
     <p>In the above code, <code>x</code> represents the value of the value of the corresponding key (which will be empty if that key doesn't exist in the map) and <code>y</code> is a boolean which is true if the key is in the map and is false if the key isn't in the map.</p>
+    <p>If we just want to check if a map element exists and not know the value, we can type: </p>
+    <code class="language-go">_, y := <i>map</i>[<i>key</i>]</code>
+    <p>That way, the value won't be assigned to any variable.</p>
 </section>
