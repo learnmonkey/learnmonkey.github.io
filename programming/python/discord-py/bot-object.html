@@ -38,6 +38,16 @@ async def hello(ctx):
 </section>
 
 <section>
+    <h2>Adding an Event</h2>
+    <p>Events use the <code>@bot.event()</code> decorator. For example, the following code prints out every message sent in the server: </p>
+    <pre><code class="language-python">
+@bot.event
+async def on_message(message):
+    print(message.content)
+    </code></pre>
+</section>
+
+<section>
     <h2>Command Arguments</h2>
     <p>Our bot commands can also have arguments other than the context. For example: </p>
     <pre><code class="language-python">
