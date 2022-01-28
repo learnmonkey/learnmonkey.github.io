@@ -12,13 +12,13 @@ layout: golang
 
 <section>
     <h2>Why use Functions?</h2>
-    <p>Let's say that you wanted to write some code to make buttons on a website an you have to write 5 lines of code to make each button. If you only needed to make 10 buttons. That would be 500 lines of code. Not too bad. But once you need more and more button, the number of lines of code keep growing and growing. If you want to edit all your buttons, you would now have to go through hundreds of lines of code. Instead of getting into this mess, you could make a function to make a button. Now, instead of writing 5 lines of code, you only need to write a single line of code. Plus, changing the button is as simple as changing the code inside the function.</p>
+    <p>Let's say that you wanted to write some code to make buttons on a website an you have to write 5 lines of code to make each button. If you only needed to make 10 buttons. That would be 500 lines of code. Not too bad. But once you need more and more buttons, the number of lines of code keep growing and growing. If you want to edit all your buttons, you would now have to go through hundreds of lines of code. Instead of getting into this mess, you could make a function to make a button. Now, instead of writing 5 lines of code, you only need to write a single line of code. Plus, changing the button is as simple as changing the code inside the function.</p>
 </section>
 
 <section>
     <h2>Making Functions in Go</h2>
-    <p>In Go, it's actually very easy to create functions. As a demo, type the following code into your <code>.go</code> file:</p>
-<pre><code class="language-go">
+    <p>Try running the following Go code:</p>
+    <pre><code class="language-go">
 package main
 
 import "fmt"
@@ -30,7 +30,8 @@ func hello(name string) {
 func main() {
     var name = "Coder Monkey"
     hello(name)
-}</code></pre>
+}
+    </code></pre>
 </section>
 
 <section>
@@ -41,9 +42,8 @@ func main() {
     fmt.Println("Hello " + name)
 }</code></pre>
     <p>On the first line, we have <pre><code>func hello(name string) {</code></pre> This is called <i>declaring</i> a function, much like a variable. We type <code>func</code> to tell Go that our code is a function and we name it <code>hello</code>. Then, we write <code>name string</code> in the brackets. Basically, this is an <i>argument</i>, also known as a <i>parameter</i>. This is used to pass information and variables to our function. We can even pass in other functions! Writing <code>string</code> means that the <code>name</code> argument <strong><u>MUST</u></strong> be a string Data Type. After, we write the curly bracket (<code>{</code>) to tell Go that the next lines of code, before the closing curly bracket (<code>}</code>), to be the code that runs when we call our <code>hello</code> function.</p>
-    <p>On the next line, we have <code>fmt.Println("Hello " + name)</code>. We already know that <code>fmt.Println</code> prints text, but what is the <code>+</code> doing between <code>"Hello "</code> and the variable <code>name</code>? Well, in programming, we call this <i>String Concatenation</i>, or simply just combinging two strings together. In this case, we put <code>"Hello "</code> before the variable <code>name</code> so the final result will be <code>Hello &#60;name&#62;</code>. Then, the function will print that out.</p>
+    <p>On the next line, we have <code>fmt.Println("Hello " + name)</code>. We already know that <code>fmt.Println</code> prints text, but what is the <code>+</code> doing between <code>"Hello "</code> and the variable <code>name</code>? Well, in programming, we call this <em>string concatenation</em>, or simply just combinging two strings together. In this case, we put <code>"Hello "</code> before the variable <code>name</code> so the final result will be <code>Hello <i>name</i></code>. Then, the function will print that out.</p>
     <p>Finally, we close of with the closing curly bracket (<code>}</code>) which tells Go to end our function.</p>
-
 </section>
 
 <section>
