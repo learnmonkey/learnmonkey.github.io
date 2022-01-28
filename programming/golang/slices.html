@@ -101,7 +101,7 @@ fmt.Println(cap(countries))
 8
 14
     </samp></pre>
-    <p>The reason this is happening is because <code>len</code> returns the number of elements in the slice, but <code>cap</code> returns the equivalent amount of memory the actual slice is using.</p>
+    <p>The reason this is happening is because <code>len</code> returns the number of elements in the slice, but <code>cap</code> returns the equivalent amount of memory the actual slice is using. Whenever we append an element to our slice, Go is making an array behind the scenes with twice the amount of memory as before.</p>
 </section>
 
 <section>
