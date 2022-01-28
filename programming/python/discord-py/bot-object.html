@@ -10,3 +10,19 @@ permalink: /programming/python/discord-py/bot-object/
     <h2>The Problem</h2>
     <p>If we wanted to make a real Discord bot with commands and a prefix, we could do lots and lots and lots of <code>elif</code> statements in the message listener, but that would be pretty inefficient and quite ugly. Instead, we could've used Discord.py's <code>Bot</code> object and set a prefix and make commands much more easily.</p>
 </section>
+
+<section>
+    <h2>Using the <code>Bot</code> object</h2>
+    <p>The <code>Bot</code> object is actually not in the main Discord.py package, but in a very useful extension subpackage called <code>commands</code> which we can import by doing: </p>
+    <pre><code class="language-python">
+from discord.ext import commands
+    </code></pre>
+    <p>To create a bot object we simply write: </p>
+    <pre><code class="language-python">
+bot = commands.Bot(command_prefix="$")
+    </code></pre>
+    <p>And to run the bot: </p>
+    <pre><code class="language-python">
+bot.run("token")
+    </code></pre>
+</section>
