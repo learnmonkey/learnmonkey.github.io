@@ -36,3 +36,14 @@ async def hello(ctx):
     await ctx.send("Hello!")
     </code></pre>
 </section>
+
+<section>
+    <h2>Command Arguments</h2>
+    <p>Our bot commands can also have arguments other than the context. For example: </p>
+    <pre><code class="language-python">
+@bot.command()
+async def echo(ctx, text):
+    await ctx.send(text)
+    </code></pre>
+    <p>Here, the bot simply echoes back whatever was sent into the echo command. So, if you send <code>$echo Hello!</code>, you the bot sends back <samp>Hello!</samp>.</p>
+</section>
