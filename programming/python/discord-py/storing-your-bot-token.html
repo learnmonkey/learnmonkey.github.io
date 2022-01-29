@@ -10,3 +10,9 @@ permalink: /programming/python/discord-py/storing-bot-token/
     <h2>The Importance of Storing your Bot Token</h2>
     <p>As already mentioned, bot tokens are the password to your bot. If someone has access to your bot token, they basically control the bot. So, we regenerate the token whenever we need to. However, it is still very important to store your bot token, because we might not know when our token is leaked. Right now, our token is stored directly in our code. However, this is bad because anyone who sees our code can control our bot.</p>
 </section>
+
+<section>
+    <h2>Using a .env file</h2>
+    <p>One option is to use a .env file. So, create a file in the same folder as your code files and type the following in it: </p>
+    <pre><code>TOKEN='your token here'</code></pre>
+</section>
