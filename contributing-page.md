@@ -10,7 +10,7 @@ If you want to add some content or fix something, fork this repository and make 
 
 If you want to make some suggestions, you can open an issue. For more information, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
 
-You can also view our [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the Wiki.
+You can also view the [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the Wiki.
 
 # Running Learnmonkey
 
