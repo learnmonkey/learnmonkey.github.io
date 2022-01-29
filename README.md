@@ -14,3 +14,15 @@ You can also view our [Todo List](https://github.com/learnmonkey/learnmonkey.git
 # Our Mission
 
 At Learnmonkey, we strive to provide high-quality educational content for free.
+
+# Running Learnmonkey
+
+In order to run an instance of Learnmonkey (looking to contribute? nice!), you need:
+- Ruby
+- RubyGems
+- Jekyll
+
+Server the site like a regular/normal Jekyll page!
+```batch
+jekyll serve
+```
