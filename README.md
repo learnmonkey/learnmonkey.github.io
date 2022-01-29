@@ -23,6 +23,6 @@ In order to run an instance of Learnmonkey (looking to contribute? nice!), you n
 - Jekyll
 
 Server the site like a regular/normal Jekyll page!
-```batch
+$ ```batch
 jekyll serve
 ```
