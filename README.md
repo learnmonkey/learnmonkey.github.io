@@ -7,7 +7,9 @@ Currently, we are focusing on making programming content. We would greatly appre
 
 If you want to add some content or fix something, fork this repository and make your edits. Then, you can create a pull request.
 
-If you want to make some suggestions, you can open an issue. For more information, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+If you want to make some suggestions, you can open an issue.
+
+For more information on contributing, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
 
 You can also view the [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the Wiki.
 
