@@ -15,4 +15,21 @@ permalink: /programming/python/discord-py/storing-bot-token/
     <h2>Using a .env file</h2>
     <p>One option is to use a .env file. So, create a file in the same folder as your code files and type the following in it: </p>
     <pre><code>TOKEN='your token here'</code></pre>
+    <p>Then, we need to install the <code>python-dotenv</code> module by running <code>pip install python-dotenv</code> in the command line. Then, in our Python file we can type: </p>
+    <pre><code class="language-python">
+from dotenv import load_dotenv
+
+load_dotenv()
+    </code></pre>
+    <p>Now, we need to actually get the token using the built-in <code>os</code> module: </p>
+    <pre><code class="language-python">
+from dotenv import load_dotenv
+from os import getenv
+
+load_dotenv()
+
+token = getenv("TOKEN")
+    </code></pre>
+    <p>That's it! Now you can run your bot: </p>
+    <pre><code class="language-python">bot.run(token)</code></pre>
 </section>
