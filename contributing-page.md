@@ -4,7 +4,7 @@ permalink: /contributing/
 layout: default
 ---
 
-# Contributing to Learnmonkey
+# Contributing
 
 If you want to add some content or fix something, fork this repository and make your edits. Then, you can create a pull request.
 
