@@ -1,0 +1,62 @@
+---
+layout: fastapi
+title: Your First FastAPI API
+permalink: /programming/python/fastapi/first-api/
+---
+
+<h1>Your First FastAPI API</h1>
+
+<section>
+    <h2>Writing the Code</h2>
+    <p>Below is what our code is going to look like:</p>
+    <pre><code class="language-python">
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def hello_world():
+    return {"message": "Hello FastAPI!"}
+    </code></pre>
+    <p>Then, save the above code in a file called <code>main.py</code>.</p>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>Actually, you cannot run the code as a normal Python file. Instead, you need to run: </p>
+    <pre><code class="language-bat">python -m uvicorn main:app --reload</code></pre>
+    <p>The <code>main</code> part of the command refers to the file we saved our code in, <code>main.py</code>.</p>
+    <p>The <code>app</code> part refers to the name of the <code>FastAPI()</code> object we created.</p>
+    <p>Finally, the <code>--reload</code> flag makes the server restart every time you change the code. This should only be used for development.</p>
+    <p>Once you run it, you should see something like: </p>
+    <pre><samp>
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28720]
+INFO:     Started server process [28722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.</samp></pre>
+    <p>You should now be able to go to <a href="http://127.0.0.1:8000">127.0.0.1:8000</a> and see: </p>
+    <pre><samp>{"message":"Hello FastAPI!"}</samp></pre>
+</section>
+
+<section>
+    <h2>Interactive API Docs</h2>
+    <p>One cool feature of FastAPI is that when you make your API, FastAPI automatically generates interactive API docs. You can find it by going to <a href="http://127.0.0.1:8000/docs">127.0.0.1:8000/docs</a>. If you don't like that, there is an alternative version which you can find by going to <a href="http://127.0.0.1:8000/redoc">127.0.0.1:8000/redoc</a>.</p>
+    <p>FastAPI generates these API docs by first generating a <em>schema</em> for your API. This schema is called OpenAPI. The two interactive API docs are powered by OpenAPI. OpenAPI can also be used to generate code that interact with your API. You can find the raw OpenAPI schema at <a href="http://127.0.0.1:8000/openapi.json">127.0.0.1:8000/openapi.json</a>.</p>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>Now, let's breakdown the code we've wrote.</p>
+    <p>First of all, we need to import the FastAPI stuff we need: </p>
+    <pre><code class="language-python">from fastapi import FastAPI</code></pre>
+    <p>Then, we create an instance of the <code>FastAPI</code> class, which provides all the functionality of our API: </p>
+    <pre><code class="language-python">app = FastAPI()</code></pre>
+    <p>Then, we use a <em>decorator</em> (something that modifies the next function) on top of our function that returns our response. The decorator tells FastAPI to return whatever the next function returns and return that to the user when they go to the root of our API (a <code>GET</code> request): </p>
+    <pre><code class="language-python">@app.get("/")</code></pre>
+    <p>Then, we actually write the function. In this case it is <code>async</code>, but you could've just as easily used a normal function: </p>
+    <pre><code class="language-python">async def hello_world():</code></pre>
+    <p>Then, we return a dictionary which represents our JSON response: </p>
+    <pre><code class="language-python">return {"message":"Hello FastAPI!"}</code></pre>
+    <p>And that's it!</p>
+</section>

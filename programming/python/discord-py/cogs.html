@@ -10,3 +10,29 @@ permalink: /programming/python/discord-py/cogs/
     <h2>What are Cogs?</h2>
     <p>Cogs are a way to organize your bot's commands into different sections, so to speak. Cogs are classes and then we can individually add them to our bot object.</p>
 </section>
+
+<section>
+    <h2>Making a Cog</h2>
+    <p>Below is an example of a cog: </p>
+    <pre><code class="language-python">
+from discord.ext import commands
+
+class SomeCommands(commands.Cog):
+    """Some useful commands"""
+    
+    @commands.command()
+    async def hello(self, ctx):
+        await ctx.send("Hello!")
+    </code></pre>
+    <p>Let's break down the code step-by-step. First of all, notice that we have a class that inherits off of the <code>commands.Cog</code> base class, which includes all of the behind-the-scenes stuff for cogs.</p>
+    <p>Then, inside of the class, we have a multiline comment called a <em>docstring</em>. Docstrings are what Discord.py uses for the built-in help command.</p>
+    <p>Then, we have the commands inside of the cog. Notice that the function has <code>self</code> as the first argument instead of <code>ctx</code>. This is because we are inside a class and functions inside classes always have <code>self</code> as their first arguments. Also notice that instead of using the <code>@bot.command()</code> decorator, we now use <code>@commands.command()</code>. This is because we don't have access to the bot object inside of the cog class.</p>
+</section>
+
+<section>
+    <h2>Adding the Cog to the Bot</h2>
+    <p>Finally, we need to add the cog to our bot object. This can be simply achieved by putting the following line of code into our Python code: </p>
+    <pre><code class="language-python">
+bot.add_cog(SomeCommands)
+    </code></pre>
+</section>
