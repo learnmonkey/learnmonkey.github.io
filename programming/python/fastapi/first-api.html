@@ -5,3 +5,17 @@ permalink: /programming/python/fastapi/first-api/
 ---
 
 <h1>Your First FastAPI API</h1>
+
+<section>
+    <h2>Writing the Code</h2>
+    <p>Below is what our code is going to look like:</p>
+    <pre><code class="language-python">
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def hello_world():
+    return {"message": "Hello FastAPI!"}
+    </code></pre>
+</section>
