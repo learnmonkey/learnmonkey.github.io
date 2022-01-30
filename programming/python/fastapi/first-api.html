@@ -18,4 +18,26 @@ app = FastAPI()
 async def hello_world():
     return {"message": "Hello FastAPI!"}
     </code></pre>
+    <p>Then, save the above code in a file called <code>main.py</code>.</p>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>Actually, you cannot run the code as a normal Python file. Instead, you need to run: </p>
+    <pre><code class="language-bat">python -m uvicorn main:app --reload</code></pre>
+    <p>The <code>main</code> part of the command refers to the file we saved our code in, <code>main.py</code>.</p>
+    <p>The <code>app</code> part refers to the name of the <code>FastAPI()</code> object we created.</p>
+    <p>Finally, the <code>--reload</code> flag makes the server restart every time you change the code. This should only be used for development.</p>
+    <p>Once you run it, you should see something like: </p>
+    <pre><samp>
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28720]
+INFO:     Started server process [28722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+    </samp></pre>
+    <p>You should now be able to go to <a href="http://127.0.0.1:8000">127.0.0.1:8000</a> and see: </p>
+    <pre><samp>
+{"message":"Hello FastAPI!"}
+    </samp></pre>
 </section>
