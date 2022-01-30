@@ -7,9 +7,11 @@ Currently, we are focusing on making programming content. We would greatly appre
 
 If you want to add some content or fix something, fork this repository and make your edits. Then, you can create a pull request.
 
-If you want to make some suggestions, you can open an issue. For more information, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+If you want to make some suggestions, you can open an issue.
 
-You can also view our [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the Wiki.
+For more information on contributing, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+
+You can also view the [Todo List](https://github.com/learnmonkey/learnmonkey.github.io/wiki/Todo-List) in the Wiki.
 
 # Our Mission
 
@@ -17,12 +19,12 @@ At Learnmonkey, we strive to provide high-quality educational content for free.
 
 # Running Learnmonkey
 
-In order to run an instance of Learnmonkey (looking to contribute? nice!), you need:
+In order to run an instance of Learnmonkey, you need:
 - Ruby
 - RubyGems
 - Jekyll
 
-Server the site like a regular/normal Jekyll page!
+Now, you can run Learnmonkey: 
 ```batch
-jekyll serve
+bundle exec jekyll serve
 ```
