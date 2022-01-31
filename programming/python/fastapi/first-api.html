@@ -56,6 +56,7 @@ INFO:     Application startup complete.</samp></pre>
     <pre><code class="language-python">@app.get("/")</code></pre>
     <p>Then, we actually write the function. In this case it is <code>async</code>, but you could've just as easily used a normal function: </p>
     <pre><code class="language-python">async def hello_world():</code></pre>
+    <p>For more information on whether to use an asynchrnous function or a normal function, click <a href="https://fastapi.tiangolo.com/async/#in-a-hurry">here</a>.</p>
     <p>Then, we return a dictionary which represents our JSON response: </p>
     <pre><code class="language-python">return {"message":"Hello FastAPI!"}</code></pre>
     <p>And that's it!</p>
