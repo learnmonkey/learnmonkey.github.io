@@ -42,9 +42,7 @@ var slice1 = arr1[1:4]
 fmt.Println(slice1)
     </code></pre>
     <p>The above code returns: </p>
-    <pre><samp>
-[Capuchin Gorilla Macaque Orangutan]
-    </samp></pre>
+    <samp>[Capuchin Gorilla Macaque Orangutan]</samp>
 </section>
 
 <section>
@@ -79,17 +77,13 @@ countries := []string{"France", "Germany", "Italy", "United States", "Canada", "
 fmt.Println(len(countries))
     </code></pre>
     <p>The above code returns: </p>
-    <pre><samp>
-7
-    </samp></pre>
+    <samp>7</samp>
     <p>However, see what happens if we use the <code>cap</code> function: </p>
     <pre><code class="language-go">
 fmt.Println(cap(countries))
     </code></pre>
     <p>The code returns: </p>
-    <pre><samp>
-7
-    </samp></pre>
+    <samp>7</samp>
     <p>Hmm. Same thing. But see what happens when we append an element: </p>
     <pre><code class="language-go">
 countries = append(countries, "Brazil")
@@ -99,8 +93,7 @@ fmt.Println(cap(countries))
     <p>Now, we get: </p>
     <pre><samp>
 8
-14
-    </samp></pre>
+14</samp></pre>
     <p>The reason this is happening is because <code>len</code> returns the number of elements in the slice, but <code>cap</code> returns the equivalent amount of memory the actual slice is using. Whenever we append an element to our slice, Go is making an array behind the scenes with twice the amount of memory as before.</p>
 </section>
 
