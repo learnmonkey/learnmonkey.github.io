@@ -35,3 +35,15 @@ Learnmonkey
 True
 314.41</samp></pre>
 </section>
+
+<section>
+    <h2>Immutability</h2>
+    <p>As said earlier, tuples are immutable (i.e. you can't change them once you make them). As an example, if we try and do something like: </p>
+    <pre><code class="language-python">
+my_tuple = ("Learnmonkey", 43, True, 314.41)
+my_tuple[0] = "Stack Overflow"
+    </code></pre>
+    <p>We get an error: </p>
+    <samp style="color: red">TypeError: 'tuple' object does not support item assignment</samp>
+    <p>However, this does not mean that we can't change the tuple attached to the tuple variable itself; variables can be changed to whatever we want. The only thing you can't do is to modify the current tuple stored in the variable, like changing the elements or adding and removing elements.</p>
+</section>
