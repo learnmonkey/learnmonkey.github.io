@@ -36,6 +36,13 @@ response = requests.get("https://learnmonkey.github.io")
     <p>Output:</p>
     <samp>200</samp>
     <small>Note: A 200 status code means OK, so everything went smoothly.</small>
+    <p>If we tried requesting a page that doesn't exist, we get a 404 status code: </p>
+    <pre><code class="language-python">
+page_that_does_not_exist = requests.get("https://learnmonkey.github.io/page/that/does/not/exist")
+print(page_that_does_not_exist.status_code)
+    </code></pre>
+    <p>The code returns: </p>
+    <samp>404</samp>
     <p>We can also get the HTML (or whatever data) that was returned: </p>
     <code class="language-python">print(requests.text)</code>
     <p>The code returns all of the HTML of the page: </p>
