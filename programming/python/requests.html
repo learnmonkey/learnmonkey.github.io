@@ -24,7 +24,7 @@ permalink: /programming/python/requests/
 <section>
     <h2>Making GET Requests</h2>
     <p>GET requests simply request data from a server. The data could be HTML (for websites), JSON (APIs), or even XML. In fact, your browser sends a GET request every time you visit a website. To send a GET request, we type the following: </p>
-    <code class="language-python">requests.get("<i>URL</i>")</code>
+    <pre><code class="language-python">requests.get("<i>URL</i>")</code></pre>
     <p>The function returns a response object.</p>
     <p>For example: </p>
     <pre><code class="language-python">
@@ -32,7 +32,7 @@ import requests
 response = requests.get("https://learnmonkey.github.io")
     </code></pre>
     <p>Once we have our response object, we can get the status code: </p>
-    <code class="language-python">print(requests.status_code)</code>
+    <pre><code class="language-python">print(requests.status_code)</code></pre>
     <p>Output:</p>
     <samp>200</samp>
     <small>Note: A 200 status code means OK, so everything went smoothly.</small>
@@ -44,7 +44,7 @@ print(page_that_does_not_exist.status_code)
     <p>The code returns: </p>
     <samp>404</samp>
     <p>We can also get the HTML (or whatever data) that was returned: </p>
-    <code class="language-python">print(requests.text)</code>
+    <pre><code class="language-python">print(requests.text)</code></pre>
     <p>The code returns all of the HTML of the page: </p>
     <pre><samp>
 &lt;!doctype html>
