@@ -10,3 +10,13 @@ permalink: /programming/python/requests/
     <h2>What are Requests?</h2>
     <p>In this case, requests refers to HTTP requests. This means requesting stuff from a server over the internet. There are many different types of requests. <code>GET</code> means getting something from the server. You do this whenever you are visiting a website. Then, there's <code>POST</code>, which is for updating something on the server. <code>PUT</code>, <code>DELETE</code>, and <code>PATCH</code> are other HTTP request types. However, <code>GET</code> and <code>POST</code> are the two most common ones.</p>
 </section>
+
+<section>
+    <h2>The <code>requests</code> Module</h2>
+    <p>Python has built-in modules for doing HTTP requests, but the <code>requests</code> module makes it much simpler. Because <code>requests</code> is not in the Python standard library, we need to install it using PIP: </p>
+    <code class="language-bat">pip install requests</code>
+    <small>If PIP doesn't work, read our <a href="/programming/python/articles/troubleshooting-pip/">Troubleshooting PIP</a> article.</small>
+    <p>To test if you installed <code>requests</code> correctly, try running the following Python script: </p>
+    <code class="language-python">import requests</code>
+    <p>If it works, you can now start using the <code>requests</code> module!</p>
+</section>
