@@ -16,7 +16,12 @@ permalink: /programming/python/data-structures-and-algorithms/linear-search/
     <h2>Linear Search Implementation</h2>
     <p>Due to its simplicity, a Linear Search is very easy to implement. We only need to <i>iterate</i>, or loop, over a list of elements and check if any of them are the same as the element we are looking for. Below is the implementation of a Linear Search:</p>
     <pre><code class="language-python">
-
+def linear_search(arr, x):
+    """Finds the index of x in arr using a Linear Search Algorithm"""
+    for index in range(len(arr)):
+        if arr[index] == x:
+            return index
+    return -1
     </code></pre>
 </section>
 
