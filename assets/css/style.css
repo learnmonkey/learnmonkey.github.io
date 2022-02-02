@@ -47,7 +47,7 @@ pre {
 }
 
 .dropdown .dropbtn {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
   border: none;
   outline: none;
@@ -111,7 +111,7 @@ pre {
 }
 
 .topnav a.brand-title {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .small-nav-open {
