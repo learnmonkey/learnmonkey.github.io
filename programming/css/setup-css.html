@@ -8,22 +8,22 @@ layout: css
 
 <section>
     <h2>How do I setup CSS?</h2>
-    <p>It is actually very easy to get CSS setup. To do that, first, make a file in the same directory as your <code>index.html</code> file called <code>style.css</code>. This is where all of our CSS will go. Then, in your index.html file, add the following code into your <code style='color:#000000;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>head</span><span style='color:#a65700; '>></span></code>:</p>
-    <code style='color:#000000;'><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>link</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"style.css"</span><span style='color:#274796; '> </span><span style='color:#074726; '>rel</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"stylesheet"</span><span style='color:#274796; '> </span><span style='color:#074726; '>type</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"text/css"</span><span style='color:#274796; '> </span><span style='color:#a65700; '>/></span></code>
+    <p>It is actually very easy to get CSS setup. To do that, first, make a file in the same directory as your <code>index.html</code> file called <code>style.css</code>. This is where all of our CSS will go. Then, in your index.html file, add the following code into your HTML file's <code>&lt;head></code> tag: </p>
+    <pre><code class="language-css">&lt;link href="style.css" rel="stylesheet" type="text/css" /></code></pre>
     <p>We will discuss what this code means later.</p>
 </section>
 
 <section>
     <h2>Checking If It Works</h2>
-    <p>Once you have CSS added into your HTML, add the following code into the CSS file:</p>
-    <code style='color:#000000;'><span style='color:#800000; font-weight:bold; '>body</span> <span style='color:#800080; '>{</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#bb7977; font-weight:bold; '>font-family</span><span style='color:#808030; '>:</span> <span style='color:#074726; '>sans-serif</span><span style='color:#800080; '>;</span><br>
-      <span style='color:#800080; '>}</span></code>
-      <p>Now, instead of your page looking like this: </p>
-      <!--<img src="/images/programming/css/serif-website.png" alt="Serif Website">-->
-      <h1 style="font-family: serif">Welcome to My Website!</h1><br>
-      <p>It should look like this: </p>
-      <!--<img src="/images/programming/css/sans-serif-website.png" style="height: 40%;width:40%;" alt="Sans-Serif Website">-->
-      <h1 style="font-family: sans-serif">Welcome to My Website!</h1><br>
+    <p>Once you have CSS added into your HTML, add the following code into the a file called <code>style.css</code>: </p>
+    <pre><code class="language-css">
+body {
+    font-family: sans-serif;
+}
+    </code></pre>
+    <p>Now, instead of your page looking like this: </p>
+    <h1 style="font-family: serif">Welcome to My Website!</h1><br>
+    <p>It should look like this: </p>
+    <h1 style="font-family: sans-serif">Welcome to My Website!</h1><br>
     <p>We will discuss how this works in the next lesson.</p>
 </section>
