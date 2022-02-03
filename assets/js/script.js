@@ -19,7 +19,8 @@ function switchDark() {
 	samp {color: #3D3D3D;}
 	ul#tutorials-list a {color: blue;}
 	ul#tutorials-list a:hover {color: darkblue;}
-	code {color: #3d3d3d; font: #3d3d3d;}`
+	code {color: #3d3d3d; font: #3d3d3d;}
+	#toggledarklight {color: white;}`
 		try {
 			style.innerHTML = css;
 		}
