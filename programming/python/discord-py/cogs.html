@@ -23,6 +23,10 @@ class SomeCommands(commands.Cog):
     @commands.command()
     async def hello(self, ctx):
         await ctx.send("Hello!")
+    
+    @commands.command()
+    async def greet(self, ctx, name):
+        await ctx.send("Hello " + name + "!")
     </code></pre>
     <p>Let's break down the code step-by-step. First of all, notice that we have a class that inherits off of the <code>commands.Cog</code> base class, which includes all of the behind-the-scenes stuff for cogs.</p>
     <p>Then, inside of the class, we have a multiline comment called a <em>docstring</em>. Docstrings are what Discord.py uses for the built-in help command.</p>
@@ -35,4 +39,5 @@ class SomeCommands(commands.Cog):
     <pre><code class="language-python">
 bot.add_cog(SomeCommands)
     </code></pre>
+    <p>Now, when you use your bot, you should be able to use the <code>hello</code> and <code>name</code> commands.</p>
 </section>
