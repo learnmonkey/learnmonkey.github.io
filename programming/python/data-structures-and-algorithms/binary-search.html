@@ -9,12 +9,12 @@ permalink: /programming/python/data-structures-and-algorithms/binary-search/
 
 <section>
     <h2>What is a Binary Search?</h2>
-    <p>A Binary Search is a simple and quick Search Algorithm. It searches for elements within an <i>array</i>, also known as a <i>list</i>, by cutting the list in half and searching half of a list for the element, and then cutting the list into quarters. Don't worry if you don't understand the concept yet.</p>
+    <p>A Binary Search is a simple and quick Search Algorithm. It searches for elements within an <i>array</i>, also known as a <i>list</i>, by cutting the list in half and checking if the last element of the half-list is greater than the target element/number. If it is, then we shrink the possible range of the element to that half of the list, and repeat the process until we find the element. Don't worry if you don't understand the concept yet.</p>
 </section>
 
 <section>
     <h2>Binary Search Implementation</h2>
-    <p>Due to its simplicity, a Binary Search is very easy to implement. We only need to <i>iterate</i>, or loop, over a list of elements and check if any of them are the same as the element we are looking for. Below is the implementation of a Binary Search:</p>
+    <p>A Binary Search is actually very easy to implement. We only need to <i>iterate</i>, or loop, over a list of elements and check if any of them are the same as the element we are looking for. Below is the implementation of a Binary Search:</p>
     <pre><code class="language-python">
 def Binary_search(arr, x):
     """Finds the index of x in arr using a Binary Search Algorithm"""
