@@ -16,11 +16,17 @@ permalink: /programming/python/data-structures-and-algorithms/binary-search/
     <h2>Binary Search Implementation</h2>
     <p>A Binary Search is actually very easy to implement. Below is the implementation of a Binary Search:</p>
     <pre><code class="language-python">
-def binary_search(arr, x):
-    """Finds the index of x in arr using a Binary Search Algorithm"""
-    for index in range(len(arr)):
-        if arr[index] == x:
-            return index
+def search(arr, target):
+    left = 0
+    right = len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2 # make sure to round it down
+        if arr[mid] == target:
+            return mid
+        elif target < arr[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
     return -1
     </code></pre>
 </section>
