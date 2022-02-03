@@ -5,3 +5,39 @@ permalink: /programming/python/data-structures-and-algorithms/binary-search/
 ---
 
 <h1>Binary Search</h1>
+<p>In this tutorial, we'll learn about Binary Search, the simplest Search Algorithm there is out there.</p>
+
+<section>
+    <h2>What is a Binary Search?</h2>
+    <p>A Binary Search is the simplest and easiest Search Algorithm out there. It loops over an <i>array</i> (a <i>list</i>), and checks every item for the target element. Of course, it isn't very efficient if your element is at the end of the list and you have a lot of elements in your list. So, a Binary Search isn't often used in programming, but it is a fundamental idea.</p>
+</section>
+
+<section>
+    <h2>Binary Search Implementation</h2>
+    <p>Due to its simplicity, a Binary Search is very easy to implement. We only need to <i>iterate</i>, or loop, over a list of elements and check if any of them are the same as the element we are looking for. Below is the implementation of a Binary Search:</p>
+    <pre><code class="language-python">
+def Binary_search(arr, x):
+    """Finds the index of x in arr using a Binary Search Algorithm"""
+    for index in range(len(arr)):
+        if arr[index] == x:
+            return index
+    return -1
+    </code></pre>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>The code is written in a simple function. It performs a Binary Search on the array, <var>arr</var>, and finds the first occurence of the value of <var>x</var>. If the element is not found, the program returns <code>-1</code>. Otherwise, it returns the index where <var>x</var> is found.</p>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>The code for a Binary Search is very simple. On the first line, we define a function with <pre><code class="language-python">def Binary_search(arr, x):</code></pre> On the next line, we have a multi-line string. When you put a multi-line string on the line right after declaring a function, we call it a <i>doc-string</i>, which tells the developer a little bit about the function. Then, we have our main code:</p>
+    <pre><code class="language-python">
+for index in range(len(arr)):
+    if arr[index] == x:
+        return index
+    </code></pre>
+    <p>In the code, we <i>loop</i> (or <i>iterate</i>) over the arry/list. For each item, we check if the element is equal to our target. If it is, then we'll return the index where we find it. WHen we return something in Python, we automatically break out of the function, so our function will return the first occurence of the target, if it finds it.</p>
+    <p>Finally, on the last line, we have <code>return -1</code>. This will just return <i><code>-1</code> if the target is not found.</i></p>
+</section>
