@@ -4,4 +4,57 @@ title: Jump Search
 permalink: /programming/python/data-structures-and-algorithms/jump-search/
 ---
 
-<h1>Jump Search</h1>
+<h1>Binary Search</h1>
+<p>In this tutorial, we'll learn about Binary Search, a simple and speedy Search Algorithm.</p>
+
+<section>
+    <h2>What is a Binary Search?</h2>
+    <p>A Binary Search is a simple and quick Search Algorithm. It searches for elements within an <i>array</i>, also known as a <i>list</i>, by cutting the list in half and checking if the last element of the half-list is greater than the target element/number. If it is, then we shrink the possible range of the element to that half of the list, and repeat the process until we find the element. Don't worry if you don't understand the concept yet.</p>
+</section>
+
+<section>
+    <h2>Binary Search Implementation</h2>
+    <p>A Binary Search is actually very easy to implement. Below is the implementation of a Binary Search:</p>
+    <pre><code class="language-python">
+def binary_search(arr, target):
+    """This function performs a simple Binary Search on arr and searches for target."""
+    left = 0
+    right = len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif target < arr[mid]:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
+    </code></pre>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>The code is written in a simple function. It performs a Binary Search on the array, <var>arr</var>, and finds the first occurence of the value of <var>x</var>. If the element is not found, the program returns <code>-1</code>. Otherwise, it returns the index where <var>x</var> is found.</p>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>The code for a Binary Search is very simple. On the first line, we define a function with <pre><code class="language-python">def binary_search(arr, target):</code></pre> On the next line, we have a multi-line string. When you put a multi-line string on the line right after declaring a function, we call it a <i>doc-string</i>, which tells the developer a little bit about the function. Then, we declare some <i>pointers</i>:</p>
+    <pre><code class="language-python">
+left = 0
+right = len(arr) - 1
+    </code></pre>
+    <p>In our code, we use the pointers to keep track of the range in the list where the target element could be. The whole idea of using Binary Searches is using pointers and then keeping track of the range where our target could be. When the left pointer is greater than the right pointer, it means that the element is not in the list, so our program will return <code>-1</code>.</p>
+    <p>By using pointers, we are able to determine which range our element is in. Then, we change our pointers according to the <code>if-elif-else</code> statements, so we can shorten our range until we find our target.</p>
+    <pre><code class="language-python">
+mid = (left + right) // 2
+if arr[mid] == target:
+    return mid
+elif target < arr[mid]:
+    right = mid - 1
+else:
+    left = mid + 1
+    </code></pre>
+    <p>If we do find the target, we'll return the index where we find it. In Python, when we return in a function, the code will automatically break out of the function.</p>
+    <p>Finally, on the last line, we have <code>return -1</code>. This will just return <i><code>-1</code></i> if the target is not found.</i></p>
+</section>
