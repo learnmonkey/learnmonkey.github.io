@@ -4,3 +4,22 @@ permalink: /programming/jekyll/first-website/
 layout: jekyll
 ---
 <h1>Your First Jekyll Website</h1>
+
+<section>
+    <h2>Creating a Jekyll Website</h2>
+    <p>To generate all of the Jekyll boilerplate stuff, we can use some command line commands.</p>
+    <ol>
+        <li>Install all prerequisites.</li>
+        <li>Install the Jekyll and bundler gems: </li>
+        <pre><code class="language-batch">gem install jekyll bundler</code></pre>
+        <li>Create a Jekyll website with all the boilerplate (will be created in <code>./mysite</code>): </li>
+        <pre><code class="language-batch">jekyll new mysite</code></pre>
+        <li>Go into the <code>mysite</code> directory: </li>
+        <pre><code class="language-batch">cd mysite</code></pre>
+        <li>Add <code>webrick</code> to the bundle: </li>
+        <pre><code class="language-batch">bundle add webrick</code></pre>
+        <li>Build the site and run it on <code>localhost</code>: </li>
+        <pre><code class="language-batch">bundle exec jekyll serve</code></pre>
+        <li>Go to <a href="https://localhost:4000">https://localhost:4000</a> in your web browser.</li>
+    </ol>
+</section>
