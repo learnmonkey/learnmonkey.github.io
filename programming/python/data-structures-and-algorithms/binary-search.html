@@ -44,6 +44,7 @@ def binary_search(arr, target):
 left = 0
 right = len(arr) - 1
     </code></pre>
+    <p>In our code, we use the pointers to keep track of the range in the list where the target element could be. The whole idea of using Binary Searches is using pointers and then keeping track of the range where our target could be. When the left pointer is greater than the right pointer, it means that the element is not in the list, so our program will return <code>-1</code>.</p>
     <p>In the code, we <i>loop</i> (or <i>iterate</i>) over the arry/list. For each item, we check if the element is equal to our target. If it is, then we'll return the index where we find it. WHen we return something in Python, we automatically break out of the function, so our function will return the first occurence of the target, if it finds it.</p>
     <p>Finally, on the last line, we have <code>return -1</code>. This will just return <i><code>-1</code> if the target is not found.</i></p>
 </section>
