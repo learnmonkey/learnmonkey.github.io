@@ -45,7 +45,7 @@ left = 0
 right = len(arr) - 1
     </code></pre>
     <p>In our code, we use the pointers to keep track of the range in the list where the target element could be. The whole idea of using Binary Searches is using pointers and then keeping track of the range where our target could be. When the left pointer is greater than the right pointer, it means that the element is not in the list, so our program will return <code>-1</code>.</p>
-    <p>By using pointers, we are able to determine which range our element is in. Then, we change our pointers according to the <code>if-elif-else</code> statements, so we will shorten our range until we find our target.</p>
+    <p>By using pointers, we are able to determine which range our element is in. Then, we change our pointers according to the <code>if-elif-else</code> statements, so we can shorten our range until we find our target.</p>
     <pre><code class="language-python">
 mid = (left + right) // 2
 if arr[mid] == target:
