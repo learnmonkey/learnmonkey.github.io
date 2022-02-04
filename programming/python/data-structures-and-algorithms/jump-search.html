@@ -16,18 +16,24 @@ permalink: /programming/python/data-structures-and-algorithms/jump-search/
     <h2>Jump Search Implementation</h2>
     <p>A Jump Search is actually very easy to implement. Below is the implementation of a Jump Search:</p>
     <pre><code class="language-python">
-def binary_search(arr, target):
-    """This function performs a simple Jump Search on arr and searches for target."""
-    left = 0
-    right = len(arr) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if arr[mid] == target:
-            return mid
-        elif target < arr[mid]:
-            right = mid - 1
-        else:
-            left = mid + 1
+import math
+def jump_search(arr, x):
+    """This function performs a simple Jump Search on arr and searches for x withen the array.."""
+    n = len(arr)
+    step = math.sqrt(n)
+    prev = 0
+    while arr[int(min(step, n)-1)] < x:
+        prev = step
+        step += math.sqrt(n)
+        if prev >= n:
+            return -1
+    while arr[int(prev)] < x:
+        prev += 1
+        if prev == min(step, n):
+            return -1
+    if arr[int(prev)] == x:
+        return prev
+         
     return -1
     </code></pre>
 </section>
