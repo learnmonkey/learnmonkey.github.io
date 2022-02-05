@@ -1,4 +1,5 @@
 # Updates the backup branch
+# python update_backup.py
 
 import os
 os.system("git pull")
