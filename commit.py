@@ -1,3 +1,5 @@
+# python commit.py my commit message
+
 import os
 import sys
 del sys.argv[0]
