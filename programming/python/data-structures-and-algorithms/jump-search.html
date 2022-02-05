@@ -53,15 +53,13 @@ step = math.sqrt(n)
 prev = 0
     </code></pre>
     <p><var>n</var> is the length of the array that we are going to search, and we use it for checking if we have jumped through the entire list but didn't find it. If that happens, then we will break the function and return <code>-1</code>.</p>
-    <p></p>
+    <p>Then, we have the code that runs the Jumps:</p>
     <pre><code class="language-python">
-mid = (left + right) // 2
-if arr[mid] == target:
-    return mid
-elif target < arr[mid]:
-    right = mid - 1
-else:
-    left = mid + 1
+while arr[int(min(step, n)-1)] < x:
+    prev = step
+    step += math.floor(math.sqrt(n))
+    if prev >= n:
+        return -1
     </code></pre>
     <p>If we do find the target, we'll return the index where we find it. In Python, when we return in a function, the code will automatically break out of the function.</p>
     <p>Finally, on the last line, we have <code>return -1</code>. This will just return <i><code>-1</code></i> if the target is not found.</i></p>
