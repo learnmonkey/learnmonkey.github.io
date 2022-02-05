@@ -61,6 +61,6 @@ while arr[int(min(step, n)-1)] < x:
     if prev >= n:
         return -1
     </code></pre>
-    <p>If we do find the target, we'll return the index where we find it. In Python, when we return in a function, the code will automatically break out of the function.</p>
+    <p>We run this code while the element we are at is less than the target element. Once it is greater than the target element, we break out of the loop. If we ever jump to a position greater than the length of the list, we will break out of the function and return <code>-1</code>./p>
     <p>Finally, on the last line, we have <code>return -1</code>. This will just return <i><code>-1</code></i> if the target is not found.</i></p>
 </section>
