@@ -1,6 +1,7 @@
 # You can use this file to more easily commit to Learnmonkey if you are using the command line.
 # It will commit your changes and update the backup branch.
 # Use: python commit.py [your commit message here]
+# We'll make it into a CLI soon...
 
 import os
 import sys
