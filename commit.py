@@ -1,6 +1,6 @@
 # You can use this file to more easily commit to Learnmonkey if you are using the command line.
 # Use: python commit.py [your commit message here]
-# We'll make it a bit complex soon...
+# We'll make it into a CLI later...
 
 import os
 import sys
