@@ -1,4 +1,5 @@
-# python commit.py my commit message
+# You can use this file to more easily commit to Learnmonkey if you are using the command line.
+# Use: python commit.py [your commit message here]
 
 import os
 import sys
