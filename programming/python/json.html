@@ -26,5 +26,14 @@ x = json.loads("[json string here]")
 
 <section>
     <h2>Converting Python to JSON</h2>
-    <p></p>
+    <p>To convert JSON text into a Python object, we use the <code>dumps()</code> function in the <code>json</code> module: </p>
+    <pre><code class="language-python">
+import json
+x = {
+    "name": "Learnmonkey",
+    "year_created": 2022
+}
+y = json.dumps(x)
+print(y)
+    </code></pre>
 </section>
