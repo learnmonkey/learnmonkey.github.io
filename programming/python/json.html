@@ -20,8 +20,17 @@ permalink: /programming/python/json/
     <p>To convert JSON text to a Python dictionary, we can use the <code>loads()</code> function in the <code>json</code> module: </p>
     <pre><code class="language-python">
 import json
-x = json.loads("[json string here]")
+x = """
+{
+    "name": "Learnmonkey",
+    "year_created": 2022
+}
+"""
+y = json.loads(x)
+print(y)
     </code></pre>
+    <p>The code returns: </p>
+    <samp>{'name': 'Learnmonkey', 'year_created': 2022}</samp>
 </section>
 
 <section>
@@ -36,4 +45,6 @@ x = {
 y = json.dumps(x)
 print(y)
     </code></pre>
+    <p>The code returns: </p>
+    <samp>{"name": "Learnmonkey", "year_created": 2022}</samp>
 </section>
