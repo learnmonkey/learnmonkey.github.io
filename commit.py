@@ -12,7 +12,7 @@ usage:
 
 commit options:
     default:   commit local changes and update the backup branch
-    `-b`:      update the backup branch only
+    `-b`:      update the backup branch only and commit already set commits into the backup branch
     `-n`:      commit local changes don't update the backup branch
 """)
 else:
