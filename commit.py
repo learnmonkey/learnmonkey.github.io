@@ -6,7 +6,7 @@
 import os
 import sys
 del sys.argv[0] # the text "commit.py" is part of argv
-if sys.argv == "-n":
+if sys.argv[0] == "-n":
 	del sys.argv[0]
 	os.system("git pull") # update local clone
 	os.system("git add -A") # add changes
