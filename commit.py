@@ -14,6 +14,8 @@ commit options:
     default:   commit local changes and update the backup branch too
     `-b`:      update the backup branch only and commit local commits and changes
     `-n`:      commit local changes but don't update the backup branch
+
+always update the backup branch with your commits UNLESS your commiting something risky/dangerous to main our modifying the main branch (i.e. remove commits)
 """)
 else:
 	del sys.argv[0] # the text "commit.py" is part of argv
