@@ -11,9 +11,9 @@ usage:
     python commit.py [options] commit message
 
 commit options:
-    default:   commit local changes and update the backup branch
+    default:   commit local changes and update the backup branch too
     `-b`:      update the backup branch only and commit local commits and changes
-    `-n`:      commit local changes don't update the backup branch
+    `-n`:      commit local changes but don't update the backup branch
 """)
 else:
 	del sys.argv[0] # the text "commit.py" is part of argv
