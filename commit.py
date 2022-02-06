@@ -5,7 +5,7 @@
 
 import os
 import sys
-if len(sys.argv) == 1:
+if len(sys.argv) == 1 or sys.argv[1] == "-h":
 	print("""
 usage:
     python commit.py [options] commit message
