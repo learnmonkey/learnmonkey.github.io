@@ -1,3 +1,0 @@
-rem add custom commit message later...
-
-python commit.py commit code
