@@ -28,3 +28,5 @@ Now, you can run Learnmonkey:
 ```batch
 bundle exec jekyll serve
 ```
+
+# Comitting Tool
