@@ -29,4 +29,14 @@ Now, you can run Learnmonkey:
 bundle exec jekyll serve
 ```
 
-# Comitting Tool
+# Committing Tool
+
+We've developed a simple tool for committing through Learnmonkey.
+This file is `commit.py`, and to use it, you need Python installed.
+
+Usage:
+```batch
+python commit.py
+```
+
+Just calling the file gives you a help command.
