@@ -5,26 +5,37 @@
 
 import os
 import sys
-del sys.argv[0] # the text "commit.py" is part of argv
-if sys.argv[0] == "-n":
-	del sys.argv[0]
-	os.system("git pull") # update local clone
-	os.system("git add -A") # add changes
-	os.system(f"""git commit -m "{' '.join(sys.argv)}" -- .""") # commit code
-	os.system("git push") # push local commits
-elif sys.argv[0] == "-b":
-	del sys.argv[0]
-	os.system("git pull") # update local clone
-	os.system("git checkout backup") # switch to backup branch
-	os.system("git merge main")# update backup with main
-	os.system("git push")# push new backup branch with changes
-	os.system("git checkout main") # switch back to main branch
+if len(sys.argv) == 1:
+	print("""
+usage:
+    python commit.py [options] commit message
+
+commit options:
+    default:   commit local changes and update the backup branch
+    `-b`:      update the backup branch only
+    `-n`:      commit local changes don't update the backup branch
+""")
 else:
-	os.system("git pull") # update local clone
-	os.system("git add -A") # add changes
-	os.system(f"""git commit -m "{' '.join(sys.argv)}" -- .""") # commit code
-	os.system("git push") # push local commits
-	os.system("git checkout backup") # switch to backup branch
-	os.system("git merge main")# update backup with main
-	os.system("git push")# push new backup branch with changes
-	os.system("git checkout main") # switch back to main branch
+	del sys.argv[0] # the text "commit.py" is part of argv
+	if sys.argv[0] == "-n":
+		del sys.argv[0]
+		os.system("git pull") # update local clone
+		os.system("git add -A") # add changes
+		os.system(f"""git commit -m "{' '.join(sys.argv)}" -- .""") # commit code
+		os.system("git push") # push local commits
+	elif sys.argv[0] == "-b":
+		del sys.argv[0]
+		os.system("git pull") # update local clone
+		os.system("git checkout backup") # switch to backup branch
+		os.system("git merge main")# update backup with main
+		os.system("git push")# push new backup branch with changes
+		os.system("git checkout main") # switch back to main branch
+	else:
+		os.system("git pull") # update local clone
+		os.system("git add -A") # add changes
+		os.system(f"""git commit -m "{' '.join(sys.argv)}" -- .""") # commit code
+		os.system("git push") # push local commits
+		os.system("git checkout backup") # switch to backup branch
+		os.system("git merge main")# update backup with main
+		os.system("git push")# push new backup branch with changes
+		os.system("git checkout main") # switch back to main branch
