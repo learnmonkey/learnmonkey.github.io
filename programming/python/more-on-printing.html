@@ -10,25 +10,29 @@ permalink: /programming/python/more-on-printing/
 <section>
     <h2>Printing Multiple Things at a Time</h2>
     <p>We can give <code>print</code> two things to print by separating them by commas.</p>
-    <p>For example, we can do <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello"</span><span style='color:#808030; '>,</span> <span style='color:#0000e6; '>"World!"</span><span style='color:#808030; '>)</span>
-    </pre>. In the command line, it prints out <samp>Hello World!</samp>.</p>
-    <p>If you noticed, Python put a space between the words. If we don't want the space, we use <var>sep</var>, which stands for seperator. Going back to the Hello World exmaple, we do <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello"</span><span style='color:#808030; '>,</span> <span style='color:#0000e6; '>"World"</span><span style='color:#808030; '>,</span> sep<span style='color:#808030; '>=</span><span style='color:#0000e6; '>""</span><span style='color:#808030; '>)</span>
-    </pre> and we get back <samp>HelloWorld</samp>.</p>
+    <p>For example:</p>
+    <pre><code class="language-python">print("Hello", "World!")</code></pre>
+    <p>In the command line, the output is:</p>
+    <samp>Hello World!</samp>
+    <p>If you noticed, Python put a space between the words. If we don't want the space, we use <code>sep</code>, which stands for seperator. Going back to the Hello World exmaple, we type:</p>
+    <pre><code class="language-python">print("Hello", "World", sep="")</code></pre>
+    <p>The output is:</p>
+    <pre><code class="language-python">HelloWorld</code></pre>
 </section>
 
 <section>
     <h2>Printing Without Endline</h2>
-    <p>Python's <code>print</code> actually creates a new line after it prints. With the Hello World it might not be that obvious, but we can easily demonstrate it by printing two things.</p>
-    <p>If we do <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello"</span><span style='color:#808030; '>)</span>
-        <span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"World"</span><span style='color:#808030; '>)</span>
-        </pre> we see: <pre><samp>
-Hello
-World
-    </samp></pre></p>
-    <p>Well, what if we don't want the newline at the end? It's actually very simple. Going back to our Hello World example, we change it to 
-        <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Hello"</span><span style='color:#808030; '>,</span> end<span style='color:#808030; '>=</span><span style='color:#0000e6; '>""</span><span style='color:#808030; '>)</span>
-            <span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"World"</span><span style='color:#808030; '>,</span> end<span style='color:#808030; '>=</span><span style='color:#0000e6; '>""</span><span style='color:#808030; '>)</span>
-            </pre> we get <samp>HelloWorld</samp>.
-    </p>
-    <p>Note: you can actually change the <var>end</var> to be anything. I'd recommend you not do that though.</p>
+    <p>Python's <code>print</code> actually creates a new line after it prints. With the Hello World it might not be that obvious, but we can easily demonstrate it by using <code>print</code> twice.</p>
+    <p>For example:</p>
+    <pre><code class="language-python">print("Hello")
+print("World")</code></pre>
+    <p>The output is:</p>
+    <pre><samp>Hello
+World</samp></pre>
+    <p>If we don't want the newline, we can use <code>end</code>. For example:</p>
+    <pre><code class="language-python">print("Hello", end="")
+print("World", end="")</code></pre>
+    <p>The code returns:</p>
+    <samp>HelloWorld</samp>
+    <p>Note: you can actually change <code>end</code> to be anything. I'd recommend you not do that though.</p>
 </section>
