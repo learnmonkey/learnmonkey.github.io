@@ -5,4 +5,57 @@ permalink: /programming/python/data-structures-and-algorithms/queues/
 ---
 
 <h1>Queues</h1>
-<p></p>
+<p>In this tutorial, we'll learn about Queues.</p>
+
+
+<section>
+    <h2>What are Queues?</h2>
+    <p>Queues are a simple but useful Data Structure. They're used in Programming Competitions and Job Interviews, so it is a good idea to learn about them.</p>
+    <p>In Programming, Queues are like actual Queues of items. Imagine that you have some pancakes stacked on top of each other:</p>
+    <div style="height: 75px; width: 250px; border-radius: 50%; border: 2px solid black; text-align: center; display: flex; flex-direction: column; justify-content: center; margin-bottom: 10px;">3</div>
+    <div style="height: 75px; width: 250px; border-radius: 50%; border: 2px solid black; text-align: center; display: flex; flex-direction: column; justify-content: center; margin-bottom: 10px;">42</div>
+    <div style="height: 75px; width: 250px; border-radius: 50%; border: 2px solid black; text-align: center; display: flex; flex-direction: column; justify-content: center; margin-bottom: 10px;">-29</div>
+    <div style="height: 75px; width: 250px; border-radius: 50%; border: 2px solid black; text-align: center; display: flex; flex-direction: column; justify-content: center; margin-bottom: 10px;">6</div>
+    <div style="height: 75px; width: 250px; border-radius: 50%; border: 2px solid black; text-align: center; display: flex; flex-direction: column; justify-content: center; margin-bottom: 10px;">38</div>
+    <p>With these pancakes, you can either put some more pancakes on top of the stack, or remove the pancake on top of the stack. You can't remove or add items to the bottom of the pancakes, or the whole pile would fall. It's the same with Queues in Programming. We call this idea/rule "First In, Last Out" (FILO), meaning that the first elements you add to the Stack will get removed last.</p>
+</section>
+
+<section>
+    <h2>Stack Implementation</h2>
+    <p>In Python, we can use <i>lists</i> to represent Queues. Lists already come pre-built with the needed functions to make a Stack. So as an example, we'll use a browser history system to demonstrate the behavior of a Stack.</p>
+    <pre><code class="language-python">
+history = [1, 2, 3]
+    </code></pre>
+    <p>In this example, we represent our browser history with numbers. But, of course, you'd put the URL of a site as a string when you are creating an actual browser.</p>
+    <p>Then, type the following code into your program:</p>
+    <pre><code class="language-python">
+history.append(4)
+history.append(5)
+print(history.pop())
+print(history)
+    </code></pre>
+    <p>After running the code, you'll get<br> <samp>5<br>
+[1, 2, 3, 4]</samp><br> printed out into the terinal.</p>
+    <p>On the first two lines, we call the <code>append</code> method on our <code>history</code> list. This will add the element we pass in to the end of our list. After running these two lines of code, our <code>history</code> list will be <code>[1, 2, 3, 4, 5]</code>. First, it will add <code>4</code> to the list and then it will add <code>5</code>.</p>
+    <p>Then, we have <pre><code class="language-python">
+print(history.pop())
+print(history)
+    </code></pre> On the first line of this snippet, we use the <code>pop</code> method on our <code>history</code> list. The <code>pop</code> method will remove the last item from the list and return it. So, our program will print out the <code>5</code> from the end of the list. To make sure that our code has successfully run, we print out <code>history</code> and it displays <code>[1, 2, 3, 4]</code>, so we know that <code>pop</code> did indeed delete the last element (<code>5</code>) from our list.</p>
+</section>
+
+<section>
+    <h2>Queues in Competition</h2>
+    <p>We've already gone over how Queues work and how to implement one. So, now, let's go over using Queues in Programming Competitions and Job Interview problems.</p>
+    <section>
+        <h3>When To Use Queues</h3>
+        <p>In Programming problems, it is often useful to use Queues when:</p>
+        <ul>
+            <li>Queues Are Involved (Queues Of Books)</li>
+            <li>There Is A "First In Last Out" Format</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Implementing Queues in Contests</h3>
+        <p>When you are using Queues, you have two main options when it comes to implementing Queues: creating your own <code>Stack</code> class or using lists, which are already built-in. Well, it's better to use your own class if you want to implement a couple of more complex features. Of course, this would use up memory so try to limit to built-in functions if you can. So, it's a good idea to just use a <code>list</code> most of the time.</p>
+    </section>
+</section>
