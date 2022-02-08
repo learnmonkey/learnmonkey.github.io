@@ -15,18 +15,25 @@ permalink: /programming/python/variables/
 <section>
     <h2>Why use Variables?</h2>
     <p>You might think that variables are super useless, but they are one of the most important things in all of programming. Why?</p>
-    <p>Well, imagine you were programming a 2d game. When making games, you need to know the position of the player. But you can't know the position. The player decides that. So, you put the position in a variable. Instead of checking the player's position every single time you need to check for collision, etc, you can just access the variable you have instead of using a long function to get the position of the player.</p>
+    <p>Well, imagine you were programming a 2d game. When making games, you need to know the position of the player. But you can't know the position. The player decides that. So, you put the position in a variable.</p>
 </section>
 
 <section>
     <h2>How to Use Variables?</h2>
-    <p>It's actually very, very simple. Let's say that we want to declare a variable called <var>x</var> and set it to the value of 3.</p>
-    <p>We just write <code><pre style='color:#000000;background:#ffffff;'>x <span style='color:#808030; '>=</span> <span style='color:#008c00; '>3</span></pre></code>. Simple, right. If we wanted a variable called <var>y</var> to have the value of 4, we write <code>y = 4</code>. Easy peasy.</p>
-    <p>If we now want <var>x</var> to be 5, we just do <code><pre style='color:#000000;background:#ffffff;'>x <span style='color:#808030; '>=</span> <span style='color:#008c00; '>5</span></pre></code>. Nothing special.</p>
+    <p>Let's say that we want to declare a variable called <code>x</code> and set it to the value of 3. We type:</p>
+    <pre><code class="language-python">x = 3</code></pre>
+    <p>If we now want a variable called <code>count</code> and set it to 10, we type:</p>
+    <pre><code class="language-python">count = 10</code></pre>
+    <p>If we now want our variable <code>x</code> to be equal to 5, we type:</p>
+    <pre><code class="language-python">x = 5</code></pre>
 </section>
 
 <section>
     <h2>A word a caution</h2>
-    <p>In math class, our teacher told us that x = y is the same as y = x. That doesn't happen in programming. If we do <code><pre style='color:#000000;background:#ffffff;'><span style='color:#008c00; '>3</span> <span style='color:#808030; '>=</span> x
-    </pre></code>, Python would interpret that as setting the value of 3 to x. Nonsense! So, Python would return an error.</p>
+    <p>In math class, our teacher told us that x = y is the same as y = x. That's not true in programming. For example if we type, it's perfectly fine:</p>
+    <pre><code class="language-python">x = 3</code></pre>
+    <p>We're simply making a variable called <code>x</code> and setting it to 3.</p>
+    <p>Now, see what happens when we type:</p>
+    <pre><code class="language-python">3 = x</code></pre>
+    <p>We're telling Python to set the value of 3 to <code>x</code>. Nonsense! So, Python gives us an error.</p>
 </section>
