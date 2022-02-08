@@ -2,6 +2,7 @@
 # It will commit your changes and update the backup branch.
 # Use: python commit.py [your commit message here]
 # We'll make it into a CLI soon...
+# We'll make the features into functions soon...
 
 import os
 import sys
