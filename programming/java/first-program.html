@@ -1,0 +1,45 @@
+---
+layout: java
+title: Your First Java Program
+permalink: /programming/java/first-program/
+---
+<h1>Your First Java Program</h1>
+
+<section>
+    <h2>Writing the Code</h2>
+    <p>Below is the code we will write:</p>
+    <pre><code class="language-java">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+    </code></pre>
+    <p>Save the code in a file called <code>HelloWorld.java</code>.</p>
+</section>
+
+<section>
+    <h2>Running the Code</h2>
+    <p>First of all, you open the command line and navigate to the folder where you stored the code file.</p>
+    <p>Then, run the following command in the command line, which compiles the Java code into bytecode:</p>
+    <pre><code class="language-batch">javac HelloWorld.java</code></pre>
+    <p>After you run the command, you should see a new file called <code>HelloWorld.class</code>, which stores the bytecode.</p>
+    <p>Then, run the following command, which interprets the bytecode:</p>
+    <pre><code class="language-batch">java HelloWorld</code></pre>
+    <p>Once you run the code, you should see:</p>
+    <samp>Hello World!</samp>
+</section>
+
+<section>
+    <h2>Code Breakdown</h2>
+    <p>All Java programs have a class definition. The name of the class is the same as the name of the Java file. We will learn about classes in a later tutorial:</p>
+    <pre><code class="language-java">class HelloWorld {
+        ...
+    }</code></pre>
+    <p>Inside of the class, we have the <code>main</code> function, which we will learn more about in a later tutorial. Just know that when Java runs the file, the code inside the <code>main</code> function will be run:</p>
+    <pre><code class="language-java">public static void main(String[] args) {
+        ...
+    }</code></pre>
+    <p>Finally, inside of the <code>main</code> function, we output <code>Hello, World!</code>:</p>
+    <pre><code class="language-java">System.out.println("Hello, World!");</code></pre>
+</section>
