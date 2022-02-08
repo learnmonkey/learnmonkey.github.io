@@ -6,7 +6,7 @@
 }
 .Column {
     display: table-cell;
-    height: 75px;
+    height: calc(100vh / 5)
     width: 75px;
     border-radius: 50%;
     border: 2px solid black;
