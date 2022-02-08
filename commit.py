@@ -16,7 +16,7 @@ commit options:
     `-b`:      update the backup branch only and commit local commits and changes
     `-n`:      commit local changes but don't update the backup branch
 
-always update the backup branch with your commits UNLESS your commiting something risky/dangerous to main or modifying the main branch (i.e. remove commits)
+always update the backup branch with your commits UNLESS your commiting something risky/dangerous like changing the main branch's commit history
 
 """)
 else:
