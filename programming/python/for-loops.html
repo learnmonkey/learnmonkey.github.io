@@ -24,4 +24,8 @@ for [element] in [iterable]:
     <p>If you put just one number in the <code>range</code> function, the <code>range</code> function will default to: </p>
     <pre><code class="language-python">range(0, <i>number</i> - 1)</code></pre>
     <p>It goes from zero to the number minus one so it's easier to go through a list.</p>
+    <p>However, do note that the <code>range</code> function doesn't return a list. It actually returns an object of the <code>range</code> class. In order to convert it into a list, we can run the <code>list</code> function/class on it, like this:</p>
+    <pre><code class="language-python">
+print(list(range(5))) # output is [1, 2, 3, 4]
+    </code></pre>
 </section>
