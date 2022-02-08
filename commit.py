@@ -15,6 +15,7 @@ commit options:
     default:   commit local changes and update the backup branch too
     `-b`:      update the backup branch only and commit local commits and changes
     `-n`:      commit local changes but don't update the backup branch
+    `-u`:      update a branch with the main branch
 
 always update the backup branch with your commits UNLESS your commiting something risky/dangerous like changing the main branch's commit history
 
@@ -33,6 +34,14 @@ else:
 		os.system("git checkout backup") # switch to backup branch
 		os.system("git merge main")# update backup with main
 		os.system("git push")# push new backup branch with changes
+		os.system("git checkout main") # switch back to main branch
+
+	elif sys.argv[0] == "-u":
+		del sys.argv[0]
+		os.system("git pull") # update local clone
+		os.system(f"git checkout {sys.argv[0]}") # switch to branch
+		os.system("git merge main")# update backup with main
+		os.system("git push")# push new branch with changes
 		os.system("git checkout main") # switch back to main branch
 	else:
 		os.system("git pull") # update local clone
