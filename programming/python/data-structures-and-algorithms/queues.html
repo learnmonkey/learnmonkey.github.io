@@ -36,10 +36,12 @@ print(my_queue.empty())
     <small><i class="fas fa-exclamation-circle"></i> You can find more methods and information on the <code>Queue</code> class on the <a href="https://docs.python.org/3/library/queue.html#queue-objects" target="_blank">Official Python Documentation</a>.</small><br>
     <p>Then, type the following code into your program:</p>
     <pre><code class="language-python">
-history.append(4)
-history.append(5)
-print(history.pop())
-print(history)
+q.put(5)
+q.put("hi")
+q.put("more stuff")
+q.put(True)
+print(q.queue)
+print(type(q.queue))
     </code></pre>
     <p>After running the code, you'll get<br> <samp>5<br>
 [1, 2, 3, 4]</samp><br> printed out into the terinal.</p>
