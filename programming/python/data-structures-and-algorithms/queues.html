@@ -8,7 +8,7 @@ permalink: /programming/python/data-structures-and-algorithms/queues/
 <p>In this tutorial, we'll learn about Queues.</p>
 
 
-<section>
+<section id="what-are-queues">
     <h2>What are Queues?</h2>
     <p>Queues are a simple but useful Data Structure. They're used in Programming Competitions and Job Interviews, so it is a good idea to learn about them.</p>
     <p>In Programming, Queues are similar to line-ups of people in real life. For example, let's say that some people are lining up to go on a rollar coaster:</p>
@@ -23,7 +23,7 @@ permalink: /programming/python/data-structures-and-algorithms/queues/
     <p>These people don't want to get out of line because they've been lining up for a long time. So, you can only add to then end of the Queue/line and the people get out of the line at the front. We call this a "First In Last Out" (<i>FILO</i>) rule.</p>
 </section>
 
-<section>
+<section id="queue-implementation">
     <h2>Queue Implementation</h2>
     <p>In Python, we actually have a built-in module called <code>queue</code> that comes with a <code>Queue</code> class. We can use this class to represent a Queue. As an example, type the following code into your file:</p>
     <pre><code class="language-python">
@@ -50,10 +50,10 @@ print(history)
     </code></pre> On the first line of this snippet, we use the <code>pop</code> method on our <code>history</code> list. The <code>pop</code> method will remove the last item from the list and return it. So, our program will print out the <code>5</code> from the end of the list. To make sure that our code has successfully run, we print out <code>history</code> and it displays <code>[1, 2, 3, 4]</code>, so we know that <code>pop</code> did indeed delete the last element (<code>5</code>) from our list.</p>
 </section>
 
-<section>
+<section id="queues-in-competitions">
     <h2>Queues in Competition</h2>
     <p>We've already gone over how Queues work and how to implement one. So, now, let's go over using Queues in Programming Competitions and Job Interview problems.</p>
-    <section>
+    <section id="when-to-use-queues">
         <h3>When To Use Queues</h3>
         <p>In Programming problems, it is often useful to use Queues when:</p>
         <ul>
@@ -61,7 +61,7 @@ print(history)
             <li>There Is A "First In Last Out" Format</li>
         </ul>
     </section>
-    <section>
+    <section id="implementing-queues-in-contests">
         <h3>Implementing Queues in Contests</h3>
         <p>When you are using Queues, you have two main options when it comes to implementing Queues: creating your own <code>Stack</code> class or using lists, which are already built-in. Well, it's better to use your own class if you want to implement a couple of more complex features. Of course, this would use up memory so try to limit to built-in functions if you can. So, it's a good idea to just use a <code>list</code> most of the time.</p>
     </section>
