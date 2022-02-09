@@ -7,6 +7,14 @@
 import os
 import sys
 
+def update_branch(branch):
+	os.system("git pull") # update local clone
+	os.system(f"git checkout {branch}") # switch to branch
+	os.system("git merge main")# update backup with main
+	os.system("git push")# push new branch with changes
+	os.system("git checkout main") # switch back to main branch
+
+
 if len(sys.argv) == 1 or sys.argv[1] == "-h":
 	print("""
 usage:
@@ -29,21 +37,15 @@ else:
 		os.system("git add -A") # add changes
 		os.system(f"""git commit -m "{' '.join(sys.argv)}" -- .""") # commit code
 		os.system("git push") # push local commits
+	
 	elif sys.argv[0] == "-b":
 		del sys.argv[0]
-		os.system("git pull") # update local clone
-		os.system("git checkout backup") # switch to backup branch
-		os.system("git merge main")# update backup with main
-		os.system("git push")# push new backup branch with changes
-		os.system("git checkout main") # switch back to main branch
+		update_branch("backup")
 
 	elif sys.argv[0] == "-u":
 		del sys.argv[0]
-		os.system("git pull") # update local clone
-		os.system(f"git checkout {sys.argv[0]}") # switch to branch
-		os.system("git merge main")# update backup with main
-		os.system("git push")# push new branch with changes
-		os.system("git checkout main") # switch back to main branch
+		update_branch(sys.argv[0])
+
 	else:
 		os.system("git pull") # update local clone
 		os.system("git add -A") # add changes
