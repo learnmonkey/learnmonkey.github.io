@@ -5,17 +5,17 @@ permalink: /programming/python/json/
 ---
 <h1>Python JSON</h1>
 
-<section>
+<section id="what-is-json">
     <h2>What is JSON?</h2>
     <p>JSON is an easily understandable way to store data. It is basically like a giant Python dictionary, but in an easily changeable and extensible file. JSON files end in <code>.json</code>.</p>
 </section>
 
-<section>
+<section id="json-module">
     <h2>The <code>json</code> module</h2>
     <p>Python has a built-in module called <code>json</code> which makes it easy to use JSON in our applications and scripts.</p>
 </section>
 
-<section>
+<section id="converting-json-to-python">
     <h2>Converting JSON to Python</h2>
     <p>To convert JSON text to a Python dictionary, we can use the <code>loads()</code> function in the <code>json</code> module: </p>
     <pre><code class="language-python">
@@ -33,7 +33,7 @@ print(y)
     <samp>{'name': 'Learnmonkey', 'year_created': 2022}</samp>
 </section>
 
-<section>
+<section id="converting-python-to-json">
     <h2>Converting Python to JSON</h2>
     <p>To convert JSON text into a Python object, we use the <code>dumps()</code> function in the <code>json</code> module: </p>
     <pre><code class="language-python">
