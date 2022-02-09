@@ -25,11 +25,14 @@ permalink: /programming/python/data-structures-and-algorithms/queues/
 
 <section>
     <h2>Stack Implementation</h2>
-    <p>In Python, we can use <i>lists</i> to represent Queues. Lists already come pre-built with the needed functions to make a Stack. So as an example, we'll use a browser history system to demonstrate the behavior of a Stack.</p>
+    <p>In Python, we actually have a built-in module called <code>queue</code> that comes with a <code>Queue</code> class. We can use this class to represent a Queue. As an example, type the following code into your file:</p>
     <pre><code class="language-python">
-history = [1, 2, 3]
+from queue import Queue
+
+my_queue = Queue()
+print(my_queue.empty())
     </code></pre>
-    <p>In this example, we represent our browser history with numbers. But, of course, you'd put the URL of a site as a string when you are creating an actual browser.</p>
+    <p>In this example, we create an empty Queue using the <code>Queue</code> class. We first import it from the <code>queue</code> class and then we assign an empty Queue to the variable <var>q</var>.</p>
     <p>Then, type the following code into your program:</p>
     <pre><code class="language-python">
 history.append(4)
