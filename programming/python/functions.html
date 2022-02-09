@@ -6,13 +6,13 @@ permalink: /programming/python/functions/
 
 <h1>Python Functions</h1>
 
-<section>
+<section id="what-is-a-function">
     <h2>What is a Function?</h2>
     <p>A function is similar to a variable, but instead of storing numbers or text, it stores lines of code for Python to run. Just like we learned in math class, functions in Python can have inputs.</p>
 </section>
 
-<section>
-    <h2>How to Make a Function?</h2>
+<section id="making-functions">
+    <h2>Making Functions</h2>
     <p>To make a function, we use <code>def</code>, which stands for "define". After that, we type our function name, which in this case is <code>helloWorld</code> and type a pair of parentheses (<code>()</code>). After that, we type a colon and press enter. Then, Sublime Text should indent the next line. This is because Python uses indentation for seperating blocks of code and this includes functions.</p>
     <small>Note: You cannot put a space in the middle of a function name.</small><br>
     <img src="/images/programming/python/functions-1.png" alt="Making a Python function in Sublime Text" style="height:20%;width:20%;">
@@ -20,7 +20,7 @@ permalink: /programming/python/functions/
     </pre>. This tells Python that whenever we run the <code>helloWorld</code> function, we want to print <samp>Hello World!</samp>. </p>
 </section>
 
-<section>
+<section id="function-arguments-and-parameters">
     <h2>Function Arguments and Parameters</h2>
     <p>When we are making our function, we can make our function have specific inputs so that when we use our function. These are called arguments. Then, when we run our functions, we can pass in the arguments we just defined as parameters. We can do it as follows:</p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> helloWorld<span style='color:#808030; '>(</span>argument1<span style='color:#808030; '>,</span> argument2<span style='color:#808030; '>,</span> argument3<span style='color:#808030; '>,</span> <span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span style='color:#808030; '>.</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
@@ -31,7 +31,7 @@ permalink: /programming/python/functions/
     <small>Note: You must run your function after you have made it. This is because Python runs the code line by line.</small>
 </section>
 
-<section>
+<section id="returning">
     <h2>Returning</h2>
     <p>When we are programming, we often want our functions to return something. We can do this in Python by using the <code>return</code> keyword. In our function code, we simply type <code>return [value]</code>, which will return the value. As an example, let's modify our <code>helloWorld</code> function to return "Hello World!" instead of printing it. To do this, we type the following: </p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> helloWorld<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
@@ -42,7 +42,7 @@ permalink: /programming/python/functions/
     <p>As expected, we get back <samp>Hello World!</samp>.</p>
 </section>
 
-<section>
+<section id="default-parameters">
     <h2>Default Parameters</h2>
     <p>We can set default parameters as following:</p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> greet<span style='color:#808030; '>(</span>name<span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Learnmonkey"</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
@@ -52,7 +52,7 @@ greet<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span
     <p>The output of the code is <samp>Hello Learnmonkey</samp>.</p>
 </section>
 
-<section>
+<section id="arbitary-arguments">
     <h2>Arbitrary Arguments (<code>*args</code>)</h2>
     <p>In Python, we can have as many arguments as we want by putting <code>*args</code> as one of the arguments, where <code>args</code> is a tuple with all of the arguments. Below is an example: </p>
     <small>Note: We reference the <code>*args</code> by typing <code>args</code> not <code>*args</code>.</small>
@@ -64,7 +64,7 @@ argsTest<span style="color:#808030; ">(</span><span style="color:#808030; ">)</s
     <small>Note: We could rename <code>*args</code> to <code>*nums</code> or anything else. The only thing that matters in the asterisk in front. It is customary to use <code>*args</code>.</small>
 </section>
 
-<section>
+<section id="keyword-arguments">
     <h2>Keyword Arguments</h2>
     <p>In Python, we can use keyword arguments to make our code more readable. When we are using keyword arguments, instead of putting out parameters in order, we can put our parameters in whatever order we choose. Below is an example of keyword arguments: </p>
 
@@ -84,7 +84,7 @@ pizza</samp></pre>
     <p>As we can see, the order in which the parameters were placed doesn't matter.</p>
 </section>
 
-<section>
+<section id="arbitrary-keyword-arguments">
     <h2>Arbitrary Keyword Arguments (<code>**kwargs</code>)</h2>
     <p>In Python, we have another similar thing to <code>*args</code> which is <code>**kwargs</code>. It's similar in the sense that they start with asterisks, only that <code>**kwargs</code> has two asterisks but with <code>**kwargs</code>, but <code>**kwargs</code> takes arguments as seperate parameters. For example, if I have the code</p>
         <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> my_function<span style='color:#808030; '>(</span><span style='color:#44aadd; '>**</span>stuff<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
@@ -97,7 +97,7 @@ my_function<span style='color:#808030; '>(</span>random<span style='color:#80803
     </pre>
 </section>
 
-<section>
+<section id="pass-statement">
     <h2>The <code>pass</code> statement</h2>
     <p>Sometimes you just want an empty function. However, Python won't let you do that and putting in a comment won't work either. So, we use <code>pass</code>. Simply put <code>pass</code> as the code in your function and Python will do nothing: </p>
     <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>def</span> emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
@@ -106,8 +106,8 @@ emptyFunction<span style='color:#808030; '>(</span><span style='color:#808030; '
     </pre>
 </section>
 
-<section>
+<section id="running-a-function">
     <h2>Running a Function</h2>
     <p>Running a function quite similar to making a function, but we don't use <code>def</code> and we don't type anything after the parentheses. For example, we could call the <code>helloWorld</code> fucntion we made earlier by typing <code>helloWorld()</code>.</p>
-    <p><i class="fas fa-exclamation-circle"></i> Remember that if you need to pass in any arguments to put them inside the brackets! Also remember you need brackets even if there are no paramaters that you are passing in!</p>
+    <small><i class="fas fa-exclamation-circle"></i> Remember that if you need to pass in any arguments to put them inside the brackets! Also remember you need brackets even if there are no paramaters that you are passing in!</small>
 </section>
