@@ -39,4 +39,4 @@ Usage:
 python commit.py
 ```
 
-Just calling the file gives you a help command.
+Just calling the file gives you a help command on all of the features it provides.
