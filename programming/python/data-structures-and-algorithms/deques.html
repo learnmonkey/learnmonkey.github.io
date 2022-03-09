@@ -35,12 +35,10 @@ d = deque()
     <small><i class="fas fa-exclamation-circle"></i> You can find more methods and information on the <code>Queue</code> class on the <a href="https://docs.python.org/3/library/queue.html#queue-objects" target="_blank">Official Python Documentation</a>.</small><br>
     <p>Then, type the following code into your program:</p>
     <pre><code class="language-python">
-q.put(5)
-q.put("hi")
-q.put("more stuff")
-q.put(True)
-print(q.queue)
-print(type(q.queue))
+d.append(5)
+q.append("hi")
+q.appendleft("more stuff")
+print(deque)
     </code></pre>
     <p>After running the code, you'll get<br> <samp>deque([5, 'hi', 'more stuff', True])<br>
 &#60;class 'collections.deque'></samp><br> printed out into the terinal.</p>
