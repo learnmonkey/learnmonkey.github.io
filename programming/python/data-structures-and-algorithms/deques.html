@@ -54,7 +54,7 @@ d.appendleft("item goes to the left")
 <section id="dequeuing-items">
     <h2>Dequeuing Items</h2>
     <p>Also, similarily with Queues, we can also remove items. Because of the double-ended property of a Deque, we can remove items from both sides of the Deque. But, obviously, we won't be able to access items in the middle of the Deque.</p>
-    <p>With the <code>Queue</code> class, we use the <code>get</code> method on the queue to do this.</p>
+    <p>With the <code>deque</code> class, we use the <code>pop</code> and <code>popleft</code> methods on the deque objects to do this.</p>
     <pre><code class="language-python">
 q.put("item goes to the end")
 print(q.get()) # prints out "item goes to the end"
