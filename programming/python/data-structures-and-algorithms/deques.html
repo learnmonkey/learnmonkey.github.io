@@ -46,9 +46,9 @@ print(d)
 <section id="appending-left-and-right">
     <h2>Appending Left and Right</h2>
     <p>With Deques, we can do the same operations (adding and removing) as we can with a Queue, but we are able to add and pop from both sides of the Deque. As we already know, by adding to a Deque, it goes to the end. However, we can use another method on the Deque, called <code>appendleft</code>, to append to the left side of the Deque. Just using the bare <code>append</code> method appends the item to the right side of the Deque.</p>
-    <p>With the <code>Queue</code> class, we use the <code>put</code> method on the queue to do this.</p>
     <pre><code class="language-python">
-q.put("item goes to the end")
+d.append("item goes to the right")
+d.appendleft("item goes to the left")
     </code></pre>
 </section>
 
