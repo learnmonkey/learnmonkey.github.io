@@ -23,6 +23,8 @@ def fib(n):
     </code></pre>
     <p>This fibonacci example is pretty self-explanatory. We first create a function <code>fib</code> which takes one parameter - the position of the term we want.</p>
     <p>After, we first do a simple if-statement check. If <var>n</var> is less than 2, we will return 1 as the value of the term. Otherwise, we follow the simple rules of the fibonacci sequence and attempt to return the sum of the two previous terms, or <code>fib(n - 1) + fib(n - 2)</code>.</p>
+    <p>However, do note that this is one of the more less efficient algorithms for recursion, because our program can easily exceed the maximum recursion limit, which is 1000. So, if you were to call <code>fib(1001)</code>, then you would hit an error.</p>
+    <code>RecursionError</code>
 </section>
 
 <sectio>
