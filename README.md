@@ -40,3 +40,8 @@ python commit.py
 ```
 
 Just calling the file gives you a help command on all of the features it provides.
+
+```batch
+python commit.py
+python commit.py -h
+```
