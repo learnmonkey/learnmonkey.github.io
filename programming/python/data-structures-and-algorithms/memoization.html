@@ -8,15 +8,30 @@ permalink: /programming/python/data-structures-and-algorithms/memoization/
 
 <section>
     <h2>What is Memoization?</h2>
-    <p></p>
+    <p>Memoization is the most popular <a href="/programming/python/data-structures-and-algorithms/caching/"><i>cache</i></a> method used in Competitive Programming. It uses the simple laws of caching which is using a dictionary to store data and keys and using the values of keys in the dictionary as the return values of the function.</p>
 </section>
 
 <section>
     <h2>Simple Memoization Implementation</h2>
-    <p></p>
+    <p>Here's the fibonacii example from the <a href="/programming/python/data-structures-and-algorithms/recursion/">Recursion</a> tutorial:</p>
+    <pre><code class="language-python">
+cache = {}
+def fib(n):
+    if n in cache:
+        return cache[n]
+    else:
+        if n <= 2:
+            cache[n] = 1
+            return 1
+        else:
+            a = fib(n - 1) + fib(n - 2)
+            cache[n] = a
+            return a
+    </code></pre>
+    <p>With this code, we can reach higher values if we run lower values of the function first. We only use simple if-statements to check if values are cached and we return them if they are. Otherwise, we calculate values and cache them.</p>
 </section>
 
 <section>
     <h2>Built-in Cache Methods in Python</h2>
-    <p></p>
+    <p>In the</p>
 </section>
